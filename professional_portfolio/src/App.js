@@ -20,6 +20,7 @@ function App() {
             member of a team. Strong written and verbal interpersonal communication 
             skills. Team player with the ability to work independently.
         </p>
+        <Navbar /v>
       </header>
     </div>
   );
