@@ -4,7 +4,17 @@ const Navbar = () => {
     return (
     
         <nav className="navbar">
-            <p>Navbar</p>
+            <ul className="nav-items">
+                <li>
+                    <p>Projects</p>
+                </li>
+                <li>
+                    <p>Experience</p>
+                </li>
+                <li>
+                    <p>References</p>
+                </li>
+            </ul>
         </nav>
     );
 };
