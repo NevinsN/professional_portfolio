@@ -7,9 +7,7 @@ function App() {
     <div className="App">
       <header className="App-header">
         <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
+      <Navbar /v>
         <h1>
           Nicholas Nevins
         </h1>
@@ -20,7 +18,6 @@ function App() {
             member of a team. Strong written and verbal interpersonal communication 
             skills. Team player with the ability to work independently.
         </p>
-        <Navbar /v>
       </header>
     </div>
   );
