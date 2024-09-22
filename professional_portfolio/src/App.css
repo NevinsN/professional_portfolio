@@ -45,3 +45,8 @@
   color: #fff;
   padding: 1rem;
 }
+
+.navbar .navbar-item {
+  display: flex;
+  align-items: center;
+}
