@@ -5,6 +5,7 @@ import {
     BrowserRouter as Router,
     Routes,
     Route,
+    Redirect,
 } from "react-router-dom";
 import Home from "./pages";
 import Experience from "./pages/experience";
