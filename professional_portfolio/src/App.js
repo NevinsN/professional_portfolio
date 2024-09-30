@@ -29,7 +29,10 @@ function App() {
                 />
                 <Route path="/skills" element={<Skills />} />
             </Routes>
-        </Router>
+            <Route exact path="/">
+                <Redirect to="/index" />
+            </Route>
+    </Router>
     );
 }
 
