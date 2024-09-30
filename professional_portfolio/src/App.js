@@ -1,26 +1,37 @@
+import React from "react";
 import logo from './logo.svg';
 import './App.css';
-import Navbar from './Components/Navbar.js';
+import Navbar from "./Components/Navbar";
+import {
+    BrowserRouter as Router,
+    Routes,
+    Route,
+} from "react-router-dom";
+import Home from "./pages";
+import Experience from "./pages/experience";
+import Projects from "./pages/projects";
+import References from "./pages/references";
+import Skills from "./pages/skills";
 
 function App() {
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-      <Navbar />
-        <h1>
-          Nicholas Nevins
-        </h1>
-        <p>A results-driven software developer with a strong technical skillset. 
-            Excels at problem solving, learning new skills quickly, and possesses 
-            a strong background in customer service and team-building. Consistently 
-            recognized for abilities to train and teach others as a functional 
-            member of a team. Strong written and verbal interpersonal communication 
-            skills. Team player with the ability to work independently.
-        </p>
-      </header>
-    </div>
-  );
+    <Router>
+            <Navbar />
+            <Routes>
+                <Route path="/index" element={<Home />} />
+                <Route path="/experience" element={<Experience />} />
+                <Route
+                    path="/projects"
+                    element={<Projects />}
+                />
+                <Route
+                    path="/references"
+                    element={<References />}
+                />
+                <Route path="/skills" element={<Skills />} />
+            </Routes>
+        </Router>
+    );
 }
 
 export default App;
