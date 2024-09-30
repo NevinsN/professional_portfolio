@@ -13,7 +13,7 @@ const Navbar = () => {
                 <Bars />
 
                 <NavMenu>
-                    <NavLink to="/index" >
+                    <NavLink to="/home" >
                         Home
                     </NavLink>
                     <NavLink to="/projects" >
@@ -28,6 +28,7 @@ const Navbar = () => {
                     <NavLink to="/references" activeStyle>
                         References
                     </NavLink>
+                    <button id="resumeBtn" value="resume">Resume</button>
                 </NavMenu>
             </Nav>
         </>
