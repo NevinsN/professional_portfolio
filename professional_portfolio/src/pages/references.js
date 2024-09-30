@@ -2,6 +2,7 @@ import React from "react";
 
 const References = () => {
     return (
+        <header className="App-header">
         <div
             style={{
                 display: "flex",
@@ -12,6 +13,7 @@ const References = () => {
         >
             <h1>References</h1>
         </div>
+        </header>
     );
 };
 

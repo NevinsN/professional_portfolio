@@ -2,6 +2,7 @@ import React from "react";
 
 const Projects = () => {
     return (
+        <header className="App-header">
         <div
             style={{
                 display: "flex",
@@ -12,6 +13,7 @@ const Projects = () => {
         >
             <h1>Projects</h1>
         </div>
+        </header>
     );
 };
 

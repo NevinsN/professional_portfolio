@@ -2,7 +2,8 @@ import React from "react";
 
 const Experience = () => {
     return (
-        <div
+        <header className="App-header">
+            <div
             style={{
                 display: "flex",
                 justifyContent: "centre",
@@ -12,6 +13,7 @@ const Experience = () => {
         >
             <h1>Experience</h1>
         </div>
+        </header>
     );
 };
 

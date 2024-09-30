@@ -2,6 +2,7 @@ import React from "react";
 
 const Skills = () => {
     return (
+        <header className="App-header">
         <div
             style={{
                 display: "flex",
@@ -12,6 +13,7 @@ const Skills = () => {
         >
             <h1>Skills</h1>
         </div>
+        </header>
     );
 };
 
