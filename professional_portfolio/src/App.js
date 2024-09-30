@@ -5,8 +5,8 @@ import {
     BrowserRouter as Router,
     Routes,
     Route,
-    Redirect,
 } from "react-router-dom";
+import { Navigate } from 'react-router-dom';
 import Home from "./pages";
 import Experience from "./pages/experience";
 import Projects from "./pages/projects";
@@ -29,10 +29,8 @@ function App() {
                     element={<References />}
                 />
                 <Route path="/skills" element={<Skills />} />
+                <Route path="/" element={<Navigate replace to="/index" />} />
             </Routes>
-            <Route exact path="/">
-                <Redirect to="/index" />
-            </Route>
     </Router>
     );
 }
