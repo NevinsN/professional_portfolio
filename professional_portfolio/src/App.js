@@ -5,6 +5,7 @@ import {
     BrowserRouter as Router,
     Routes,
     Route,
+    Switch,
 } from "react-router-dom";
 import { Navigate } from 'react-router-dom';
 import Home from "./pages/home";
@@ -18,7 +19,9 @@ function App() {
     //const [open, setOpen] = useState(false);
   return (
     <Router>
+      <Header updateOrderRoutes={updateOrderRoutes} />
             <Navbar />
+            <Switch>
             <Routes>
                 <Route path="/home" element={<Home />} />
                 <Route path="/experience" element={<Experience />} />
@@ -33,6 +36,7 @@ function App() {
                 <Route path="/skills" element={<Skills />} />
                 <Route path="/" element={<Navigate replace to="/home" />} />
             </Routes>
+            </Switch>
     </Router>
     );
 }
