@@ -28,11 +28,28 @@ const Navbar = () => {
                     <NavLink to="/references" activeStyle>
                         References
                     </NavLink>
-                    <button id="resumeBtn" value="resume">Resume</button>
+                    <button id="resumeBtn" onClick={downloadTxtFile} value="resume"><i class="fa fa-download" aria-hidden="true"></i>Résumé</button>
                 </NavMenu>
             </Nav>
         </>
     );
 };
+
+const downloadTxtFile = () => {
+    fetch("Nicholas_Nevins_Resume.pdf").then((response) => {
+        response.blob().then((blob) => {
+        
+            // Creating new object of PDF file
+            const fileURL =
+                window.URL.createObjectURL(blob);
+                
+            // Setting various property values
+            let alink = document.createElement("a");
+            alink.href = fileURL;
+            alink.download = "Nicholas_Nevins_Resume.pdf";
+            alink.click();
+        });
+    });
+}
 
 export default Navbar;

@@ -38,3 +38,16 @@
     transform: rotate(360deg);
   }
 }
+
+button {
+  background-color: #119605; /* Green */
+  border: solid;
+  border-color:#0b6b02;
+  color: rgb(255, 255, 255);
+  padding: 5px 15px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 14px;
+  border-radius: 10%;
+}
