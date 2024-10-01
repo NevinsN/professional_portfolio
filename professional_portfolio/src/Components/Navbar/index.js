@@ -10,7 +10,7 @@ const Navbar = () => {
     return (
         <>
             <Nav>
-                <Bars />
+                <Bars onClick={OpenMenu}/>
 
                 <NavMenu>
                     <NavLink to="/home" >
@@ -50,6 +50,10 @@ const downloadTxtFile = () => {
             alink.click();
         });
     });
+}
+
+const OpenMenu = () => {
+
 }
 
 export default Navbar;
