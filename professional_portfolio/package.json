@@ -37,5 +37,11 @@
       "last 1 firefox version",
       "last 1 safari version"
     ]
+    "eslintConfig": {
+        "rules": {
+            "no-undef": "off",
+            "no-unused-vars": "off"
+        }
+    }
   }
 }
