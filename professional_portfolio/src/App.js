@@ -5,9 +5,9 @@ import {
     BrowserRouter as Router,
     Routes,
     Route,
-    Switch,
 } from "react-router-dom";
 import { Navigate } from 'react-router-dom';
+import { Switch} from 'react-router';
 import Home from "./pages/home";
 import Experience from "./pages/experience";
 import Projects from "./pages/projects";
