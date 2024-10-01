@@ -18,7 +18,6 @@ function App() {
     //const [open, setOpen] = useState(false);
   return (
     <Router>
-      <Header updateOrderRoutes={updateOrderRoutes} />
             <Navbar />
             <Routes>
                 <Route path="/home" element={<Home />} />
