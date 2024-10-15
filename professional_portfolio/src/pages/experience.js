@@ -15,9 +15,9 @@ const Experience = () => {
             </div>
             <div 
             style={{
-                display: "flex",
                 justifyContent: "centre",
                 alignItems: "centre",
+                paddingLeft: "10%"
             }}
             >
             <p>
