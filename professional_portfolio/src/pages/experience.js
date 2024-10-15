@@ -13,7 +13,7 @@ const Experience = () => {
         >
             <h1>Experience</h1>
             <p>
-                <h2>Field Sales Specialist, Talking Rain Beverage Company, Idaho Falls, ID  	 	          2023 – Present</h2> 
+                <h4>Field Sales Specialist, Talking Rain Beverage Company, Idaho Falls, ID  	 	          2023 – Present</h4> 
                 <ul>
                     <li>Represented the beverage brand in Eastern Idaho, effectively interfacing with store leaders, distributor partners, and company personnel to establish and maintain exceptional relationships, contributing to the growth of regional sales.</li>
                     <li>Build and foster relationships strategically to leverage into increased sales and secure prominent display features, resulting in a substantial boost in overall sales for the region.</li>  
