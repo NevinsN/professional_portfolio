@@ -8,12 +8,11 @@ const Experience = () => {
                 display: "flex",
                 justifyContent: "centre",
                 alignItems: "centre",
-                height: "100vh",
+                height: "25vh",
             }}
         >
             <h1>Experience</h1>
-            </div>
-            <div>
+    
             <p>
                 <h4>Field Sales Specialist, Talking Rain Beverage Company, Idaho Falls, ID  	 	          2023 – Present</h4> 
                 <ul>
@@ -25,7 +24,7 @@ const Experience = () => {
                 </ul>
             </p>
             <p>
-                <h2>Food Receiver, Fred Meyer, Idaho Falls, ID</h2>         	 	 	 	 	 	          2010 – 2023 
+                <h4>Food Receiver, Fred Meyer, Idaho Falls, ID</h4>         	 	 	 	 	 	          2010 – 2023 
                 <ul>
                     <li>Mastered company technology and processes, serving as an expert to coworkers when they encountered challenges with the company's systems, increasing the team's overall proficiency.</li>
                     <li>Established and built relationships with vendors from various companies and backgrounds, fostering positive and collaborative partnerships.</li>  
