@@ -5,7 +5,7 @@ import {
     BrowserRouter as Router,
     Routes,
     Route,
-    Switch
+    //Switch
 } from "react-router-dom";
 import { Navigate } from 'react-router-dom';
 import Home from "./pages/home";
