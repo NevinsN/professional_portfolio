@@ -22,7 +22,7 @@ const Experience = () => {
             }}
             >
             <p>
-                <h4>Field Sales Specialist, Talking Rain Beverage Company, Idaho Falls, ID  	 	          2023 – Present</h4> 
+                <h4>Field Sales Specialist, Talking Rain Beverage Company, Idaho Falls, ID | 2023 – Present</h4> 
                 <ul>
                     <li>Represented the beverage brand in Eastern Idaho, effectively interfacing with store leaders, distributor partners, and company personnel to establish and maintain exceptional relationships, contributing to the growth of regional sales.</li>
                     <li>Build and foster relationships strategically to leverage into increased sales and secure prominent display features, resulting in a substantial boost in overall sales for the region.</li>  
@@ -32,7 +32,7 @@ const Experience = () => {
                 </ul>
             </p>
             <p>
-                <h4>Food Receiver, Fred Meyer, Idaho Falls, ID         	 	 	 	 	 	          2010 – 2023 </h4>
+                <h4>Food Receiver, Fred Meyer, Idaho Falls, ID | 2010 – 2023 </h4>
                 <ul>
                     <li>Mastered company technology and processes, serving as an expert to coworkers when they encountered challenges with the company's systems, increasing the team's overall proficiency.</li>
                     <li>Established and built relationships with vendors from various companies and backgrounds, fostering positive and collaborative partnerships.</li>  
