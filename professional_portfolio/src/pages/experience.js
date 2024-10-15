@@ -32,7 +32,7 @@ const Experience = () => {
                 </ul>
             </p>
             <p>
-                <h4>Food Receiver, Fred Meyer, Idaho Falls, ID</h4>         	 	 	 	 	 	          2010 – 2023 
+                <h4>Food Receiver, Fred Meyer, Idaho Falls, ID         	 	 	 	 	 	          2010 – 2023 </h4>
                 <ul>
                     <li>Mastered company technology and processes, serving as an expert to coworkers when they encountered challenges with the company's systems, increasing the team's overall proficiency.</li>
                     <li>Established and built relationships with vendors from various companies and backgrounds, fostering positive and collaborative partnerships.</li>  
