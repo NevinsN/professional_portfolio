@@ -17,7 +17,8 @@ const Experience = () => {
             style={{
                 justifyContent: "centre",
                 alignItems: "centre",
-                paddingLeft: "10%"
+                paddingLeft: "10%",
+                paddingRight: "10%",
             }}
             >
             <p>
