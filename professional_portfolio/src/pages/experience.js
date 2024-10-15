@@ -8,12 +8,18 @@ const Experience = () => {
                 display: "flex",
                 justifyContent: "centre",
                 alignItems: "centre",
-                height: "30vh",
+                height: "20vh",
             }}
         >
             <h1>Experience</h1>
             </div>
-            <div>
+            <div 
+            style={{
+                display: "flex",
+                justifyContent: "centre",
+                alignItems: "centre",
+            }}
+            >
             <p>
                 <h4>Field Sales Specialist, Talking Rain Beverage Company, Idaho Falls, ID  	 	          2023 – Present</h4> 
                 <ul>
