@@ -4,9 +4,12 @@ import Headshot from "../Images/Headshot.jpg";
 const Home = () => {
   return (
       <header className="App-header">      
-        <h1 className="App-header_title">
-          Nicholas Nevins - Software Developer
+        <div className="App-header_title">
+        <h1 style={{lineHeight: "0em"}}>
+          Nicholas Nevins
         </h1>
+        <p style={{lineHeight: "0em", fontStyle: "italic", fontSize: "25px", marginLeft: "2.5%"}}>Software Developer</p>
+        </div>
         <div className="content">
           <img src={Headshot} alt="Nick Nevins Headshot" style={{width:"200px", height:"238px",}}/>
           <p style={{
