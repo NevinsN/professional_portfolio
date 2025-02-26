@@ -36,7 +36,7 @@ const Navbar = () => {
 };
 
 const downloadTxtFile = () => {
-    fetch("Nicholas_Nevins_Resume.pdf").then((response) => {
+    fetch("Resume Nicholas Nevins Software Developer.pdf").then((response) => {
         response.blob().then((blob) => {
         
             // Creating new object of PDF file
