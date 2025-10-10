@@ -19,22 +19,22 @@ const Navbar = () => {
                 <Bars onClick={handleMenuToggle} />
 
                 <NavMenu className={isOpen ? "active" : ""}>
-                    <NavLink to="/home" >
+                    <NavLink to="/home" onClick={() => setIsOpen(false)}>
                         Home
                     </NavLink>
-                    <NavLink to="/projects" >
+                    <NavLink to="/projects" onClick={() => setIsOpen(false)}>
                         Projects
                     </NavLink>
-                    <NavLink to="/skills" activeStyle>
+                    <NavLink to="/skills" onClick={() => setIsOpen(false)} activeStyle>
                         Skills
                     </NavLink>
-                    <NavLink to="/experience" activeStyle>
+                    <NavLink to="/experience" onClick={() => setIsOpen(false)} activeStyle>
                         Experience
                     </NavLink>
-                    <NavLink to="/references" activeStyle>
+                    <NavLink to="/references" onClick={() => setIsOpen(false)} activeStyle>
                         References
                     </NavLink>
-                    <button id="resumeBtn" onClick={downloadTxtFile} value="resume"><i class="fa fa-download" aria-hidden="true"></i>Résumé</button>
+                    <button id="resumeBtn" onClick={(e) => { downloadTxtFile(); setIsOpen(false); }} value="resume"><i class="fa fa-download" aria-hidden="true"></i>Résumé</button>
                 </NavMenu>
             </Nav>
         </>
