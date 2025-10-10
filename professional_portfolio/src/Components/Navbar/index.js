@@ -17,8 +17,36 @@ const Navbar = ({ theme, toggleTheme }) => {
         <>
             <Nav>
                 <Bars onClick={handleMenuToggle} />
-                <button onClick={toggleTheme} style={{position: 'absolute', right: '120px', top: '16px', zIndex: 101}}>
-                    {theme === "dark" ? "Light Mode" : "Dark Mode"}
+                <button
+                    onClick={toggleTheme}
+                    style={{
+                        position: 'absolute',
+                        right: '24px', // match Bars right position
+                        top: '16px',  // match Bars top position
+                        zIndex: 101,
+                        background: 'rgba(0,0,0,0.1)',
+                        color: '#fff',
+                        border: 'none',
+                        borderRadius: '6px',
+                        padding: '8px',
+                        fontSize: '2.2rem',
+                        boxShadow: '0 2px 8px rgba(0,0,0,0.08)',
+                        cursor: 'pointer',
+                        transition: 'background 0.2s, color 0.2s',
+                        height: 'auto',
+                        width: 'auto',
+                        marginRight: '56px' // add margin to separate from hamburger
+                    }}
+                    onMouseOver={e => {
+                        e.target.style.background = '#ecdc1a';
+                        e.target.style.color = '#006910';
+                    }}
+                    onMouseOut={e => {
+                        e.target.style.background = 'rgba(0,0,0,0.1)';
+                        e.target.style.color = '#fff';
+                    }}
+                >
+                    {theme === "dark" ? "☀" : "🌙"}
                 </button>
                 <NavMenu className={isOpen ? "active" : ""}>
                     <NavLink to="/home" onClick={() => setIsOpen(false)}>
