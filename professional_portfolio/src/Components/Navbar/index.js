@@ -5,7 +5,6 @@ import {
     Bars,
     NavMenu
 } from "./NavbarElements";
-import { FaSun, FaMoon } from "react-icons/fa";
 
 const Navbar = ({ theme, toggleTheme }) => {
     const [isOpen, setIsOpen] = useState(false);
