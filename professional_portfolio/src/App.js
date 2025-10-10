@@ -32,15 +32,15 @@ function App() {
     <Router>
             <Navbar theme={theme} toggleTheme={toggleTheme}/>
             <Routes>
-                <Route path="/home" element={<Home />} />
-                <Route path="/experience" element={<Experience />} />
-                <Route path="/projects" element={<Projects />} />
-                <Route path="/projects/capstone" element={<Capstone />} />
-                <Route path="/projects/capstone/mysteryGame" element={<MysteryGame />} />
-                <Route path="/projects/capstone/animalShelter" element={<AnimalShelter />} />
-                <Route path="/projects/capstone/binarySearchTree" element={<BinarySearchTree />} />
-                <Route path="/references" element={<References />} />
-                <Route path="/skills" element={<Skills />} />
+                <Route path="/home" element={<Home theme={theme}/>} />
+                <Route path="/experience" element={<Experience theme={theme}/>} />
+                <Route path="/projects" element={<Projects theme={theme}/>} />
+                <Route path="/projects/capstone" element={<Capstone theme={theme}/>} />
+                <Route path="/projects/capstone/mysteryGame" element={<MysteryGame theme={theme}/>} />
+                <Route path="/projects/capstone/animalShelter" element={<AnimalShelter theme={theme}/>} />
+                <Route path="/projects/capstone/binarySearchTree" element={<BinarySearchTree theme={theme}/>} />
+                <Route path="/references" element={<References theme={theme}/>} />
+                <Route path="/skills" element={<Skills theme={theme}/>} />
                 <Route path="/" element={<Navigate replace to="/home" />} />
             </Routes>
     </Router>

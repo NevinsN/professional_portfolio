@@ -3,7 +3,7 @@ import { Link } from "react-router-dom";
 
 const Capstone = () => {
     return (
-        <header className="App-header">
+        <header className="App-header ${theme}">
         <div 
             style={{
                 justifyContent: "centre",

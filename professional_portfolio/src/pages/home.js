@@ -3,7 +3,7 @@ import Headshot from "../Images/Headshot.jpg";
 
 const Home = () => {
   return (
-      <header className="App-header">      
+      <header className="App-header ${theme}">      
         <div className="App-header_title">
         <h1 style={{lineHeight: "0em"}}>
           Nicholas Nevins

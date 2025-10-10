@@ -3,7 +3,7 @@ import { Link } from "react-router-dom";
 
 const Projects = () => {
     return (
-        <header className="App-header">
+        <header className="App-header ${theme}">
         <div className="App-header_titleSubpage">
             <h1>Projects</h1>
 

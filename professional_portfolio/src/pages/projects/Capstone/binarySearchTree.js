@@ -2,7 +2,7 @@ import React from "react";
 
 const BinarySearchTree = () => {
     return (
-        <header className="App-header">
+        <header className="App-header ${theme}">
         <div 
             style={{
             justifyContent: "centre",

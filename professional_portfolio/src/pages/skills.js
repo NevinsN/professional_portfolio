@@ -2,7 +2,7 @@ import React from "react";
 
 const Skills = () => {
     return (
-        <header className="App-header">
+        <header className="App-header ${theme}">
         <div className="App-header_titleSubpage">
             <h1>Skills</h1>
         </div>
