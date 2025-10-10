@@ -58,8 +58,4 @@ const downloadTxtFile = () => {
     });
 }
 
-const OpenMenu = () => {
-
-}
-
 export default Navbar;
