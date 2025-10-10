@@ -21,8 +21,8 @@ const Navbar = ({ theme, toggleTheme }) => {
                     onClick={toggleTheme}
                     style={{
                         position: 'absolute',
-                        left: '80px', // move right a little
-                        top: '20px', // center vertically with hamburger
+                        left: '80px', // keep right of hamburger
+                        top: '16px', // match Bars top
                         zIndex: 101,
                         background: 'rgba(0,0,0,0.1)',
                         color: '#fff',
@@ -33,8 +33,8 @@ const Navbar = ({ theme, toggleTheme }) => {
                         boxShadow: '0 2px 8px rgba(0,0,0,0.08)',
                         cursor: 'pointer',
                         transition: 'background 0.2s, color 0.2s',
-                        height: '40px', // match hamburger height
-                        width: '40px', // make square for icon
+                        height: '40px', // match Bars height (fontSize + padding)
+                        width: '40px', // match Bars width
                         display: 'flex',
                         alignItems: 'center',
                         justifyContent: 'center'
