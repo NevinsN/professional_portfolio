@@ -16,9 +16,9 @@ const Navbar = () => {
     return (
         <>
             <Nav>
-                <Bars onClick={OpenMenu}/>
+                <Bars onClick={handleMenuToggle} />
 
-                <NavMenu>
+                <NavMenu className={isOpen ? "active" : ""}>
                     <NavLink to="/home" >
                         Home
                     </NavLink>
