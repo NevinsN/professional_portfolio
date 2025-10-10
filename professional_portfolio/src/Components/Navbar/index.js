@@ -17,7 +17,9 @@ const Navbar = ({ theme, toggleTheme }) => {
         <>
             <Nav>
                 <Bars onClick={handleMenuToggle} />
-
+                <button onClick={toggleTheme} style={{position: 'absolute', right: '70px', top: '16px', zIndex: 101}}>
+                    {theme === "dark" ? "Light Mode" : "Dark Mode"}
+                </button>
                 <NavMenu className={isOpen ? "active" : ""}>
                     <NavLink to="/home" onClick={() => setIsOpen(false)}>
                         Home
@@ -35,9 +37,6 @@ const Navbar = ({ theme, toggleTheme }) => {
                         References
                     </NavLink>
                     <button id="resumeBtn" onClick={(e) => { downloadTxtFile(); setIsOpen(false); }} value="resume"><i class="fa fa-download" aria-hidden="true"></i>Résumé</button>
-                    <button onClick={toggleTheme}>
-                      {theme === "dark" ? "Light Mode" : "Dark Mode"}
-                    </button>
                 </NavMenu>
             </Nav>
         </>
