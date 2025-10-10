@@ -4,7 +4,7 @@ import styled from "styled-components";
 
 export const Nav = styled.nav`
     background: #006910;
-    background-image: radial-gradient(circle at center center, rgb(56,248,56),rgb(2,73,0));
+    background-image: linear-gradient(90deg, rgb(173, 173, 173),rgb(129, 129, 129)),linear-gradient(90deg, rgb(91, 131, 23) 0%, rgb(91, 131, 23) 65%,rgb(110, 144, 39) 65%, rgb(110, 144, 39) 67%,rgb(128, 157, 55) 67%, rgb(128, 157, 55) 71%,rgb(147, 169, 70) 71%, rgb(147, 169, 70) 74%,rgb(165, 182, 86) 74%, rgb(165, 182, 86) 93%,rgb(184, 195, 102) 93%, rgb(184, 195, 102) 100%),linear-gradient(67.5deg, rgb(91, 131, 23) 0%, rgb(91, 131, 23) 65%,rgb(110, 144, 39) 65%, rgb(110, 144, 39) 67%,rgb(128, 157, 55) 67%, rgb(128, 157, 55) 71%,rgb(147, 169, 70) 71%, rgb(147, 169, 70) 74%,rgb(165, 182, 86) 74%, rgb(165, 182, 86) 93%,rgb(184, 195, 102) 93%, rgb(184, 195, 102) 100%),linear-gradient(157.5deg, rgb(91, 131, 23) 0%, rgb(91, 131, 23) 65%,rgb(110, 144, 39) 65%, rgb(110, 144, 39) 67%,rgb(128, 157, 55) 67%, rgb(128, 157, 55) 71%,rgb(147, 169, 70) 71%, rgb(147, 169, 70) 74%,rgb(165, 182, 86) 74%, rgb(165, 182, 86) 93%,rgb(184, 195, 102) 93%, rgb(184, 195, 102) 100%); background-blend-mode:overlay, overlay, overlay, normal;
     height: 70px;
     display: flex;
     justify-content: space-between;

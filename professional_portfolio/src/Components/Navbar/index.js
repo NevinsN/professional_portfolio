@@ -17,7 +17,7 @@ const Navbar = ({ theme, toggleTheme }) => {
         <>
             <Nav>
                 <Bars onClick={handleMenuToggle} />
-                <button onClick={toggleTheme} style={{position: 'absolute', right: '70px', top: '16px', zIndex: 101}}>
+                <button onClick={toggleTheme} style={{position: 'absolute', right: '120px', top: '16px', zIndex: 101}}>
                     {theme === "dark" ? "Light Mode" : "Dark Mode"}
                 </button>
                 <NavMenu className={isOpen ? "active" : ""}>
