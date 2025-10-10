@@ -26,6 +26,9 @@ export const NavLink = styled(Link)`
         color: #ecdc1a;
     }
 `;
+<NavLink to="/home" onClick={() => setIsOpen(false)}>
+    Home
+</NavLink>
 
 export const Bars = styled(FaBars)`
     display: none;
@@ -45,6 +48,7 @@ export const Bars = styled(FaBars)`
     }
     }
 `;
+<Bars onClick={handleMenuToggle} aria-label="Toggle navigation menu"/>
 
 export const NavMenu = styled.div`
     display: flex;
@@ -60,6 +64,9 @@ export const NavMenu = styled.div`
         display: none;
     }
 `;
+<NavMenu isOpen={isOpen}>
+    { Link }
+</NavMenu>
 
 export const NavBtn = styled.nav`
     display: flex;

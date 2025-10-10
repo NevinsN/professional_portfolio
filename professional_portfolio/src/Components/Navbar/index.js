@@ -3,10 +3,17 @@ import {
     Nav,
     NavLink,
     Bars,
-    NavMenu
+    NavMenu,
+    useState
 } from "./NavbarElements";
 
 const Navbar = () => {
+    const [isOpen, setIsOpen] = useState(false);
+
+    const handleMenuToggle = () => {
+        setIsOpen(!isOpen);
+    };
+    
     return (
         <>
             <Nav>
