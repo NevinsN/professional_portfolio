@@ -6,7 +6,7 @@ import {
     NavMenu
 } from "./NavbarElements";
 
-const Navbar = () => {
+const Navbar = ({ theme, toggleTheme }) => {
     const [isOpen, setIsOpen] = useState(false);
 
     const handleMenuToggle = () => {

@@ -1,4 +1,4 @@
-import React, { useState } from "react";
+import React, { useState, useEffect } from "react";
 import './App.css';
 import Navbar from "./Components/Navbar";
 import {
@@ -17,14 +17,12 @@ import MysteryGame from "./pages/projects/Capstone/mysteryGame";
 import AnimalShelter from "./pages/projects/Capstone/animalShelter";
 import BinarySearchTree from "./pages/projects/Capstone/binarySearchTree";
 
-import { useEffect } from "react";
-
-useEffect(() => {
-  document.body.className = theme;
-}, [theme]);
-
 function App() {
     const [theme, setTheme] = useState("light");
+
+    useEffect(() => {
+      document.body.className = theme;
+    }, [theme]);
 
     const toggleTheme = () => {
         setTheme((prevTheme) => (prevTheme === "light" ? "dark" : "light"));
