@@ -1,8 +1,8 @@
 import React from "react";
 
-const Experience = () => {
+const Experience = ({ theme }) => {
     return (
-        <header className="App-header ${theme}">
+        <header className={`App-header ${theme}`}>
             <div className="App-header_titleSubpage">
             <h1>Experience</h1>
             </div>

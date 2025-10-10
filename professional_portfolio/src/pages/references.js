@@ -1,8 +1,8 @@
 import React from "react";
 
-const References = () => {
+const References = ({ theme }) => {
     return (
-        <header className="App-header ${theme}">
+        <header className={`App-header ${theme}`}>
         <div className="App-header_titleSubpage">
             <h1 style={{lineHeight: "0em"}}>
                 References

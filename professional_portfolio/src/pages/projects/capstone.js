@@ -1,9 +1,9 @@
 import React from "react";
 import { Link } from "react-router-dom";
 
-const Capstone = () => {
+const Capstone = ({ theme }) => {
     return (
-        <header className="App-header ${theme}">
+        <header className={`App-header ${theme}`}>
         <div 
             style={{
                 justifyContent: "centre",

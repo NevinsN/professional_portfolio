@@ -1,9 +1,9 @@
 import React from "react";
 import { Link } from "react-router-dom";
 
-const Projects = () => {
+const Projects = ({ theme }) => {
     return (
-        <header className="App-header ${theme}">
+        <header className={`App-header ${theme}`}>
         <div className="App-header_titleSubpage">
             <h1>Projects</h1>
 

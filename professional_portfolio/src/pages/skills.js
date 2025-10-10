@@ -1,8 +1,8 @@
 import React from "react";
 
-const Skills = () => {
+const Skills = ({ theme }) => {
     return (
-        <header className="App-header ${theme}">
+        <header className={`App-header ${theme}`}>
         <div className="App-header_titleSubpage">
             <h1>Skills</h1>
         </div>

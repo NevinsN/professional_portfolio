@@ -1,9 +1,9 @@
 import React from 'react';
 import Headshot from "../Images/Headshot.jpg";
 
-const Home = () => {
+const Home = ({ theme }) => {
   return (
-      <header className="App-header ${theme}">      
+      <header className={`App-header ${theme}`}>      
         <div className="App-header_title">
         <h1 style={{lineHeight: "0em"}}>
           Nicholas Nevins

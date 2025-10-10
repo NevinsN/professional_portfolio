@@ -1,8 +1,8 @@
 import React from "react";
 
-const BinarySearchTree = () => {
+const BinarySearchTree = ({ theme }) => {
     return (
-        <header className="App-header ${theme}">
+        <header className={`App-header ${theme}`}>
         <div 
             style={{
             justifyContent: "centre",
