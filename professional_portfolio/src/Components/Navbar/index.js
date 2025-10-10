@@ -1,10 +1,9 @@
-import React from "react";
+import React, { useState } from "react";
 import {
     Nav,
     NavLink,
     Bars,
-    NavMenu,
-    useState
+    NavMenu
 } from "./NavbarElements";
 
 const Navbar = () => {
