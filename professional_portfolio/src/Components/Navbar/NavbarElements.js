@@ -5,7 +5,7 @@ import styled from "styled-components";
 export const Nav = styled.nav`
     background: #006910;
     background-image: radial-gradient(circle at 72% 83%, rgba(12, 12, 12,0.04) 0%, rgba(12, 12, 12,0.04) 50%,rgba(172, 172, 172,0.04) 50%, rgba(172, 172, 172,0.04) 100%),radial-gradient(circle at 57% 65%, rgba(11, 11, 11,0.04) 0%, rgba(11, 11, 11,0.04) 50%,rgba(222, 222, 222,0.04) 50%, rgba(222, 222, 222,0.04) 100%),radial-gradient(circle at 64% 31%, rgba(11, 11, 11,0.04) 0%, rgba(11, 11, 11,0.04) 50%,rgba(191, 191, 191,0.04) 50%, rgba(191, 191, 191,0.04) 100%),linear-gradient(130deg, rgb(5, 235, 123),rgb(47, 52, 6));
-    height: 55px;
+    height: 70px;
     display: flex;
     justify-content: space-between;
     padding: 0.2rem calc((100vw - 1000px) / 2);
@@ -26,47 +26,38 @@ export const NavLink = styled(Link)`
 `;
 
 export const Bars = styled(FaBars)`
-    display: none;
+    display: block;
     color: #fff;
     background: transparent;
     border: none;
     z-index: 100;
-    @media screen and (max-width: 768px) {
-        display: block;
-        position: absolute;
-        top: 16px;
-        right: 24px;
-        font-size: 2.2rem;
-        cursor: pointer;
-        background: rgba(0,0,0,0.1);
-        border-radius: 6px;
-        padding: 8px;
-        box-shadow: 0 2px 8px rgba(0,0,0,0.08);
-        transition: background 0.2s, color 0.2s;
-        &:hover {
-            background: #ecdc1a;
-            color: #006910;
-        }
+    position: absolute;
+    top: 16px;
+    right: 24px;
+    font-size: 2.2rem;
+    cursor: pointer;
+    background: rgba(0,0,0,0.1);
+    border-radius: 6px;
+    padding: 8px;
+    box-shadow: 0 2px 8px rgba(0,0,0,0.08);
+    transition: background 0.2s, color 0.2s;
+    &:hover {
+        background: #ecdc1a;
+        color: #006910;
     }
 `;
 
 export const NavMenu = styled.div`
-    display: flex;
-    align-items: center;
-    margin-left: 55%;
-    margin-right: -24px;
-    @media screen and (max-width: 768px) {
-        display: none;
-        &.active {
-            display: flex;
-            flex-direction: column;
-            position: absolute;
-            top: 55px;
-            right: 0;
-            background: #006910;
-            width: 200px;
-            padding: 1rem 0;
-        }
+    display: none;
+    &.active {
+        display: flex;
+        flex-direction: column;
+        position: absolute;
+        top: 70px;
+        right: 0;
+        background: #006910;
+        width: 200px;
+        padding: 1rem 0;
     }
 `;
 
