@@ -5,6 +5,8 @@ import {
     Bars,
     NavMenu
 } from "./NavbarElements";
+import { FaBars } from "react-icons/fa";
+import { FaSun, FaMoon } from "react-icons/fa";
 
 const Navbar = ({ theme, toggleTheme }) => {
     const [isOpen, setIsOpen] = useState(false);
@@ -16,25 +18,28 @@ const Navbar = ({ theme, toggleTheme }) => {
     return (
         <>
             <Nav>
+                <Bars onClick={handleMenuToggle} style={{ left: '24px', right: 'auto', top: '16px', position: 'absolute', zIndex: 100 }} />
                 <button
                     onClick={toggleTheme}
                     style={{
                         position: 'absolute',
-                        left: '24px', // align to left
+                        left: '72px', // 24px (hamburger left) + 40px (hamburger width + padding)
                         top: '16px',
                         zIndex: 101,
                         background: 'rgba(0,0,0,0.1)',
                         color: '#fff',
                         border: 'none',
                         borderRadius: '6px',
-                        padding: '6px 12px', // less tall, wider
-                        fontSize: '1.8rem', // slightly smaller
+                        padding: '8px', // match Bars padding
+                        fontSize: '2.2rem', // match Bars font size
                         boxShadow: '0 2px 8px rgba(0,0,0,0.08)',
                         cursor: 'pointer',
                         transition: 'background 0.2s, color 0.2s',
-                        height: 'auto',
-                        width: 'auto',
-                        marginRight: '12px' // space between button and hamburger
+                        height: '40px', // match hamburger height
+                        width: '40px', // make square for icon
+                        display: 'flex',
+                        alignItems: 'center',
+                        justifyContent: 'center'
                     }}
                     onMouseOver={e => {
                         e.target.style.background = '#ecdc1a';
@@ -45,9 +50,8 @@ const Navbar = ({ theme, toggleTheme }) => {
                         e.target.style.color = '#fff';
                     }}
                 >
-                    {theme === "dark" ? "☀" : "🌙"}
+                    {theme === "dark" ? <FaSun /> : <FaMoon />}
                 </button>
-                <Bars onClick={handleMenuToggle} style={{ left: '64px', right: 'auto' }} />
                 <NavMenu className={isOpen ? "active" : ""}>
                     <NavLink to="/home" onClick={() => setIsOpen(false)}>
                         Home
