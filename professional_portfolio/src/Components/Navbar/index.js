@@ -5,7 +5,6 @@ import {
     Bars,
     NavMenu
 } from "./NavbarElements";
-import { FaBars } from "react-icons/fa";
 import { FaSun, FaMoon } from "react-icons/fa";
 
 const Navbar = ({ theme, toggleTheme }) => {

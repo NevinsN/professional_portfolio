@@ -4,7 +4,7 @@ import styled from "styled-components";
 
 export const Nav = styled.nav`
     background: #006910;
-    background-image: linear-gradient(90deg, rgb(173, 173, 173),rgb(129, 129, 129)),linear-gradient(90deg, rgb(39,125,22) 0%, rgb(39,125,22) 65%,rgb(103,168,94) 65%, rgb(103,168,94) 67%,rgb(12,172,30) 67%, rgb(12,172,30) 71%,rgb(60,112,53) 71%, rgb(60,112,53) 74%,rgb(30,125,22) 74%, rgb(30,125,22) 93%,rgb(14,102,4) 93%, rgb(14,102,4) 100%),linear-gradient(67.5deg, rgb(39,125,22) 0%, rgb(39,125,22) 65%,rgb(103,168,94) 65%, rgb(103,168,94) 67%,rgb(12,172,30) 67%, rgb(12,172,30) 71%,rgb(60,112,53) 71%, rgb(60,112,53) 74%,rgb(30,125,22) 74%, rgb(30,125,22) 93%,rgb(14,102,4) 93%, rgb(14,102,4) 100%),linear-gradient(157.5deg, rgb(39,125,22) 0%, rgb(39,125,22) 65%,rgb(103,168,94) 65%, rgb(103,168,94) 67%,rgb(12,172,30) 67%, rgb(12,172,30) 71%,rgb(60,112,53) 71%, rgb(60,112,53) 74%,rgb(30,125,22) 74%, rgb(30,125,22) 93%,rgb(14,102,4) 93%, rgb(14,102,4) 100%); background-blend-mode:overlay, overlay, overlay, normal;
+    background-image: linear-gradient(134deg, rgba(0, 0, 0, 0.04) 0%, rgba(0, 0, 0, 0.04) 41%,rgba(188, 188, 188, 0.04) 41%, rgba(188, 188, 188, 0.04) 100%),linear-gradient(19deg, rgba(41, 41, 41, 0.04) 0%, rgba(41, 41, 41, 0.04) 46%,rgba(233, 233, 233, 0.04) 46%, rgba(233, 233, 233, 0.04) 100%),linear-gradient(65deg, rgba(24, 24, 24, 0.04) 0%, rgba(24, 24, 24, 0.04) 97%,rgba(108, 108, 108, 0.04) 97%, rgba(108, 108, 108, 0.04) 100%),linear-gradient(311deg, rgba(58, 58, 58, 0.04) 0%, rgba(58, 58, 58, 0.04) 79%,rgba(220, 220, 220, 0.04) 79%, rgba(220, 220, 220, 0.04) 100%),linear-gradient(90deg, rgb(25, 147, 13),rgb(68, 253, 105));
     height: 70px;
     display: flex;
     justify-content: space-between;
