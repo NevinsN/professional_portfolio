@@ -49,7 +49,7 @@ const Navbar = ({ theme, toggleTheme }) => {
                         e.target.style.color = '#fff';
                     }}
                 >
-                    <span style={{ color: 'inherit', transition: 'none' }}>{theme === "dark" ? <FaSun /> : <FaMoon />}</span>
+                    {theme === "dark" ? "☀" : "🌙"}
                 </button>
                 <NavMenu className={isOpen ? "active" : ""}>
                     <NavLink to="/home" onClick={() => setIsOpen(false)}>
