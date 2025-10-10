@@ -22,8 +22,8 @@ const Navbar = ({ theme, toggleTheme }) => {
                     onClick={toggleTheme}
                     style={{
                         position: 'absolute',
-                        left: '72px', // 24px (hamburger left) + 40px (hamburger width + padding)
-                        top: '16px',
+                        left: '80px', // move right a little
+                        top: '20px', // center vertically with hamburger
                         zIndex: 101,
                         background: 'rgba(0,0,0,0.1)',
                         color: '#fff',
@@ -49,7 +49,7 @@ const Navbar = ({ theme, toggleTheme }) => {
                         e.target.style.color = '#fff';
                     }}
                 >
-                    {theme === "dark" ? <FaSun /> : <FaMoon />}
+                    <span style={{ color: 'inherit', transition: 'none' }}>{theme === "dark" ? <FaSun /> : <FaMoon />}</span>
                 </button>
                 <NavMenu className={isOpen ? "active" : ""}>
                     <NavLink to="/home" onClick={() => setIsOpen(false)}>
