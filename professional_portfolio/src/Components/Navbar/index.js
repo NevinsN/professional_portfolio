@@ -35,6 +35,9 @@ const Navbar = () => {
                         References
                     </NavLink>
                     <button id="resumeBtn" onClick={(e) => { downloadTxtFile(); setIsOpen(false); }} value="resume"><i class="fa fa-download" aria-hidden="true"></i>Résumé</button>
+                    <button onClick={toggleTheme}>
+                      {theme === "dark" ? "Light Mode" : "Dark Mode"}
+                    </button>
                 </NavMenu>
             </Nav>
         </>
