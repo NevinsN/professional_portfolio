@@ -4,7 +4,7 @@ import styled from "styled-components";
 
 export const Nav = styled.nav`
     background: #006910;
-    background-image: radial-gradient(circle at 72% 83%, rgba(12, 12, 12,0.04) 0%, rgba(12, 12, 12,0.04) 50%,rgba(172, 172, 172,0.04) 50%, rgba(172, 172, 172,0.04) 100%),radial-gradient(circle at 57% 65%, rgba(11, 11, 11,0.04) 0%, rgba(11, 11, 11,0.04) 50%,rgba(222, 222, 222,0.04) 50%, rgba(222, 222, 222,0.04) 100%),radial-gradient(circle at 64% 31%, rgba(11, 11, 11,0.04) 0%, rgba(11, 11, 11,0.04) 50%,rgba(191, 191, 191,0.04) 50%, rgba(191, 191, 191,0.04) 100%),linear-gradient(130deg, rgb(5, 235, 123),rgb(47, 52, 6));
+    background-image: radial-gradient(circle at center center, rgba(33,33,33,0),rgb(0,46,0)),repeating-linear-gradient(135deg, rgb(0,46,0) 0px, rgb(0,46,0) 1px,transparent 1px, transparent 4px),repeating-linear-gradient(45deg, rgb(51,255,42) 0px, rgb(51,255,42) 5px,transparent 5px, transparent 6px),linear-gradient(90deg, rgb(0,46,0),rgb(0,46,0));
     height: 70px;
     display: flex;
     justify-content: space-between;
