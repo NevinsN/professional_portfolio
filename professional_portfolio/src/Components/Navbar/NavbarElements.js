@@ -27,20 +27,26 @@ export const NavLink = styled(Link)`
 
 export const Bars = styled(FaBars)`
     display: none;
-    color: #808080;
+    color: #fff;
+    background: transparent;
+    border: none;
+    z-index: 100;
     @media screen and (max-width: 768px) {
         display: block;
         position: absolute;
-        top: 0;
-        right: 0;
-        transform: translate(-100%, 75%);
-        font-size: 1.8rem;
+        top: 16px;
+        right: 24px;
+        font-size: 2.2rem;
         cursor: pointer;
+        background: rgba(0,0,0,0.1);
+        border-radius: 6px;
+        padding: 8px;
+        box-shadow: 0 2px 8px rgba(0,0,0,0.08);
+        transition: background 0.2s, color 0.2s;
         &:hover {
-        transition: all 0.2s ease-in-out;
-        background: #fff;
-        color: #808080;
-    }
+            background: #ecdc1a;
+            color: #006910;
+        }
     }
 `;
 
