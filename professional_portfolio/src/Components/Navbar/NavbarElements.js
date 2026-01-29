@@ -12,6 +12,7 @@ export const Nav = styled.nav`
     padding: 0 20px;
     gap: 20px;
     position: sticky;
+    top: 0;
     z-index: 1000;
     width: 100%;
 `;
@@ -55,7 +56,7 @@ export const Bars = styled(FaBars)`
 `;
 
 export const NavMenu = styled.div`
-    display: flex; /* Horizontal on desktop */
+    display: flex; 
     align-items: center;
     margin-right: -24px;
 
@@ -71,7 +72,7 @@ export const NavMenu = styled.div`
         
         &:hover {
             transform: scale(1.1);
-            background: transparent; /* Overrides global button hover */
+            background: transparent;
         }
     }
 
@@ -83,7 +84,7 @@ export const NavMenu = styled.div`
             flex-direction: column;
             position: absolute;
             top: 70px;
-            left: 0; /* 
+            left: 0; 
             background: #006910;
             width: 250px;
             padding: 1rem 0;
