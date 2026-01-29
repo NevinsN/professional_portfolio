@@ -286,26 +286,35 @@ button {
 }
 
 .site-footer {
-    padding: 2rem 0;
-    background-color: #000000;
-    color: #ffffff;
+    padding: 1.5rem 0; /* Reduced from 2rem or 30px */
+    background-color: #000;
+    color: #fff;
     border-top: 1px solid #0b8a02;
-    width: 100%;
+    margin-top: 40px;
 }
 
-.footer-socials a {
-    color: #ffffff;
-    font-size: 1.8rem;
-    transition: color 0.3s ease;
+.footer-content {
+    display: flex;
+    flex-direction: column;
+    gap: 10px; /* Tightens the vertical space between blocks */
 }
 
-.footer-socials a:hover {
-    color: #0b8a02;
-}
-
-.footer-socials, .ops-icons {
+.footer-socials {
     display: flex;
     justify-content: center;
-    gap: 30px;
-    margin: 15px 0;
+    gap: 40px; /* Keeps horizontal space wide but vertical gap small */
+    font-size: 1.6rem;
+}
+
+.footer-branding p {
+    margin: 2px 0; /* Forces the lines closer together */
+    font-size: 0.85rem;
+}
+
+.ops-icons {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+    font-size: 1.1rem; /* Slightly smaller to distinguish from socials */
+    margin-top: 4px;
 }
