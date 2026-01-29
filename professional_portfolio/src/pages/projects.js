@@ -20,11 +20,10 @@ const Projects = ({ theme }) => {
                         <div className="project-body">
                             <p>
                                 A <strong>cloud-native orchestrator</strong> designed to automate the lifecycle of UE5 dedicated servers. 
-                                It solves the "Multi-Zonal" challenge by using <strong>Agones</strong> and <strong>Redis</strong> to persist player state during server handoffs.
                             </p>
-                            <p className="project-meta">
-                                <strong>Operational Focus:</strong> Leveraging Terraform for IaC and GitHub Actions for CI/CD containerization.
-                            </p>
+                            <a href="https://github.com/NevinsN/NexusGate" target="_blank" rel="noopener noreferrer" className="repo-btn">
+                                View Code
+                            </a>
                         </div>
                     </div>
 
@@ -35,17 +34,16 @@ const Projects = ({ theme }) => {
                             <div className="tech-stack">
                                 <span className="tag">UE5</span>
                                 <span className="tag">C++</span>
-                                <span className="tag">FPS Prototype</span>
+                                <span className="tag">FPS</span>
                             </div>
                         </div>
                         <div className="project-body">
                             <p>
-                                A first-person technical prototype built in <strong>Unreal Engine 5</strong>. 
-                                It serves as the primary validation environment for <strong>NexusGate</strong>, generating granular player data through a C++ "Powerizer" system.
+                                A first-person technical prototype built in <strong>Unreal Engine 5</strong> to validate <strong>NexusGate</strong> state synchronization.
                             </p>
-                            <p className="project-meta">
-                                <strong>Key Achievement:</strong> Successfully synchronizes "Elemental States" and puzzle flags across distributed server instances.
-                            </p>
+                            <a href="https://github.com/NevinsN/elemental-escapist/tree/main" target="_blank" rel="noopener noreferrer" className="repo-btn">
+                                View Code
+                            </a>
                         </div>
                     </div>
 
@@ -60,12 +58,11 @@ const Projects = ({ theme }) => {
                         </div>
                         <div className="project-body">
                             <p>
-                                Developed a robust desktop application using <strong>PyQT</strong>. Completed during a high-stakes family medical emergency, 
-                                demonstrating the professional resilience I bring to every engineering role.
+                                A robust desktop application demonstrating professional resilience and foundational software architecture.
                             </p>
-                            <p className="project-meta">
-                                <strong>Roadmap:</strong> Currently architecting a full-stack rework using <strong>React</strong> and <strong>Django</strong>.
-                            </p>
+                            <a href="https://github.com/NevinsN/CS-499" target="_blank" rel="noopener noreferrer" className="repo-btn">
+                                View Code
+                            </a>
                         </div>
                     </div>
                 </div> 
@@ -73,5 +70,30 @@ const Projects = ({ theme }) => {
         </header>
     );
 };
+
+{/* 4. Portfolio Site Card */}
+<div className="project-card">
+    <div className="project-header">
+        <h2>Engineering Portfolio</h2>
+        <div className="tech-stack">
+            <span className="tag">React</span>
+            <span className="tag">Styled Components</span>
+            <span className="tag">Netlify CI/CD</span>
+        </div>
+    </div>
+    <div className="project-body">
+        <p>
+            A high-performance personal portfolio built with <strong>React</strong> and <strong>Styled Components</strong>. 
+            Focuses on responsive UI/UX and automated deployment pipelines.
+        </p>
+        <p className="project-meta">
+            <strong>Key Feature:</strong> Integrated dark/light theme engine and mobile-first navigation logic.
+        </p>
+        <a href="https://github.com/NevinsN/professional_portfolio" target="_blank" rel="noopener noreferrer" className="repo-btn">
+            View Code
+        </a>
+    </div>
+</div>
+
 
 export default Projects;
