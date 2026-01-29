@@ -21,21 +21,23 @@ const Skills = () => {
 ];
 
 
-  return (
-    <section className="skills-container">
-      <h2>Technical Stack</h2>
-      {categories.map((cat, idx) => (
-        <div key={idx} className="skills-category">
-          <h3>{cat.title}</h3>
-          <ul className="skills-list">
-            {cat.skills.map((skill, sIdx) => (
-              <li key={sIdx} className="skill-tag">{skill}</li>
-            ))}
-          </ul>
-        </div>
-      ))}
+    return (
+    /* We add App-header and light so it inherits the bubbles/gradient */
+    <section className="App-header light skills-container">
+      <div className="App-header_content">
+        <h2 style={{ marginBottom: '20px' }}>Technical Stack</h2>
+        {categories.map((cat, idx) => (
+          <div key={idx} className="skills-category">
+            <h3>{cat.title}</h3>
+            <ul className="skills-list">
+              {cat.skills.map((skill, sIdx) => (
+                <li key={sIdx} className="skill-tag">{skill}</li>
+              ))}
+            </ul>
+          </div>
+        ))}
+      </div>
     </section>
   );
-};
 
 export default Skills;
