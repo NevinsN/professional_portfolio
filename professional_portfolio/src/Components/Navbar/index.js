@@ -16,6 +16,17 @@ const Navbar = ({ theme, toggleTheme }) => {
     return (
         <>
             <Nav>
+                <NavLink 
+                to="/home" 
+                style={{ 
+                    fontWeight: 'bold', 
+                    fontSize: '1.5rem', 
+                    fontFamily: 'var(--font-mono)', /* Keeps the 'Serious Engineer' feel */
+                    letterSpacing: '1px'
+                }}
+                >
+                  NN
+                </NavLink>
                 <Bars onClick={handleMenuToggle} />
                 <NavMenu className={isOpen ? "active" : ""}>
                     <NavLink to="/home" onClick={() => setIsOpen(false)}>
