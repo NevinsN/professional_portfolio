@@ -11,6 +11,7 @@ export const Nav = styled.nav`
     align-items: center;
     padding: 0 5%;
     gap: 20px;
+    position: relative;
 `;
 
 export const NavLink = styled(Link)`
@@ -35,7 +36,7 @@ export const Bars = styled(FaBars)`
 
     @media screen and (max-width: 768px) {
         display: block; /* Show only on mobile */
-        position: absolute;
+        position: relative;
         top: 16px;
         left: 24px; /* Anchored to the left */
     }
@@ -121,5 +122,11 @@ export const NavLogo = styled(Link)`
 
     &:hover {
         color: #ecdc1a; /* Matches your active/hover state */
+    }
+
+    @media screen and (max-width: 768px) {
+        /* Remove position: absolute if it was there */
+        position: relative; 
+        font-size: 1.5rem;
     }
 `;
