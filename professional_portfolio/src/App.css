@@ -322,14 +322,14 @@ button {
     margin-top: 4px;
 }
 
-/* Ensure the Skills section matches your brand green */
 .skills-container {
-    background: linear-gradient(135deg, #a8e063 0%, #56ab2f 100%); /* Matches your header gradient */
+    background: transparent !important; 
     color: #000;
     padding: 40px 20px;
-    min-height: 100vh; /* Ensures the green covers the whole screen */
+    min-height: 100vh;
     text-align: center;
 }
+
 
 /* Style the Category Headers */
 .skills-category h3 {
