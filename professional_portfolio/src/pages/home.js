@@ -8,7 +8,7 @@ const Home = ({ theme }) => {
         <h1 style={{lineHeight: "0em"}}>
           Nicholas Nevins
         </h1>
-        <p style={{lineHeight: "0em", fontStyle: "italic", fontSize: "25px", marginLeft: "2.5%"}}>Software Developer</p>
+        <h2>Software Developer</h2>
         </div>
         <div className="content">
           <img 
@@ -23,7 +23,6 @@ const Home = ({ theme }) => {
           />
           <p style={{
               fontSize: "17px",
-              width: "50%",
           }}>
               A results-driven software developer with a strong technical skillset. 
               Excels at problem solving, learning new skills quickly, and possesses 
