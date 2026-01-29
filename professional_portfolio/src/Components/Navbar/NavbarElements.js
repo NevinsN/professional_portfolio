@@ -13,6 +13,7 @@ export const Nav = styled.nav`
     gap: 20px;
     position: sticky;
     top: 0;
+    overflow-x: hidden;
     z-index: 1000;
     width: 100%;
 `;
