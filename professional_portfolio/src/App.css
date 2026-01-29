@@ -16,6 +16,12 @@
     min-height: 100vh;
 }
 
+html, body {
+    overflow-x: hidden;
+    width: 100%;
+    position: relative;
+}
+
 .App {
   text-align: center;
 }
