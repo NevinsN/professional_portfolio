@@ -59,38 +59,24 @@ export const Bars = styled(FaBars)`
 export const NavMenu = styled.div`
     display: flex; 
     align-items: center;
-    margin-right: -24px;
-
-    .theme-toggle {
-        background: transparent;
-        border: none;
-        font-size: 1.5rem;
-        cursor: pointer;
-        padding: 0 10px;
-        color: #fff;
-        transition: transform 0.2s;
-        margin-left: auto;
-        
-        &:hover {
-            transform: scale(1.1);
-            background: transparent;
-        }
-    }
+    margin-right: 0; /* Removed the negative margin to stop the white space */
 
     @media screen and (max-width: 768px) {
-        display: none; /* Hidden on mobile unless active */
+        /* 1. Default state: hidden and off-screen */
+        display: none; 
         
+        /* 2. When the 'active' class is applied via the toggle state */
         &.active {
-            display: flex;
+            display: flex !important; /* Force display when state is true */
             flex-direction: column;
             position: absolute;
             top: 70px;
             left: 0; 
             background: #006910;
-            width: 150px;
+            width: 100%; 
             padding: 1rem 0;
-            border-radius: 0 0 8px 0;
-            z-index: 99;
+            z-index: 1001;
+            /* Ensure it covers the width without creating overflow */
         }
     }
 `;
