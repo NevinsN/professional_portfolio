@@ -36,9 +36,9 @@ const Skills = () => {
             </ul>
           </div>
         ))}
-      </div>
+       </div>
     </section>
   );
-);
+};
 
 export default Skills;
