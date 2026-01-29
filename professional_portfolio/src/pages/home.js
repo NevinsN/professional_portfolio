@@ -19,12 +19,14 @@ const Home = ({ theme }) => {
                   width:"200px", 
                   height:"238px", 
                   border: "5px solid white",
-                  borderRadius:"50%"
+                  borderRadius:"50%",
+                  filter: drop-shadow(0 4px 8px rgba(0,0,0,0.1));,
                 }}
           />
           <p style={{
               fontSize: "17px",
               padding: "2%",
+              max-width: "800px",
           }}>
             <ul>
               <li><b>Engineering Focus:</b> Cloud-native game backends (K8s/Agones).</li>
