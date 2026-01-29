@@ -65,23 +65,17 @@ const Projects = ({ theme }) => {
                             </a>
                         </div>
                     </div>
-                </div> 
-            </div> 
-        </header>
-    );
-};
-
-{/* 4. Portfolio Site Card */}
-<div className="project-card">
-    <div className="project-header">
+                    {/* 4. Portfolio Site Card */}
+                    <div className="project-card">
+                        <div className="project-header">
         <h2>Engineering Portfolio</h2>
-        <div className="tech-stack">
-            <span className="tag">React</span>
-            <span className="tag">Styled Components</span>
-            <span className="tag">Netlify CI/CD</span>
-        </div>
-    </div>
-    <div className="project-body">
+                            <div className="tech-stack">
+                                <span className="tag">React</span>
+                                <span className="tag">Styled Components</span>
+                                <span className="tag">Netlify CI/CD</span>
+                            </div>
+                        </div>
+                     <div className="project-body">
         <p>
             A high-performance personal portfolio built with <strong>React</strong> and <strong>Styled Components</strong>. 
             Focuses on responsive UI/UX and automated deployment pipelines.
@@ -92,8 +86,13 @@ const Projects = ({ theme }) => {
         <a href="https://github.com/NevinsN/professional_portfolio" target="_blank" rel="noopener noreferrer" className="repo-btn">
             View Code
         </a>
-    </div>
-</div>
+                     </div>
+                 </div>  
+                </div> 
+            </div> 
+        </header>
+    );
+};
 
 
 export default Projects;
