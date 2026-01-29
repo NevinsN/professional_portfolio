@@ -70,7 +70,7 @@ export const NavMenu = styled.div`
             top: 70px;
             left: 0; 
             background: #006910;
-            width: 100%; 
+            width: 160px; 
             padding: 1rem 0;
             z-index: 1001;
             /* Ensure it covers the width without creating overflow */
