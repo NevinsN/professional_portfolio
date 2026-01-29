@@ -16,7 +16,7 @@ const Navbar = ({ theme, toggleTheme }) => {
     return (
         <>
             <Nav>
-                <Bars onClick={handleMenuToggle} style={{ left: '24px', right: 'auto', top: '16px', position: 'absolute', zIndex: 100 }} />
+                <Bars onClick={handleMenuToggle} />
                 <button
                     onClick={toggleTheme}
                     style={{
@@ -74,20 +74,12 @@ const Navbar = ({ theme, toggleTheme }) => {
 };
 
 const downloadTxtFile = () => {
-    fetch("Nicholas_Nevins_Resume.pdf").then((response) => {
-        response.blob().then((blob) => {
-        
-            // Creating new object of PDF file
-            const fileURL =
-                window.URL.createObjectURL(blob);
-                
-            // Setting various property values
-            let alink = document.createElement("a");
-            alink.href = fileURL;
-            alink.download = "Nicholas_Nevins_Resume.pdf";
-            alink.click();
-        });
-    });
-}
+    const link = document.createElement("a");
+    link.href = "Nicholas_Nevins_Resume.pdf"; // Direct path to file
+    link.download = "Nicholas_Nevins_Resume.pdf";
+    document.body.appendChild(link);
+    link.click();
+    document.body.removeChild(link);
+};
 
 export default Navbar;
