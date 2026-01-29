@@ -81,7 +81,7 @@ export const NavMenu = styled.div`
             flex-direction: column;
             position: absolute;
             top: 70px;
-            left: 0; /* Align with hamburger */
+            left: 0; /* 
             background: #006910;
             width: 250px;
             padding: 1rem 0;
