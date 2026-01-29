@@ -51,7 +51,8 @@
 }
 
 /* 3. TARGET THE HEADINGS SPECIFICALLY */
-.App-header.light h1, 
+.App-header.light h1,
+.App-header.light h2, 
 .App-header.light .App-header_title h2 {
   font-family: var(--font-heading);
   font-weight: 700;
