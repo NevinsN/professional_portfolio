@@ -322,14 +322,13 @@ button {
     margin-top: 4px;
 }
 
-.skills-container {
-    background: transparent !important; 
+..skills-container {
+    background: transparent !important; /* This is the key */
     color: #000;
     padding: 40px 20px;
     min-height: 100vh;
     text-align: center;
 }
-
 
 /* Style the Category Headers */
 .skills-category h3 {
