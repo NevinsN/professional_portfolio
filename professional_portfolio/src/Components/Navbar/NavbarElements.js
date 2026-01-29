@@ -86,7 +86,7 @@ export const NavMenu = styled.div`
             top: 70px;
             left: 0; 
             background: #006910;
-            width: 250px;
+            width: 150px;
             padding: 1rem 0;
             border-radius: 0 0 8px 0;
             z-index: 99;
