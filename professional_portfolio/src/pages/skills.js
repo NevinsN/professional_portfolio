@@ -1,51 +1,41 @@
-import React from "react";
+import React from 'react';
 
-const Skills = ({ theme }) => {
-    return (
-        <header className={`App-header ${theme}`}>
-        <div className="App-header_titleSubpage">
-            <h1>Skills</h1>
-        </div>
-        <div className="App-header_content">
-            Platforms:
-            <ul>
-                <li>Windows</li>
-                <li>Linux</li>
-            </ul>
-            
-            Languages: 
-            <ul>
-                <li>C++</li> 
-                <li>Python</li>
-                <li>Java</li> 
-                <li>JavaScript</li> 
-                <li>HTML</li> 
-                <li>TypeScript</li>
-            </ul>
+const Skills = () => {
+  const categories = [
+  { 
+    title: "Cloud & Infrastructure", 
+    skills: ["Kubernetes", "Agones", "Docker", "Terraform", "Linux Admin", "CI/CD"] 
+  },
+  { 
+    title: "Software Engineering", 
+    skills: ["Python", "C++", "Go", "SQL", "Node.js", "React", "TypeScript"] 
+  },
+  { 
+    title: "Game Backend & Systems", 
+    skills: ["UE5 Networking", "TCP/UDP", "Redis", "Server Orchestration"] 
+  },
+  { 
+    title: "Operational Leadership", 
+    skills: ["Systems Thinking", "Agile/Scrum", "Capacity Planning", "Technical Writing"] 
+  }
+];
 
-            Tools: 
-            <ul>
-                <li>Angular</li> 
-                <li>express.js</li> 
-                <li>Node.js</li> 
-                <li>MySQL</li> 
-                <li>MongoDB</li> 
-                <li>Visual Studio</li> 
-                <li>Bitbucket and GitHub</li> 
-                <li>Pandas</li>
-                <li>Dash</li> 
-                <li>RESTful APIs</li> 
-                <li>OpenGL</li> 
-                <li>Tensorflow</li> 
-                <li>Keras</li> 
-                <li>MS Office Suite</li>
-                <li>RES apis</li> 
-                <li>PyQt</li> 
-                <li>Unreal Engine</li>
-            </ul>
+
+  return (
+    <section className="skills-container">
+      <h2>Technical Stack</h2>
+      {categories.map((cat, idx) => (
+        <div key={idx} className="skills-category">
+          <h3>{cat.title}</h3>
+          <ul className="skills-list">
+            {cat.skills.map((skill, sIdx) => (
+              <li key={sIdx} className="skill-tag">{skill}</li>
+            ))}
+          </ul>
         </div>
-        </header>
-    );
+      ))}
+    </section>
+  );
 };
 
 export default Skills;

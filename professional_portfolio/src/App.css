@@ -321,3 +321,44 @@ button {
     font-size: 1.1rem; /* Slightly smaller to distinguish from socials */
     margin-top: 4px;
 }
+
+/* Skills Container */
+.skills-container {
+    max-width: 800px;
+    margin: 0 auto;
+    padding: 20px;
+}
+
+.skills-category {
+    margin-bottom: 30px;
+}
+
+.skills-category h3 {
+    color: #0b8a02; /* Your primary green */
+    font-size: 1.2rem;
+    margin-bottom: 15px;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+}
+
+/* The Tag Cloud Fix */
+.skills-list {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 10px;
+    list-style: none;
+    padding: 0;
+}
+
+.skill-tag {
+    transition: all 0.3s cubic-bezier(0.175, 0.885, 0.32, 1.275);
+    cursor: default;
+}
+
+.skill-tag:hover {
+    background-color: #0b8a02 !important;
+    border-color: #0b8a02 !important;
+    color: #000 !important;
+    transform: scale(1.1);
+}
