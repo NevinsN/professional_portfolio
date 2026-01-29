@@ -1,4 +1,4 @@
-import React, { useState } from "react";
+import React, { useState, useEffect, useRef } from "react";
 import {
     Nav,
     NavLink,
@@ -8,34 +8,82 @@ import {
 
 const Navbar = ({ theme, toggleTheme }) => {
     const [isOpen, setIsOpen] = useState(false);
+    const menuRef = useRef(null); // The "sensor" for the menu
 
     const handleMenuToggle = () => {
         setIsOpen(!isOpen);
     };
+
+    // Logic to detect clicks outside the menu
+    useEffect(() => {
+        const handleClickOutside = (event) => {
+            // If the menu is open and the user clicks outside the menuRef
+            if (isOpen && menuRef.current && !menuRef.current.contains(event.target)) {
+                setIsOpen(false);
+            }
+        };
+
+        document.addEventListener("mousedown", handleClickOutside);
+        return () => {
+            document.removeEventListener("mousedown", handleClickOutside);
+        };
+    }, [isOpen]);
     
+    // Restoration of the download logic inside the component scope or globally
+    const downloadTxtFile = () => {
+        const link = document.createElement("a");
+        link.href = "Nicholas_Nevins_Resume.pdf"; // Ensure this file is in your /public folder
+        link.download = "Nicholas_Nevins_Resume.pdf";
+        document.body.appendChild(link);
+        link.click();
+        document.body.removeChild(link);
+    };
+
     return (
-      <Nav>
+        <Nav>
             <Bars onClick={handleMenuToggle} />
-            <NavLink to="/home" onClick={() => setIsOpen(false)} className="nav-logo">
+            <NavLink 
+                to="/home" 
+                onClick={() => setIsOpen(false)} 
+                className="nav-logo"
+                style={{ 
+                    fontWeight: 'bold', 
+                    fontSize: '1.5rem', 
+                    fontFamily: 'var(--font-mono)',
+                    letterSpacing: '1px'
+                }}
+            >
               NN
             </NavLink>
 
-            {/* This div must have the ref and the active class */}
             <NavMenu ref={menuRef} className={isOpen ? "active" : ""}>
-                <NavLink to="/projects" onClick={() => setIsOpen(false)}>Projects</NavLink>
-                <NavLink to="/skills" onClick={() => setIsOpen(false)}>Skills</NavLink>
-                <NavLink to="/experience" onClick={() => setIsOpen(false)}>Experience</NavLink>
-                <NavLink to="/references" onClick={() => setIsOpen(false)}>References</NavLink>
+                <NavLink to="/projects" onClick={() => setIsOpen(false)}>
+                    Projects
+                </NavLink>
+                <NavLink to="/skills" onClick={() => setIsOpen(false)}>
+                    Skills
+                </NavLink>
+                <NavLink to="/experience" onClick={() => setIsOpen(false)}>
+                    Experience
+                </NavLink>
+                <NavLink to="/references" onClick={() => setIsOpen(false)}>
+                    References
+                </NavLink>
                 
-                <button id="resumeBtn" onClick={() => { downloadTxtFile(); setIsOpen(false); }}>
-                    <i className="fa fa-download"></i> Résumé
+                <button 
+                    id="resumeBtn" 
+                    onClick={() => { downloadTxtFile(); setIsOpen(false); }} 
+                    style={{ cursor: 'pointer' }}
+                >
+                    <i className="fa fa-download" aria-hidden="true"></i> Résumé
                 </button>
+                
                 <button className="theme-toggle" onClick={toggleTheme}>
                   {theme === "dark" ? "☀" : "🌙"}
                 </button>
             </NavMenu>
         </Nav>
     );
-};              
+};
 
 export default Navbar;
