@@ -16,9 +16,6 @@ const Navbar = ({ theme, toggleTheme }) => {
     return (
         <>
             <Nav>
-                <Bars onClick={handleMenuToggle} />
-                    {theme === "dark" ? "☀" : "🌙"}
-                </button>
                 <NavMenu className={isOpen ? "active" : ""}>
                     <NavLink to="/home" onClick={() => setIsOpen(false)}>
                         Home
