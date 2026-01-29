@@ -24,6 +24,7 @@ const Home = ({ theme }) => {
           />
           <p style={{
               fontSize: "17px",
+              padding: "2%",
           }}>
             <ul>
               <li><b>Engineering Focus:</b> Cloud-native game backends (K8s/Agones).</li>
