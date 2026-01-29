@@ -26,38 +26,40 @@ export const NavLink = styled(Link)`
 `;
 
 export const Bars = styled(FaBars)`
-    display: block;
+    display: none; /* Hide on desktop */
     color: #fff;
-    background: transparent;
-    border: none;
     z-index: 100;
-    position: absolute;
-    top: 16px;
-    right: 24px;
-    font-size: 2.2rem;
     cursor: pointer;
-    background: rgba(0,0,0,0.1);
-    border-radius: 6px;
-    padding: 8px;
-    box-shadow: 0 2px 8px rgba(0,0,0,0.08);
-    transition: background 0.2s, color 0.2s;
-    &:hover {
-        background: #ecdc1a;
-        color: #006910;
+    font-size: 2rem;
+
+    @media screen and (max-width: 768px) {
+        display: block; /* Show only on mobile */
+        position: absolute;
+        top: 16px;
+        left: 24px; /* Anchored to the left */
     }
 `;
 
 export const NavMenu = styled.div`
-    display: none;
-    &.active {
-        display: flex;
-        flex-direction: column;
-        position: absolute;
-        top: 70px;
-        right: 0;
-        background: #006910;
-        width: 200px;
-        padding: 1rem 0;
+    display: flex; /* Horizontal on desktop */
+    align-items: center;
+    margin-right: -24px;
+
+    @media screen and (max-width: 768px) {
+        display: none; /* Hidden on mobile unless active */
+        
+        &.active {
+            display: flex;
+            flex-direction: column;
+            position: absolute;
+            top: 70px;
+            left: 0; /* Align with hamburger */
+            background: #006910;
+            width: 250px;
+            padding: 1rem 0;
+            border-radius: 0 0 8px 0;
+            z-index: 99;
+        }
     }
 `;
 
