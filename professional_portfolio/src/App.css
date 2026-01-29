@@ -222,3 +222,52 @@ button {
     width: 100%;
   }
 }
+
+/* Container for all project cards */
+.project-container {
+    display: flex;
+    justify-content: flex-start; /* Aligns with your left-heavy header title */
+    margin-top: 20px;
+    width: 100%;
+}
+
+.project-card {
+    background: rgba(255, 255, 255, 0.05); /* Subtle contrast */
+    border-left: 4px solid var(--primary-green); /* Visual 'Engineering' accent */
+    padding: 20px;
+    max-width: 600px;
+    text-align: left;
+    border-radius: 4px;
+}
+
+.project-link {
+    color: var(--primary-green);
+    text-decoration: none;
+}
+
+.tech-stack {
+    margin: 10px 0;
+}
+
+.tag {
+    background: var(--primary-green);
+    color: white;
+    padding: 2px 8px;
+    border-radius: 4px;
+    font-family: var(--font-mono);
+    font-size: 0.8rem;
+    margin-right: 10px;
+}
+
+.project-body p {
+    font-size: 1rem;
+    line-height: 1.5;
+    margin-bottom: 10px;
+}
+
+.project-meta {
+    font-size: 0.9rem;
+    opacity: 0.8;
+    border-top: 1px solid rgba(255,255,255,0.1);
+    padding-top: 10px;
+}
