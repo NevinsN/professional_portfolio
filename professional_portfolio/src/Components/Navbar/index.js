@@ -16,6 +16,7 @@ const Navbar = ({ theme, toggleTheme }) => {
     return (
         <>
             <Nav>
+                <Bars onClick={handleMenuToggle} />
                 <NavLink 
                 to="/home" 
                 style={{ 
@@ -27,7 +28,6 @@ const Navbar = ({ theme, toggleTheme }) => {
                 >
                   NN
                 </NavLink>
-                <Bars onClick={handleMenuToggle} />
                 <NavMenu className={isOpen ? "active" : ""}>
                     <NavLink to="/projects" onClick={() => setIsOpen(false)}>
                         Projects
