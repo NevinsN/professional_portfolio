@@ -45,6 +45,21 @@ export const NavMenu = styled.div`
     align-items: center;
     margin-right: -24px;
 
+    .theme-toggle {
+        background: transparent;
+        border: none;
+        font-size: 1.5rem;
+        cursor: pointer;
+        padding: 0 10px;
+        color: #fff;
+        transition: transform 0.2s;
+        
+        &:hover {
+            transform: scale(1.1);
+            background: transparent; /* Overrides global button hover */
+        }
+    }
+
     @media screen and (max-width: 768px) {
         display: none; /* Hidden on mobile unless active */
         
