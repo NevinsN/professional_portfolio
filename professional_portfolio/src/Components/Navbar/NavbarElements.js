@@ -7,13 +7,11 @@ export const Nav = styled.nav`
     background-image: linear-gradient(134deg, rgba(0, 0, 0, 0.04) 0%, rgba(0, 0, 0, 0.04) 41%,rgba(188, 188, 188, 0.04) 41%, rgba(188, 188, 188, 0.04) 100%),linear-gradient(19deg, rgba(41, 41, 41, 0.04) 0%, rgba(41, 41, 41, 0.04) 46%,rgba(233, 233, 233, 0.04) 46%, rgba(233, 233, 233, 0.04) 100%),linear-gradient(65deg, rgba(24, 24, 24, 0.04) 0%, rgba(24, 24, 24, 0.04) 97%,rgba(108, 108, 108, 0.04) 97%, rgba(108, 108, 108, 0.04) 100%),linear-gradient(311deg, rgba(58, 58, 58, 0.04) 0%, rgba(58, 58, 58, 0.04) 79%,rgba(220, 220, 220, 0.04) 79%, rgba(220, 220, 220, 0.04) 100%),linear-gradient(90deg, rgb(25, 147, 13),rgb(68, 253, 105));
     height: 70px;
     display: flex;
-    justify-content: flex-start;
+    justify-content: space-between;
     align-items: center;
     padding: 0 20px;
-    gap: 20px;
     position: sticky;
     top: 0;
-    overflow-x: hidden;
     z-index: 1000;
     width: 100%;
 `;
@@ -59,7 +57,6 @@ export const Bars = styled(FaBars)`
 export const NavMenu = styled.div`
     display: flex; 
     align-items: center;
-    margin-right: 0; /* Removed the negative margin to stop the white space */
 
     @media screen and (max-width: 768px) {
         /* 1. Default state: hidden and off-screen */
