@@ -16,6 +16,7 @@ const Navbar = ({ theme, toggleTheme }) => {
     return (
         <>
             <Nav>
+                <Bars onClick={handleMenuToggle} />
                 <NavMenu className={isOpen ? "active" : ""}>
                     <NavLink to="/home" onClick={() => setIsOpen(false)}>
                         Home
