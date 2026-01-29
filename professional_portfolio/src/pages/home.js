@@ -29,7 +29,7 @@ const Home = ({ theme }) => {
               <li><b>Engineering Focus:</b> Cloud-native game backends (K8s/Agones).</li>
               <li><b>Academic Excellence:</b> BS in Computer Science, Magna Cum Laude.</li>
               <li><b>Operational Edge:</b> 13 years leading high-uptime logistics and resource allocation.</li>
-            </ul></br> 
+            </ul> 
             Magna Cum Laude Computer Science graduate and Infrastructure Engineer with 13 years of operational leadership experience. I specialize in building and scaling cloud-native game backends, currently focused on orchestrating Unreal Engine 5 dedicated servers using Go, Kubernetes, and Agones. My 'Day 2' operational mindset ensures that the systems I build are not just functional, but reliable, observable, and scalable.
 
           </p>
