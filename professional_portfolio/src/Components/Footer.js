@@ -11,10 +11,10 @@ const Footer = () => {
           <a href="https://github.com/NevinsN" target="_blank" rel="noopener noreferrer" aria-label="GitHub">
             <FaGithub />
           </a>
-          <a href="https://linkedin.com/in/your-profile" target="_blank" rel="noopener noreferrer" aria-label="LinkedIn">
+          <a href="https://www.linkedin.com/in/nicholas-nevins" target="_blank" rel="noopener noreferrer" aria-label="LinkedIn">
             <FaLinkedin />
           </a>
-          <a href="mailto:your-email@example.com" aria-label="Email">
+          <a href="mailto:nevins.nicholas@gmail.com" aria-label="Email">
             <FaEnvelope />
           </a>
         </div>
