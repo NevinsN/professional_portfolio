@@ -17,6 +17,7 @@ const Home = ({ theme }) => {
           style={{
                   width:"200px", 
                   height:"238px", 
+                  border: "5px solid white",
                   borderRadius:"50%"
                 }}
           />

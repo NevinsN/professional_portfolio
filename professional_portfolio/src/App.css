@@ -1,3 +1,10 @@
+/* Imports from Google Fonts */
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;600&family=Space+Grotesk:wght@500;700&family=JetBrains+M
+
+:root {
+    --dark-text: #1A1A1A;
+}
+
 .App {
   text-align: center;
 }
@@ -26,7 +33,7 @@
 }
 
 .App-header.light {
-  font-family:Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+  font-family: 'Space Grotesk', sans-serif;
   background-color: white;
   background-image: radial-gradient(circle at 77% 66%, rgba(41,180,35, 0.18) 0%, rgba(41,180,35, 0.18) 9%,transparent 9%, transparent 43%,transparent 43%, transparent 100%),radial-gradient(circle at 6% 56%, rgba(41,180,35, 0.18) 0%, rgba(41,180,35, 0.18) 20%,transparent 20%, transparent 56%,transparent 56%, transparent 100%),radial-gradient(circle at 48% 45%, rgba(41,180,35, 0.18) 0%, rgba(41,180,35, 0.18) 15%,transparent 15%, transparent 85%,transparent 85%, transparent 100%),radial-gradient(circle at 89% 6%, rgba(41,180,35, 0.18) 0%, rgba(41,180,35, 0.18) 5%,transparent 5%, transparent 32%,transparent 32%, transparent 100%),radial-gradient(circle at 71% 38%, rgba(41,180,35, 0.18) 0%, rgba(41,180,35, 0.18) 14%,transparent 14%, transparent 21%,transparent 21%, transparent 100%),radial-gradient(circle at 84% 78%, rgba(41,180,35, 0.18) 0%, rgba(41,180,35, 0.18) 11%,transparent 11%, transparent 85%,transparent 85%, transparent 100%),radial-gradient(circle at 92% 72%, rgba(41,180,35, 0.18) 0%, rgba(41,180,35, 0.18) 42%,transparent 42%, transparent 51%,transparent 51%, transparent 100%),radial-gradient(circle at 73% 95%, rgba(41,180,35, 0.18) 0%, rgba(41,180,35, 0.18) 48%,transparent 48%, transparent 63%,transparent 63%, transparent 100%),radial-gradient(circle at 29% 29%, rgba(41,180,35, 0.18) 0%, rgba(41,180,35, 0.18) 24%,transparent 24%, transparent 73%,transparent 73%, transparent 100%),linear-gradient(90deg, rgb(154,242,154),rgb(154,242,154));
   min-height: 100vh;
@@ -34,7 +41,7 @@
   flex-direction: column;
   justify-content: center;
   font-size: calc(10px + 2vmin);
-  color: #1e1e1e;
+  color: var(--dark-text);
 }
 
 .App-header_title {
