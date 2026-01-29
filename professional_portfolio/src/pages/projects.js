@@ -1,4 +1,4 @@
-import React from "react"; 
+import React from "react";
 
 const Projects = ({ theme }) => {
     return (
@@ -7,7 +7,49 @@ const Projects = ({ theme }) => {
                 <h1>Projects</h1>
                 
                 <div className="project-container">
-                    {/* 1. Capstone Card */}
+                    {/* 1. NexusGate */}
+                    <div className="project-card">
+                        <div className="project-header">
+                            <h2>NexusGate</h2>
+                            <div className="tech-stack">
+                                <span className="tag">Go</span>
+                                <span className="tag">Kubernetes</span>
+                                <span className="tag">Redis</span>
+                            </div>
+                        </div>
+                        <div className="project-body">
+                            <p>
+                                A <strong>cloud-native orchestrator</strong> designed to automate the lifecycle of UE5 dedicated servers. 
+                                It solves the "Multi-Zonal" challenge by using <strong>Agones</strong> and <strong>Redis</strong> to persist player state during server handoffs.
+                            </p>
+                            <p className="project-meta">
+                                <strong>Operational Focus:</strong> Leveraging Terraform for IaC and GitHub Actions for CI/CD containerization.
+                            </p>
+                        </div>
+                    </div>
+
+                    {/* 2. Elemental Escapist */}
+                    <div className="project-card">
+                        <div className="project-header">
+                            <h2>Elemental Escapist</h2>
+                            <div className="tech-stack">
+                                <span className="tag">UE5</span>
+                                <span className="tag">C++</span>
+                                <span className="tag">FPS Prototype</span>
+                            </div>
+                        </div>
+                        <div className="project-body">
+                            <p>
+                                A first-person technical prototype built in <strong>Unreal Engine 5</strong>. 
+                                It serves as the primary validation environment for <strong>NexusGate</strong>, generating granular player data through a C++ "Powerizer" system.
+                            </p>
+                            <p className="project-meta">
+                                <strong>Key Achievement:</strong> Successfully synchronizes "Elemental States" and puzzle flags across distributed server instances.
+                            </p>
+                        </div>
+                    </div>
+
+                    {/* 3. Capstone Project */}
                     <div className="project-card">
                         <div className="project-header">
                             <h2>Capstone Project</h2>
@@ -17,54 +59,17 @@ const Projects = ({ theme }) => {
                             </div>
                         </div>
                         <div className="project-body">
-                            <p>Developed a desktop application utilizing <strong>PyQT</strong> as the primary interface. Completed during a son's NICU stay, demonstrating professional resilience.</p>
-                        </div>
-                    </div>
-
-                    {/* 2. Elemental Escapist Card */}
-                    <div className="project-card">
-                        <div className="project-header">
-                            <h2>Elemental Escapist</h2>
-                            <div className="tech-stack">
-                                <span className="tag">Unreal Engine 5</span>
-                                <span className="tag">C++</span>
-                                <span className="tag">Blueprints</span>
-                            </div>
-                        </div>
-                        <div className="project-body">
                             <p>
-                                A 3D platformer developed in <strong>Unreal Engine 5</strong>. Focused on implementing fluid character 
-                                mechanics and complex elemental interactions through a hybrid <strong>C++ and Blueprint</strong> architecture.
+                                Developed a robust desktop application using <strong>PyQT</strong>. Completed during a high-stakes family medical emergency, 
+                                demonstrating the professional resilience I bring to every engineering role.
                             </p>
                             <p className="project-meta">
-                                <strong>Key Focus:</strong> Optimized game-loop logic and asset management for high-fidelity performance.
+                                <strong>Roadmap:</strong> Currently architecting a full-stack rework using <strong>React</strong> and <strong>Django</strong>.
                             </p>
                         </div>
                     </div>
-
-                    {/* 3. NexusGate Card */}
-                    <div className="project-card">
-                        <div className="project-header">
-                            <h2>NexusGate</h2>
-                            <div className="tech-stack">
-                                <span className="tag">Go</span>
-                                <span className="tag">gRPC</span>
-                                <span className="tag">Kubernetes</span>
-                            </div>
-                        </div>
-                        <div className="project-body">
-                            <p>
-                                A high-performance <strong>API Gateway</strong> designed for microservices orchestration. Built 
-                                with <strong>Go</strong> to handle low-latency request routing and service discovery.
-                            </p>
-                            <p className="project-meta">
-                                <strong>Key Focus:</strong> Scalable cloud-native infrastructure with <strong>gRPC</strong> communication 
-                                and automated deployment via <strong>Kubernetes</strong>.
-                            </p>
-                        </div>
-                    </div>
-                </div> {/* End project-container */}
-            </div> {/* End App-header_titleSubpage */}
+                </div> 
+            </div> 
         </header>
     );
 };
