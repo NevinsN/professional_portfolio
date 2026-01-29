@@ -74,7 +74,7 @@ const Navbar = ({ theme, toggleTheme }) => {
 };
 
 const downloadTxtFile = () => {
-    fetch("Resume Nicholas Nevins Software Developer.pdf").then((response) => {
+    fetch("Nicholas_Nevins_Resume.pdf").then((response) => {
         response.blob().then((blob) => {
         
             // Creating new object of PDF file
