@@ -10,6 +10,12 @@
     --font-mono: 'JetBrains Mono', monospace;
 }
 
+#root {
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+}
+
 .App {
   text-align: center;
 }
@@ -37,6 +43,7 @@
   justify-content: center;
   font-size: calc(10px + 2vmin);
   color: var(--dark-text);
+  flex: 1 0 auto;
 }
 
 /* 3. TARGET THE HEADINGS SPECIFICALLY */
@@ -59,6 +66,7 @@
   justify-content: center;
   font-size: calc(10px + 2vmin);
   color: white;
+  flex: 1 0 auto;
 }
 
 .App-header.dark h1 {
@@ -277,56 +285,27 @@ button {
     padding-top: 10px;
 }
 
-.footer {
-  background: #000;
-  color: #fff;
-  padding: 30px 20px;
-  border-top: 1px solid var(--primary-green);
-  margin-top: 50px;
+.site-footer {
+    padding: 2rem 0;
+    background-color: #000000;
+    color: #ffffff;
+    border-top: 1px solid #0b8a02;
+    width: 100%;
 }
 
-.footer-content {
-  max-width: 1200px;
-  margin: 0 auto;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  gap: 15px;
-  text-align: center;
+.footer-socials a {
+    color: #ffffff;
+    font-size: 1.8rem;
+    transition: color 0.3s ease;
 }
 
-.social-links {
-  display: flex;
-  gap: 20px;
+.footer-socials a:hover {
+    color: #0b8a02;
 }
 
-.social-links a {
-  color: #fff;
-  text-decoration: none;
-  font-size: 0.9rem;
-  font-weight: bold;
-  transition: color 0.3s ease;
-}
-
-.social-links a:hover {
-  color: var(--primary-green);
-}
-
-.footer-info p {
-  margin: 2px 0;
-  font-size: 0.85rem;
-  opacity: 0.9;
-}
-
-.footer-stack {
-  font-size: 0.75rem;
-  opacity: 0.6;
-  font-style: italic;
-}
-
-@media (min-width: 768px) {
-  .footer-content {
-    flex-direction: row;
-    justify-content: space-between;
-  }
+.footer-socials, .ops-icons {
+    display: flex;
+    justify-content: center;
+    gap: 30px;
+    margin: 15px 0;
 }
