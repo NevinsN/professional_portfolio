@@ -1,8 +1,13 @@
-/* Imports from Google Fonts */
-@import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;600&family=Space+Grotesk:wght@500;700&family=JetBrains+M
+/* FONT IMPORT (Make sure this is at the very top) */
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;600&family=Space+Grotesk:wght@500;700&family=JetBrains+Mono&display=swap');
 
 :root {
     --dark-text: #1A1A1A;
+    --primary-green: #119605;
+    /* Define font variables for easy reuse */
+    --font-heading: 'Space Grotesk', sans-serif;
+    --font-body: 'Inter', sans-serif;
+    --font-mono: 'JetBrains Mono', monospace;
 }
 
 .App {
@@ -20,8 +25,32 @@
   }
 }
 
+
+/* LIGHT MODE (The "Whimsical Tech" Look) */
+.App-header.light {
+  font-family: var(--font-body); /* Standardize body text */
+  background-color: white;
+  background-image: radial-gradient(circle at 77% 66%, rgba(41,180,35, 0.18) 0%, rgba(41,180,35, 0.18) 9%,transparent 9%, transparent 43%,transparent 43%, transparent 100%),radial-gradient(circle at 6% 56%, rgba(41,180,35, 0.18) 0%, rgba(41,180,35, 0.18) 20%,transparent 20%, transparent 56%,transparent 56%, transparent 100%),radial-gradient(circle at 48% 45%, rgba(41,180,35, 0.18) 0%, rgba(41,180,35, 0.18) 15%,transparent 15%, transparent 85%,transparent 85%, transparent 100%),radial-gradient(circle at 89% 6%, rgba(41,180,35, 0.18) 0%, rgba(41,180,35, 0.18) 5%,transparent 5%, transparent 32%,transparent 32%, transparent 100%),radial-gradient(circle at 71% 38%, rgba(41,180,35, 0.18) 0%, rgba(41,180,35, 0.18) 14%,transparent 14%, transparent 21%,transparent 21%, transparent 100%),radial-gradient(circle at 84% 78%, rgba(41,180,35, 0.18) 0%, rgba(41,180,35, 0.18) 11%,transparent 11%, transparent 85%,transparent 85%, transparent 100%),radial-gradient(circle at 92% 72%, rgba(41,180,35, 0.18) 0%, rgba(41,180,35, 0.18) 42%,transparent 42%, transparent 51%,transparent 51%, transparent 100%),radial-gradient(circle at 73% 95%, rgba(41,180,35, 0.18) 0%, rgba(41,180,35, 0.18) 48%,transparent 48%, transparent 63%,transparent 63%, transparent 100%),radial-gradient(circle at 29% 29%, rgba(41,180,35, 0.18) 0%, rgba(41,180,35, 0.18) 24%,transparent 24%, transparent 73%,transparent 73%, transparent 100%),linear-gradient(90deg, rgb(154,242,154),rgb(154,242,154));
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  font-size: calc(10px + 2vmin);
+  color: var(--dark-text);
+}
+
+/* 3. TARGET THE HEADINGS SPECIFICALLY */
+.App-header.light h1, 
+.App-header.light .App-header_title h2 {
+  font-family: var(--font-heading);
+  font-weight: 700;
+  letter-spacing: -0.02em;
+}
+
+/* DARK MODE (The "Serious Engineer" Look) */
 .App-header.dark {
-  font-family:Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+  /* Swapping from Times New Roman to a modern dark-mode feel */
+  font-family: var(--font-body); 
   background-color: #000000;
   background-image: radial-gradient(circle at 57% 36%, hsla(263,0%,78%,0.04) 0%, hsla(263,0%,78%,0.04) 10%,transparent 10%, transparent 100%),radial-gradient(circle at 22% 61%, hsla(263,0%,78%,0.04) 0%, hsla(263,0%,78%,0.04) 36%,transparent 36%, transparent 100%),radial-gradient(circle at 68% 97%, hsla(263,0%,78%,0.04) 0%, hsla(263,0%,78%,0.04) 41%,transparent 41%, transparent 100%),radial-gradient(circle at 57% 89%, hsla(263,0%,78%,0.04) 0%, hsla(263,0%,78%,0.04) 30%,transparent 30%, transparent 100%),radial-gradient(circle at 39% 80%, hsla(263,0%,78%,0.04) 0%, hsla(263,0%,78%,0.04) 22%,transparent 22%, transparent 100%),radial-gradient(circle at 88% 71%, hsla(263,0%,78%,0.04) 0%, hsla(263,0%,78%,0.04) 30%,transparent 30%, transparent 100%),linear-gradient(0deg, rgb(0,0,0),rgb(0,0,0));
   min-height: 100vh;
@@ -32,16 +61,22 @@
   color: white;
 }
 
-.App-header.light {
-  font-family: 'Space Grotesk', sans-serif;
-  background-color: white;
-  background-image: radial-gradient(circle at 77% 66%, rgba(41,180,35, 0.18) 0%, rgba(41,180,35, 0.18) 9%,transparent 9%, transparent 43%,transparent 43%, transparent 100%),radial-gradient(circle at 6% 56%, rgba(41,180,35, 0.18) 0%, rgba(41,180,35, 0.18) 20%,transparent 20%, transparent 56%,transparent 56%, transparent 100%),radial-gradient(circle at 48% 45%, rgba(41,180,35, 0.18) 0%, rgba(41,180,35, 0.18) 15%,transparent 15%, transparent 85%,transparent 85%, transparent 100%),radial-gradient(circle at 89% 6%, rgba(41,180,35, 0.18) 0%, rgba(41,180,35, 0.18) 5%,transparent 5%, transparent 32%,transparent 32%, transparent 100%),radial-gradient(circle at 71% 38%, rgba(41,180,35, 0.18) 0%, rgba(41,180,35, 0.18) 14%,transparent 14%, transparent 21%,transparent 21%, transparent 100%),radial-gradient(circle at 84% 78%, rgba(41,180,35, 0.18) 0%, rgba(41,180,35, 0.18) 11%,transparent 11%, transparent 85%,transparent 85%, transparent 100%),radial-gradient(circle at 92% 72%, rgba(41,180,35, 0.18) 0%, rgba(41,180,35, 0.18) 42%,transparent 42%, transparent 51%,transparent 51%, transparent 100%),radial-gradient(circle at 73% 95%, rgba(41,180,35, 0.18) 0%, rgba(41,180,35, 0.18) 48%,transparent 48%, transparent 63%,transparent 63%, transparent 100%),radial-gradient(circle at 29% 29%, rgba(41,180,35, 0.18) 0%, rgba(41,180,35, 0.18) 24%,transparent 24%, transparent 73%,transparent 73%, transparent 100%),linear-gradient(90deg, rgb(154,242,154),rgb(154,242,154));
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: var(--dark-text);
+.App-header.dark h1 {
+  font-family: var(--font-heading);
+  color: #FFFFFF;
+}
+
+/* MAKE THE BUTTONS AND TAGS LOOK LIKE CODE */
+button {
+  font-family: var(--font-mono); /* This makes buttons feel "Technical" */
+  background-color: var(--primary-green);
+  border: 1px solid #0b6b02;
+  font-weight: 600;
+  text-transform: uppercase; /* Professional touch */
+  letter-spacing: 0.05em;
+  padding: 8px 20px;
+  cursor: pointer;
+  border-radius: 4px; /* Slightly sharper for a serious look */
 }
 
 .App-header_title {
@@ -91,19 +126,6 @@
 
 .Bars {
   display: none;
-}
-
-button {
-  background-color: #119605; /* Green */
-  border: solid;
-  border-color:#0b6b02;
-  color: rgb(255, 255, 255);
-  padding: 5px 15px;
-  text-align: center;
-  text-decoration: none;
-  display: inline-block;
-  font-size: 14px;
-  border-radius: 10%;
 }
 
 @media (max-width: 768px) {
