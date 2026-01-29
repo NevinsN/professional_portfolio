@@ -54,6 +54,7 @@ export const NavMenu = styled.div`
         padding: 0 10px;
         color: #fff;
         transition: transform 0.2s;
+        margin-left: auto;
         
         &:hover {
             transform: scale(1.1);
