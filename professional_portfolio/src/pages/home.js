@@ -26,7 +26,7 @@ const Home = ({ theme }) => {
           <p style={{
               fontSize: "17px",
               padding: "2%",
-              max-width: "800px",
+              maxWidth: "800px",
           }}>
             <ul>
               <li><b>Engineering Focus:</b> Cloud-native game backends (K8s/Agones).</li>
