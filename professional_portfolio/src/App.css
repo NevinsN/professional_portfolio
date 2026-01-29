@@ -129,6 +129,14 @@ button {
 }
 
 @media (max-width: 768px) {
+  .App-header_title, 
+  .App-header_titleSubpage, 
+  .App-header_content {
+    margin-left: 0;     
+    align-items: center;
+    text-align: center; 
+    width: 100%;
+  }
   .Bars {
     display: block;
     position: absolute;
@@ -173,5 +181,36 @@ button {
   .contentItem {
     width: 100%;
     margin-top: 20px;
+  }
+}
+
+
+
+
+
+@media (max-width: 768px) {
+  /* 1. Center the Header and Titles */
+  .App-header_title, 
+  .App-header_titleSubpage, 
+  .App-header_content {
+    margin-left: 0;           /* Remove the 10% push */
+    align-items: center;      /* Center the text and image vertically */
+    text-align: center;       /* Center the text itself */
+    width: 100%;              /* Ensure it uses the full screen width */
+  }
+
+  /* 2. Fix the narrow text "Squish" */
+  .content {
+    flex-direction: column;   /* Force vertical stacking */
+    margin-inline-start: 0;   /* Remove the left margin start */
+    padding: 0 20px;          /* Use padding instead of margins for safe spacing */
+    align-items: center;
+    width: 100%;
+    box-sizing: border-box;   /* Prevents padding from adding to width */
+  }
+
+  .contentItem {
+    width: 100%;              /* Allow text to breathe across the screen */
+    max-width: 500px;         /* Optional: keep it readable on tablets */
   }
 }
