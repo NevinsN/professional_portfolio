@@ -9,7 +9,7 @@ export const Nav = styled.nav`
     display: flex;
     justify-content: flex-start;
     align-items: center;
-    padding: 0 5%;
+    padding: 0 20px;
     gap: 20px;
     position: relative;
 `;
@@ -19,11 +19,19 @@ export const NavLink = styled(Link)`
     display: flex;
     align-items: center;
     text-decoration: none;
-    padding: 0 1rem;
     height: 100%;
     cursor: pointer;
+    
     &.active {
         color: #ecdc1a;
+    }
+
+    /* If this is the NN logo, use specific styling */
+    &.nav-logo {
+        font-weight: bold;
+        font-size: 1.5rem;
+        font-family: var(--font-mono);
+        padding: 0;           /* Prevents extra space from staggering it */
     }
 `;
 
@@ -35,10 +43,12 @@ export const Bars = styled(FaBars)`
     font-size: 2rem;
 
     @media screen and (max-width: 768px) {
-        display: block; /* Show only on mobile */
-        position: relative;
-        top: 16px;
-        left: 24px; /* Anchored to the left */
+       display: block;
+        font-size: 1.8rem;
+        cursor: pointer;
+        color: #fff;
+        margin-right: 15px;
+        position: static;
     }
 `;
 
