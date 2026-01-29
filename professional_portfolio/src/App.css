@@ -161,4 +161,15 @@ button {
   .NavBtn {
     display: none;
   }
+  .content {
+    flex-direction: column;
+    align-items: center;
+    margin-inline-start: 5%;
+    margin-inline-end: 5%;
+    text-align: center:
+  }
+  .contentItem {
+    width: 100%;
+    margin-top: 20px;
+  }
 }
