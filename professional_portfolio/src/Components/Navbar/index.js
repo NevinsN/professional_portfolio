@@ -37,8 +37,8 @@ const Navbar = ({ theme, toggleTheme }) => {
                     </NavLink>
                     <button id="resumeBtn" onClick={(e) => { downloadTxtFile(); setIsOpen(false); }} value="resume"><i class="fa fa-download" aria-hidden="true"></i>Résumé</button>
                     <button className="theme-toggle" onClick={toggleTheme}>
-        {theme === "dark" ? "☀" : "🌙"}
-    </button>
+                      {theme === "dark" ? "☀" : "🌙"}
+                    </button>
                 </NavMenu>
             </Nav>
         </>
