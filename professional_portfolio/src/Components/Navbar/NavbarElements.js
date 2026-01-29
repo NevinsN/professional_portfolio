@@ -11,7 +11,9 @@ export const Nav = styled.nav`
     align-items: center;
     padding: 0 20px;
     gap: 20px;
-    position: relative;
+    position: sticky;
+    z-index: 1000;
+    width: 100%;
 `;
 
 export const NavLink = styled(Link)`

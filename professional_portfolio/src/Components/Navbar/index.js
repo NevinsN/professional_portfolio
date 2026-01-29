@@ -14,50 +14,28 @@ const Navbar = ({ theme, toggleTheme }) => {
     };
     
     return (
-        <>
-            <Nav>
-                <Bars onClick={handleMenuToggle} />
-                <NavLink 
-                to="/home" 
-                style={{ 
-                    fontWeight: 'bold', 
-                    fontSize: '1.5rem', 
-                    fontFamily: 'var(--font-mono)', /* Keeps the 'Serious Engineer' feel */
-                    letterSpacing: '1px'
-                }}
-                >
-                  NN
-                </NavLink>
-                <NavMenu className={isOpen ? "active" : ""}>
-                    <NavLink to="/projects" onClick={() => setIsOpen(false)}>
-                        Projects
-                    </NavLink>
-                    <NavLink to="/skills" onClick={() => setIsOpen(false)} activeStyle>
-                        Skills
-                    </NavLink>
-                    <NavLink to="/experience" onClick={() => setIsOpen(false)} activeStyle>
-                        Experience
-                    </NavLink>
-                    <NavLink to="/references" onClick={() => setIsOpen(false)} activeStyle>
-                        References
-                    </NavLink>
-                    <button id="resumeBtn" onClick={(e) => { downloadTxtFile(); setIsOpen(false); }} value="resume"><i class="fa fa-download" aria-hidden="true"></i>Résumé</button>
-                    <button className="theme-toggle" onClick={toggleTheme}>
-                      {theme === "dark" ? "☀" : "🌙"}
-                    </button>
-                </NavMenu>
-            </Nav>
-        </>
-    );
-};
+    <Nav>
+        <Bars onClick={handleMenuToggle} />
+        <NavLink to="/home" onClick={() => setIsOpen(false)} className="nav-logo">
+          NN
+        </NavLink>
 
-const downloadTxtFile = () => {
-    const link = document.createElement("a");
-    link.href = "Nicholas_Nevins_Resume.pdf"; // Direct path to file
-    link.download = "Nicholas_Nevins_Resume.pdf";
-    document.body.appendChild(link);
-    link.click();
-    document.body.removeChild(link);
-};
+        {/* This div must have the ref and the active class */}
+        <NavMenu ref={menuRef} className={isOpen ? "active" : ""}>
+            <NavLink to="/projects" onClick={() => setIsOpen(false)}>Projects</NavLink>
+            <NavLink to="/skills" onClick={() => setIsOpen(false)}>Skills</NavLink>
+            <NavLink to="/experience" onClick={() => setIsOpen(false)}>Experience</NavLink>
+            <NavLink to="/references" onClick={() => setIsOpen(false)}>References</NavLink>
+            
+            <button id="resumeBtn" onClick={() => { downloadTxtFile(); setIsOpen(false); }}>
+                <i className="fa fa-download"></i> Résumé
+            </button>
+            <button className="theme-toggle" onClick={toggleTheme}>
+              {theme === "dark" ? "☀" : "🌙"}
+            </button>
+        </NavMenu>
+    </Nav>
+);
+
 
 export default Navbar;
