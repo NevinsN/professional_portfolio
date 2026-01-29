@@ -104,3 +104,20 @@ export const NavBtnLink = styled(Link)`
         color: #808080;
     }
 `;
+
+export const NavLogo = styled(Link)`
+    color: #fff;
+    justify-self: flex-start;
+    cursor: pointer;
+    font-size: 1.5rem;
+    display: flex;
+    align-items: center;
+    margin-left: 24px;
+    font-family: var(--font-mono); /* Technical font */
+    font-weight: bold;
+    text-decoration: none;
+
+    &:hover {
+        color: #ecdc1a; /* Matches your active/hover state */
+    }
+`;
