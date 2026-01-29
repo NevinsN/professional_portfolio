@@ -74,7 +74,8 @@
 }
 
 .App-header.dark h1,
-.App-header.dark h2 {
+.App-header.dark h2, 
+.App-header.dark h3 {
   font-family: var(--font-heading);
   color: #FFFFFF;
 }
