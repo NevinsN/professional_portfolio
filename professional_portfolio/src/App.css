@@ -31,6 +31,10 @@
   }
 }
 
+.App-header {
+    flex: 1 0 auto;
+    padding-bottom: 60px;
+}
 
 /* LIGHT MODE (The "Whimsical Tech" Look) */
 .App-header.light {
@@ -290,7 +294,6 @@ button {
     background-color: #000;
     color: #fff;
     border-top: 1px solid #0b8a02;
-    margin-top: 40px;
 }
 
 .footer-content {
