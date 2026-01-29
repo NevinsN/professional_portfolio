@@ -20,7 +20,7 @@ const Home = ({ theme }) => {
                   height:"238px", 
                   border: "5px solid white",
                   borderRadius:"50%",
-                  filter: drop-shadow(0 4px 8px rgba(0,0,0,0.1));,
+                  filter: "drop-shadow(0 4px 8px rgba(0,0,0,0.1))",
                 }}
           />
           <p style={{
