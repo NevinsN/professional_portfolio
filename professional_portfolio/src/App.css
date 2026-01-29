@@ -129,22 +129,28 @@ button {
   display: none;
 }
 
+.Nav {
+  display: flex;
+  justify-content: space-between; /* Pushes name to left, links to right */
+  align-items: center;
+  padding: 0.5rem 10%;
+  height: 80px;
+  z-index: 10;
+}
+
 .NavMenu {
   display: flex;
-  flex-direction: row; /* Horizontal for desktop */
   align-items: center;
   list-style: none;
-  text-align: center;
-  /* Add spacing and position it to the right of your name/logo */
-  margin-right: 5%;
 }
 
 .NavMenu a {
-  padding: 0 1rem;
-  color: var(--dark-text); /* Uses your Technical Navy */
+  padding: 0 1.5rem;
+  color: var(--dark-text); 
   text-decoration: none;
   font-family: var(--font-mono);
-  font-size: 1rem;
+  font-size: 1.1rem;
+  font-weight: 500;
 }
 
 @media (max-width: 768px) {
@@ -159,41 +165,43 @@ button {
   .Bars {
     display: block;
     position: absolute;
-    top: 0;
-    right: 0;
-    transform: translate(-100%, 75%);
+    top: 25px;
+    left: 20px; /* Moved to left side */
     font-size: 1.8rem;
     cursor: pointer;
-    color: #fff;
+    color: var(--dark-text); /* Use dark text so it shows on green */
+    z-index: 20;
   }
   .NavMenu {
-    display: flex;
     flex-direction: column;
-    width: 100%;
+    width: 250px;           /* Professional drawer width */
     height: auto;
     position: absolute;
-    top: 60px;
-    left: 10px;
+    top: 70px;              /* Sits under the header */
+    left: 10px;             /* Drops down on the left */
+    
+    /* Animation Logic */
     transform: translateY(-20px); 
-    opacity: 0;          
+    opacity: 0; 
     pointer-events: none;
+    
     transition: all 0.3s ease-out;
-    background: #1A1A1A;   
-    border: 1px solid #0b6b02; 
-    border-radius: 8px; 
+    background: #1A1A1A;    /* Dark 'Serious' background */
+    border: 1px solid var(--primary-green);
+    border-radius: 8px;
     z-index: 10;
   }
   .NavMenu.active {
-    transform: translateY(0); 
-    opacity: 1;               
+    transform: translateY(0);
+    opacity: 1;
     pointer-events: auto;
   }
   .NavMenu a {
-  padding: 15px 20px;
-  color: white;
-  text-decoration: none;
-  font-family: 'JetBrains Mono', monospace; /* Technical font choice */
-  font-size: 14px;
+    color: white; /* Contrast for the dark popup */
+    padding: 15px 20px;
+    width: 100%;
+    text-align: left;
+    border-bottom: 1px solid #333;
   }
   .NavMenu a:hover {
     background-color: #0b6b02; /* Highlight link with your brand green */
