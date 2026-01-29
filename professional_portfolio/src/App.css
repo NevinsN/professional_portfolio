@@ -223,13 +223,18 @@ button {
   }
 }
 
-/* Container for all project cards */
 .project-container {
     display: flex;
-    justify-content: flex-start; /* Aligns with your left-heavy header title */
-    margin-top: 20px;
-    width: 100%;
+    flex-wrap: wrap; /* This allows cards to move to the next line */
+    gap: 20px;
+    justify-content: flex-start; /* Keeps them aligned with your left-side header */
 }
+
+.project-card {
+    flex: 1 1 350px; /* Allows cards to grow but stay at least 350px wide */
+    max-width: 500px;
+}
+
 
 .project-card {
     background: rgba(255, 255, 255, 0.05); /* Subtle contrast */
