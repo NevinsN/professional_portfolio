@@ -11,7 +11,7 @@ const Home = ({ theme }) => {
         <p style={{lineHeight: "0em", fontStyle: "italic", fontSize: "25px", marginLeft: "2.5%"}}>Software Developer</p>
         </div>
         <div className="content">
-          <img src={Headshot} alt="Nick Nevins Headshot" style={{width:"200px", height:"238px", border-radius=50%,}}/>
+          <img src={Headshot} alt="Nick Nevins Headshot" style={{width:"200px", height:"238px", border-radius=50%}}/>
           <p style={{
               fontSize: "17px",
               width: "50%",
