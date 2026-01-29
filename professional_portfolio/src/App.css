@@ -278,9 +278,9 @@ button {
 }
 
 .footer {
-  background: #000; /* Deep black to contrast your green header */
+  background: #000;
   color: #fff;
-  padding: 40px 20px;
+  padding: 30px 20px;
   border-top: 1px solid var(--primary-green);
   margin-top: 50px;
 }
@@ -291,18 +291,20 @@ button {
   display: flex;
   flex-direction: column;
   align-items: center;
-  gap: 20px;
+  gap: 15px;
   text-align: center;
 }
 
 .social-links {
   display: flex;
-  gap: 25px;
-  font-size: 1.5rem;
+  gap: 20px;
 }
 
 .social-links a {
   color: #fff;
+  text-decoration: none;
+  font-size: 0.9rem;
+  font-weight: bold;
   transition: color 0.3s ease;
 }
 
@@ -311,27 +313,15 @@ button {
 }
 
 .footer-info p {
-  margin: 5px 0;
-  font-family: var(--font-body);
-}
-
-.footer-motto {
-  font-size: 0.9rem;
-  opacity: 0.7;
+  margin: 2px 0;
+  font-size: 0.85rem;
+  opacity: 0.9;
 }
 
 .footer-stack {
-  display: flex;
-  align-items: center;
-  gap: 10px;
-  font-size: 0.8rem;
+  font-size: 0.75rem;
   opacity: 0.6;
-}
-
-.stack-icons {
-  display: flex;
-  gap: 12px;
-  font-size: 1.2rem;
+  font-style: italic;
 }
 
 @media (min-width: 768px) {

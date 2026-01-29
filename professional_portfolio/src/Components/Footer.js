@@ -1,22 +1,20 @@
 import React from 'react';
-import { FaGithub, FaLinkedin, FaEnvelope } from 'react-icons/fa';
-import { SiNetlify, SiGithubactions } from 'react-icons/si'; 
 import './Footer.css';
 
 const Footer = () => {
   return (
     <footer className="footer">
       <div className="footer-content">
-        {/* Social Section */}
+        {/* Social Links as Plain Text */}
         <div className="social-links">
           <a href="https://github.com/NevinsN" target="_blank" rel="noopener noreferrer">
-            <FaGithub />
+            GitHub
           </a>
           <a href="https://linkedin.com/in/your-profile" target="_blank" rel="noopener noreferrer">
-            <FaLinkedin />
+            LinkedIn
           </a>
           <a href="mailto:your-email@example.com">
-            <FaEnvelope />
+            Email
           </a>
         </div>
 
@@ -28,11 +26,7 @@ const Footer = () => {
 
         {/* Tech Stack Attribution */}
         <div className="footer-stack">
-          <span>Built with:</span>
-          <div className="stack-icons">
-             <SiGithubactions title="GitHub Actions" />
-             <SiNetlify title="Netlify" />
-          </div>
+          <span>Built with: GitHub Actions & Netlify</span>
         </div>
       </div>
     </footer>
