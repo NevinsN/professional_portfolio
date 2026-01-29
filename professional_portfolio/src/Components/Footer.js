@@ -1,6 +1,6 @@
 import React from 'react';
 import { FaGithub, FaLinkedin, FaEnvelope } from 'react-icons/fa';
-import { SiNetlify, { SiGithubactions } from 'react-icons/si';
+import { SiNetlify, SiGithubactions } from 'react-icons/si'; 
 import './Footer.css';
 
 const Footer = () => {
