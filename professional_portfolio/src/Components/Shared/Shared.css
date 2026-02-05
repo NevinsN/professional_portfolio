@@ -1,1 +1,62 @@
-# placeholder
+/* Universal Tech Tag (Used in Projects & Skills) */
+.tag {
+    background: rgba(17, 150, 5, 0.08);
+    color: var(--primary-green);
+    border: 1px solid var(--primary-green);
+    padding: 4px 10px;
+    border-radius: 4px;
+    font-family: var(--font-mono);
+    font-size: 0.75rem;
+    font-weight: 600;
+    white-space: nowrap;
+    transition: all 0.2s ease;
+}
+
+.tag:hover {
+    background: var(--primary-green);
+    color: white;
+}
+
+/* Standardized Section Labels (Used in Home & Skills) */
+.section-label {
+    display: block;
+    font-family: var(--font-mono);
+    font-size: 0.9rem;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    color: var(--primary-green);
+    margin-bottom: 15px;
+    border-bottom: 1px solid var(--card-border);
+    padding-bottom: 5px;
+    width: fit-content;
+}
+
+/* Action Buttons (Used in Projects & Home) */
+.action-btn {
+    display: inline-flex;
+    align-items: center;
+    text-decoration: none;
+    font-family: var(--font-mono);
+    font-size: 0.8rem;
+    color: var(--primary-green);
+    border: 1px solid var(--primary-green);
+    padding: 8px 16px;
+    border-radius: 4px;
+    background: transparent;
+    transition: all 0.2s ease;
+    cursor: pointer;
+    font-weight: 600;
+}
+
+.action-btn:hover {
+    background: var(--primary-green);
+    color: white;
+    box-shadow: 0 4px 12px rgba(17, 150, 5, 0.2);
+}
+
+/* Standardized Page Layout Wrapper */
+.subpage-container {
+    padding: 40px 10%;
+    width: 100%;
+    text-align: left;
+}
