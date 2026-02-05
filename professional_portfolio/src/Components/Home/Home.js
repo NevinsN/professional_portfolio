@@ -5,7 +5,7 @@ import "../Shared/Shared.css";
 
 const Home = ({ theme }) => {
   return (
-    <header className={`App-header ${theme}`}>      
+      <header className="home-page">      
       {/* Title Section */}
       <div className="App-header_title">
         <h1>Nicholas Nevins</h1>
