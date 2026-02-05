@@ -54,11 +54,6 @@
     flex-shrink: 0;
 }
 
-/* 4. Ensure the parent doesn't chop off the shadow */
-.home-content, .profile-section {
-    overflow: visible !important;
-}
-
 
 /* ==========================================
    BIO & TEXT AREA
