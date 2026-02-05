@@ -1,1 +1,87 @@
-# placeholder
+/* CONTAINER GRID */
+.project-container {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
+    gap: 25px;
+    padding: 20px 0;
+    width: 100%;
+}
+
+/* THE PROJECT CARD */
+.project-card {
+    background: var(--card-bg);
+    border: 1px solid var(--card-border);
+    border-left: 4px solid var(--primary-green); /* The "Engineering" accent */
+    border-radius: 8px;
+    padding: 24px;
+    text-align: left;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    transition: transform 0.2s ease, box-shadow 0.2s ease;
+    backdrop-filter: blur(8px); /* Subtle glass effect */
+}
+
+.project-card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 10px 20px rgba(0,0,0,0.1);
+    border-color: var(--primary-green);
+}
+
+/* TEXT STYLES */
+.project-card h2 {
+    margin-bottom: 12px;
+    font-size: 1.4rem;
+    color: var(--text-main);
+}
+
+.project-body p {
+    font-size: 0.95rem;
+    line-height: 1.6;
+    margin-bottom: 15px;
+    color: var(--text-main);
+}
+
+.project-meta {
+    font-size: 0.85rem;
+    font-style: italic;
+    opacity: 0.8;
+    margin-bottom: 15px;
+}
+
+/* TAGS & BUTTONS */
+.tech-stack {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 8px;
+    margin-bottom: 20px;
+}
+
+.tag {
+    background: rgba(17, 150, 5, 0.1); /* Subtle green tint */
+    color: var(--primary-green);
+    border: 1px solid var(--primary-green);
+    padding: 4px 10px;
+    border-radius: 4px;
+    font-family: var(--font-mono);
+    font-size: 0.75rem;
+    font-weight: 600;
+}
+
+.repo-btn {
+    display: inline-block;
+    text-decoration: none;
+    font-family: var(--font-mono);
+    font-size: 0.8rem;
+    color: var(--primary-green);
+    border: 1px solid var(--primary-green);
+    padding: 6px 12px;
+    border-radius: 4px;
+    transition: all 0.2s ease;
+    width: fit-content;
+}
+
+.repo-btn:hover {
+    background: var(--primary-green);
+    color: white;
+}
