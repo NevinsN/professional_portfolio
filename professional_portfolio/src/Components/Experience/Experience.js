@@ -1,5 +1,6 @@
 import React from "react";
 import "./Experience.css";
+import "../Shared/Shared.css";
 
 const Experience = ({ theme }) => {
     return (
