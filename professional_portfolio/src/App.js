@@ -1,15 +1,16 @@
 import React, { useState } from 'react';
-import { BrowserRouter as Router, Routes, Route, Link } from 'react-router-dom';
+import { BrowserRouter as Router, Routes, Route } from 'react-router-dom';
+import Navbar from './Components/Navbar'; // Adjust path if necessary
 import Home from './Components/Home/Home';
 import Projects from './Components/Projects/Projects';
 import Experience from './Components/Experience/Experience';
 import Skills from './Components/Skills/Skills';
 import References from './Components/References/References';
+import Footer from './Components/Footer'; 
 import './App.css';
-import Footer from './Components/Footer/Footer';
 
 function App() {
-  const [theme, setTheme] = useState('light');
+  const [theme, setTheme] = useState('dark'); // Suggest starting with dark
 
   const toggleTheme = () => {
     setTheme((prevTheme) => (prevTheme === 'light' ? 'dark' : 'light'));
@@ -17,26 +18,14 @@ function App() {
 
   return (
     <Router>
-      {/* The .App wrapper gets the .dark or .light class for global theming */}
       <div className={`App ${theme}`}>
-        <nav className="Nav">
-          <div className="NavMenu">
-            <Link to="/" className="nav-link">Home</Link>
-            <Link to="/projects">Projects</Link>
-            <Link to="/experience">Experience</Link>
-            <Link to="/skills">Skills</Link>
-            <Link to="/references">References</Link>
-          </div>
-          
-          <button onClick={toggleTheme} className="action-btn">
-            {theme === 'light' ? 'TERMINAL MODE' : 'BLUEPRINT MODE'}
-          </button>
-        </nav>
+        {/* REPLACED: Using your custom Navbar component */}
+        <Navbar theme={theme} toggleTheme={toggleTheme} />
 
-        {/* This is the main container that holds your Blueprint/Schematic gradients */}
         <main className={`App-header ${theme}`}>
           <Routes>
             <Route path="/" element={<Home theme={theme} />} />
+            <Route path="/home" element={<Home theme={theme} />} />
             <Route path="/projects" element={<Projects theme={theme} />} />
             <Route path="/experience" element={<Experience theme={theme} />} />
             <Route path="/skills" element={<Skills theme={theme} />} />
