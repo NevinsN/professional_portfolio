@@ -60,7 +60,6 @@ const Home = ({ theme }) => {
             </li>
           </ul>
         </div>
-      </div>
     </header>
   );
 }
