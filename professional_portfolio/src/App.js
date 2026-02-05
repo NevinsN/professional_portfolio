@@ -6,6 +6,7 @@ import Experience from './Components/Experience/Experience';
 import Skills from './Components/Skills/Skills';
 import References from './Components/References/References';
 import './App.css';
+import Footer from './Components/Footer/Footer';
 
 function App() {
   const [theme, setTheme] = useState('light');
@@ -43,7 +44,7 @@ function App() {
           </Routes>
         </main>
 
-        <footer />
+        <Footer />
       </div>
     </Router>
   );
