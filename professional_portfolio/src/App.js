@@ -43,9 +43,7 @@ function App() {
           </Routes>
         </main>
 
-        <footer className="site-footer">
-          <p>© 2024 Nicholas Nevins | SRE Portfolio</p>
-        </footer>
+        <footer />
       </div>
     </Router>
   );
