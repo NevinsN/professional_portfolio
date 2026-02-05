@@ -57,3 +57,7 @@ button {
     text-transform: uppercase;
     font-weight: 600;
 }
+
+* {
+    transition: background-color 0.2s ease, color 0.2s ease;
+}
