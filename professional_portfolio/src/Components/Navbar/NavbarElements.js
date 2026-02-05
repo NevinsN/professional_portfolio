@@ -2,30 +2,22 @@ import { FaBars } from "react-icons/fa";
 import { NavLink as Link } from "react-router-dom";
 import styled from "styled-components";
 
-/* NavbarElements.js - Updated Nav Styled Component */
 export const Nav = styled.nav`
-    /* A sophisticated 'Architectural' Gradient */
+    /* A deep "Midnight Mint" gradient */
     background: ${props => props.theme === 'dark' 
-        ? 'linear-gradient(135deg, #0d1117 0%, #162a1d 100%)' 
-        : 'linear-gradient(135deg, #f0f9f6 0%, #d1eadd 100%)'};
+        ? 'linear-gradient(180deg, #05070a 0%, #0d1117 100%)' 
+        : 'linear-gradient(180deg, #1a2c23 0%, #0d1117 100%)'};
     
-    height: 70px;
+    height: 80px; /* Slightly taller for more presence */
     display: flex;
-    justify-content: flex-start;
+    justify-content: space-between; /* Spaced out for Logo vs Menu */
     align-items: center;
-    padding: 0 20px;
+    padding: 0 2rem;
     position: sticky;
     top: 0;
     z-index: 1000;
-    width: 100%;
-    
-    /* Add a subtle 'Grid Line' at the bottom instead of a heavy border */
-    border-bottom: 1px solid ${props => props.theme === 'dark' 
-        ? 'rgba(63, 185, 80, 0.2)' 
-        : 'rgba(0, 105, 16, 0.1)'};
-    
-    /* This adds a slight 'Glass' effect */
-    backdrop-filter: blur(10px);
+    border-bottom: 2px solid var(--primary-green); /* A thin 'circuit' line */
+    box-shadow: 0 4px 20px rgba(0,0,0,0.4);
 `;
 
 
