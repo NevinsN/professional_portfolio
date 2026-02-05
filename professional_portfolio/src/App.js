@@ -1,10 +1,10 @@
 import React, { useState } from 'react';
 import { BrowserRouter as Router, Routes, Route, Link } from 'react-router-dom';
-import Home from './components/Home/Home';
-import Projects from './components/Projects/Projects';
-import Experience from './components/Experience/Experience';
-import Skills from './components/Skills/Skills';
-import References from './components/References/References';
+import Home from './Components/Home/Home';
+import Projects from './Components/Projects/Projects';
+import Experience from './Components/Experience/Experience';
+import Skills from './Components/Skills/Skills';
+import References from './Components/References/References';
 import './App.css';
 
 function App() {
