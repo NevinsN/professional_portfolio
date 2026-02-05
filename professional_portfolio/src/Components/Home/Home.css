@@ -40,12 +40,25 @@
 .home-headshot {
     width: 220px;
     height: 220px;
-    border: 5px solid white; /* Classic white border from your 1:40 screenshot */
+    border: 5px solid white;
     border-radius: 50%;
-    filter: drop-shadow(0 10px 20px rgba(0,0,0,0.3));
-    flex-shrink: 0;
     object-fit: cover;
+    
+    /* 1. Use filter instead of box-shadow for cleaner circles */
+    filter: drop-shadow(0 10px 15px rgba(0, 0, 0, 0.3));
+    
+    /* 2. Add margin so the shadow has space to sit without hitting the wall */
+    margin: 15px; 
+    
+    /* 3. Ensure it doesn't squish */
+    flex-shrink: 0;
 }
+
+/* 4. Ensure the parent doesn't chop off the shadow */
+.home-content, .profile-section {
+    overflow: visible !important;
+}
+
 
 /* ==========================================
    BIO & TEXT AREA
