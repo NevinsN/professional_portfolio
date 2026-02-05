@@ -30,13 +30,13 @@ const Home = ({ theme }) => {
               maxWidth: "800px",
           }}>
              
-            <p>
+            <div>
               I am a Magna Cum Laude Computer Science graduate and Infrastructure Engineer with 13 years of operational leadership experience. I specialize in building and scaling cloud-native distributed systems, with a focus on orchestrating stateful workloads using Go, Kubernetes, and Terraform.
-            </p>
-            <p>
+            </div>
+            <div>
               My "Day 2" operational mindset ensures that the systems I build are not just functional, but reliable, observable, and scalable from the start.<br/>
-            </p>
-            <p><b>Operational Edge:</p>
+            </div>
+            <div><b>Operational Edge</b>:</div>
             <ul>
               <li><b>Systems Thinking:</b> 13 years of maintaining 99%+ service availability in high-pressure, physical-world logistics environments.</li>
               <li><b>Incident Response:</b> Expert in real-time resource allocation and resolving critical bottlenecks under strict time constraints.</li>
