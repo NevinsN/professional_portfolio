@@ -22,7 +22,7 @@ function App() {
         {/* REPLACED: Using your custom Navbar component */}
         <Navbar theme={theme} toggleTheme={toggleTheme} />
 
-        <main className={`App-header ${theme}`}>
+        <main className={"App-header}"}>
           <Routes>
             <Route path="/" element={<Home theme={theme} />} />
             <Route path="/home" element={<Home theme={theme} />} />
