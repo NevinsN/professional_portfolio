@@ -14,11 +14,14 @@ const Home = ({ theme }) => {
 
       {/* Main Content Area */}
       <div className="home-content">
-        <img 
-          src={Headshot} 
-          className="home-headshot" 
-          alt="Nick Nevins Headshot" 
-        />
+        <div className="headshot-wrapper">
+          <img 
+            src={Headshot} 
+            className="home-headshot" 
+            alt="Nick Nevins Headshot" 
+          />
+        </div>
+      </div>
         
         <div className="home-bio">
           <div className="home-bio-intro">
