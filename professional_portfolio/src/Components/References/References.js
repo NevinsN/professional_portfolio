@@ -1,4 +1,5 @@
 import React from "react";
+import "./References.css";
 
 const References = ({ theme }) => {
     const contacts = [
@@ -38,21 +39,25 @@ const References = ({ theme }) => {
         <header className={`App-header ${theme}`}>
             <div className="App-header_titleSubpage">
                 <h1>Professional References</h1>
+                <p style={{fontFamily: 'var(--font-mono)', fontSize: '0.9rem', opacity: 0.8}}>
+                    // Verified nodes in my professional network
+                </p>
                 
-                <div className="project-container">
+                <div className="references-grid">
                     {contacts.map((ref, idx) => (
-                        <div key={idx} className="project-card reference-card">
+                        <div key={idx} className="reference-card">
                             <h2>{ref.name}</h2>
-                            <p className="tag" style={{ display: 'inline-block', marginBottom: '15px' }}>
-                                {ref.role}
-                            </p>
-                            <div className="project-body">
-                                <p style={{ fontFamily: 'var(--font-mono)', fontSize: '0.9rem' }}>
-                                    <strong>Phone:</strong> {ref.phone}
-                                </p>
-                                <p style={{ fontFamily: 'var(--font-mono)', fontSize: '0.9rem' }}>
-                                    <strong>Email:</strong> {ref.email}
-                                </p>
+                            <span className="ref-role">{ref.role}</span>
+                            
+                            <div className="ref-contact-info">
+                                <div className="contact-item">
+                                    <span className="contact-label">TEL:</span>
+                                    <span className="contact-value">{ref.phone}</span>
+                                </div>
+                                <div className="contact-item">
+                                    <span className="contact-label">EXT:</span>
+                                    <span className="contact-value">{ref.email}</span>
+                                </div>
                             </div>
                         </div>
                     ))}
