@@ -1,52 +1,54 @@
-import React, { useState, useEffect } from "react";
+import React, { useState } from 'react';
+import { BrowserRouter as Router, Routes, Route, Link } from 'react-router-dom';
+import Home from './components/Home/Home';
+import Projects from './components/Projects/Projects';
+import Experience from './components/Experience/Experience';
+import Skills from './components/Skills/Skills';
+import References from './components/References/References';
 import './App.css';
-import Navbar from "./Components/Navbar";
-import {
-    BrowserRouter as Router,
-    Routes,
-    Route,
-} from "react-router-dom";
-import { Navigate } from 'react-router-dom';
-import Footer from "./Components/Footer";
-import Home from "./pages/home";
-import Experience from "./pages/experience";
-import Projects from "./pages/projects";
-import References from "./pages/references";
-import Skills from "./pages/skills";
-import Capstone from "./pages/projects/capstone";
-import MysteryGame from "./pages/projects/Capstone/mysteryGame";
-import AnimalShelter from "./pages/projects/Capstone/animalShelter";
-import BinarySearchTree from "./pages/projects/Capstone/binarySearchTree";
 
 function App() {
-    const [theme, setTheme] = useState("light");
+  const [theme, setTheme] = useState('light');
 
-    useEffect(() => {
-      document.body.className = theme;
-    }, [theme]);
+  const toggleTheme = () => {
+    setTheme((prevTheme) => (prevTheme === 'light' ? 'dark' : 'light'));
+  };
 
-    const toggleTheme = () => {
-        setTheme((prevTheme) => (prevTheme === "light" ? "dark" : "light"));
-    };
-
-    return (
+  return (
     <Router>
-            <Navbar theme={theme} toggleTheme={toggleTheme}/>
-            <Routes>
-                <Route path="/home" element={<Home theme={theme} />} />
-                <Route path="/experience" element={<Experience theme={theme} />} />
-                <Route path="/projects" element={<Projects theme={theme} />} />
-                <Route path="/projects/capstone" element={<Capstone theme={theme} />} />
-                <Route path="/projects/capstone/mysteryGame" element={<MysteryGame theme={theme} />} />
-                <Route path="/projects/capstone/animalShelter" element={<AnimalShelter theme={theme} />} />
-                <Route path="/projects/capstone/binarySearchTree" element={<BinarySearchTree theme={theme} />} />
-                <Route path="/references" element={<References theme={theme} />} />
-                <Route path="/skills" element={<Skills theme={theme} />} />
-                <Route path="/" element={<Navigate replace to="/home" />} />
-            </Routes>
-            <Footer />
+      {/* The .App wrapper gets the .dark or .light class for global theming */}
+      <div className={`App ${theme}`}>
+        <nav className="Nav">
+          <div className="NavMenu">
+            <Link color="inherit" to="/">Home</Link>
+            <Link to="/projects">Projects</Link>
+            <Link to="/experience">Experience</Link>
+            <Link to="/skills">Skills</Link>
+            <Link to="/references">References</Link>
+          </div>
+          
+          <button onClick={toggleTheme} className="action-btn">
+            {theme === 'light' ? 'TERMINAL MODE' : 'BLUEPRINT MODE'}
+          </button>
+        </nav>
+
+        {/* This is the main container that holds your Blueprint/Schematic gradients */}
+        <main className={`App-header ${theme}`}>
+          <Routes>
+            <Route path="/" element={<Home theme={theme} />} />
+            <Route path="/projects" element={<Projects theme={theme} />} />
+            <Route path="/experience" element={<Experience theme={theme} />} />
+            <Route path="/skills" element={<Skills theme={theme} />} />
+            <Route path="/references" element={<References theme={theme} />} />
+          </Routes>
+        </main>
+
+        <footer className="site-footer">
+          <p>© 2024 Nicholas Nevins | SRE Portfolio</p>
+        </footer>
+      </div>
     </Router>
-    );
+  );
 }
 
 export default App;
