@@ -1,5 +1,6 @@
 import React from "react";
 import "./References.css";
+import "../Shared/Shared.css";
 
 const References = ({ theme }) => {
     const contacts = [
