@@ -2,9 +2,13 @@ import { FaBars } from "react-icons/fa";
 import { NavLink as Link } from "react-router-dom";
 import styled from "styled-components";
 
+/* NavbarElements.js - Updated Nav Styled Component */
 export const Nav = styled.nav`
-    background: #006910;
-    background-image: linear-gradient(134deg, rgba(0, 0, 0, 0.04) 0%, rgba(0, 0, 0, 0.04) 41%,rgba(188, 188, 188, 0.04) 41%, rgba(188, 188, 188, 0.04) 100%),linear-gradient(19deg, rgba(41, 41, 41, 0.04) 0%, rgba(41, 41, 41, 0.04) 46%,rgba(233, 233, 233, 0.04) 46%, rgba(233, 233, 233, 0.04) 100%),linear-gradient(65deg, rgba(24, 24, 24, 0.04) 0%, rgba(24, 24, 24, 0.04) 97%,rgba(108, 108, 108, 0.04) 97%, rgba(108, 108, 108, 0.04) 100%),linear-gradient(311deg, rgba(58, 58, 58, 0.04) 0%, rgba(58, 58, 58, 0.04) 79%,rgba(220, 220, 220, 0.04) 79%, rgba(220, 220, 220, 0.04) 100%),linear-gradient(90deg, rgb(25, 147, 13),rgb(68, 253, 105));
+    /* A sophisticated 'Architectural' Gradient */
+    background: ${props => props.theme === 'dark' 
+        ? 'linear-gradient(135deg, #0d1117 0%, #162a1d 100%)' 
+        : 'linear-gradient(135deg, #f0f9f6 0%, #d1eadd 100%)'};
+    
     height: 70px;
     display: flex;
     justify-content: flex-start;
@@ -14,7 +18,16 @@ export const Nav = styled.nav`
     top: 0;
     z-index: 1000;
     width: 100%;
+    
+    /* Add a subtle 'Grid Line' at the bottom instead of a heavy border */
+    border-bottom: 1px solid ${props => props.theme === 'dark' 
+        ? 'rgba(63, 185, 80, 0.2)' 
+        : 'rgba(0, 105, 16, 0.1)'};
+    
+    /* This adds a slight 'Glass' effect */
+    backdrop-filter: blur(10px);
 `;
+
 
 export const NavLink = styled(Link)`
     color: #ffffff;
