@@ -1,5 +1,6 @@
 import React from "react";
 import "./Skills.css";
+import "../Shared/Shared.css";
 
 const Skills = ({ theme }) => {
     const techStack = [
