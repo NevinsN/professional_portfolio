@@ -8,7 +8,7 @@ const Home = ({ theme }) => {
         <h1 style={{lineHeight: "0em"}}>
           Nicholas Nevins
         </h1>
-        <h2>Software Engineer | Cloud & Game Infrastructure
+        <h2>Infrastructure Engineer | SRE. Specializing in Kubernetes Orchestration and Distributed Systems Reliability.
         </h2>
         </div>
         <div className="content">
@@ -33,7 +33,9 @@ const Home = ({ theme }) => {
               <li><b>Academic Excellence:</b> BS in Computer Science, Magna Cum Laude.</li>
               <li><b>Operational Edge:</b> 13 years leading high-uptime logistics and resource allocation.</li>
             </ul> 
-            Magna Cum Laude Computer Science graduate and Infrastructure Engineer with 13 years of operational leadership experience. I specialize in building and scaling cloud-native game backends, currently focused on orchestrating Unreal Engine 5 dedicated servers using Go, Kubernetes, and Agones. My 'Day 2' operational mindset ensures that the systems I build are not just functional, but reliable, observable, and scalable.
+            I am an Infrastructure Engineer and SRE with a unique vantage point: 13 years of operational leadership combined with a Magna Cum Laude BS in Computer Science. While many engineers focus solely on the "build," my background in high-pressure logistics has ingrained in me a "Day 2" mindset--prioritizing what happens after code hits production. 
+            
+            Before transitioning into software, I spent over a decade managing complex resource allocation and predictive inventory systems. This wasn't just retail; it was real-world systems engineering. I maintained 99%+ service availability by reducing operational variance and automating workflows--the same principles I now apply to cloud-native infrastructure. 
 
           </p>
         </div>
