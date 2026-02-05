@@ -47,6 +47,14 @@
     object-fit: cover;
 }
 
+.light .home-headshot {
+    border-color: #ffffff;
+}
+
+.dark .home-headshot {
+    border-color: #1f2a24;
+}
+
 /* ==========================================
    BIO & TEXT AREA
    ========================================== */
