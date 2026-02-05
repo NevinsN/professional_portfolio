@@ -53,11 +53,11 @@
     border: 5px solid;
 }
 
-.light .home-headshot {
+.App.light .home-headshot {
     border-color: #ffffff;
 }
 
-.dark .home-headshot {
+.App.dark .home-headshot {
     border-color: #1f2a24;
 }
 
@@ -138,27 +138,27 @@
    ========================================== */
 
 /* Fixes the "Muddy Blue" text seen in the 2:06 PM screenshot */
-.dark .edge-list li {
+.App.dark .edge-list li {
     color: #c9d1d9 !important; /* High-contrast Off-White */
 }
 
-.dark .edge-list li strong {
+.App.dark .edge-list li strong {
     color: var(--primary-green); /* Vivid Green Headings */
 }
 
-.dark .home-bio-intro {
+.App.dark .home-bio-intro {
     color: #f0f6fc;
 }
 
 /* Subtle Card Lift for list items in Dark Mode */
-.dark .edge-list li {
+.App.dark .edge-list li {
     background: rgba(48, 54, 61, 0.15);
     padding: 15px 15px 15px 45px;
     border-radius: 8px;
     transition: background 0.3s ease;
 }
 
-.dark .edge-list li:hover {
+.App.dark .edge-list li:hover {
     background: rgba(48, 54, 61, 0.3);
 }
 
