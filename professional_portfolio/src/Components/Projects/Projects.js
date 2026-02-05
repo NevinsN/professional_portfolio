@@ -1,5 +1,7 @@
 import React from "react";
 import "./Projects.css";
+import "../Shared/Shared.css";
+
 
 const Projects = ({ theme }) => {
     return (
