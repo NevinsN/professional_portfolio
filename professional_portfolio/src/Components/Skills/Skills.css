@@ -1,52 +1,86 @@
-import React from "react";
-import "./Skills.css";
+/* THE DASHBOARD GRID */
+.skills-dashboard {
+    display: grid;
+    /* responsive grid: minimum 300px per card, expands to fill space */
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 25px;
+    width: 100%;
+    margin-top: 30px;
+    padding-bottom: 50px;
+}
 
-const Skills = ({ theme }) => {
-    const techStack = [
-        { 
-            title: "Cloud & Infrastructure", 
-            skills: ["Kubernetes", "Docker", "Terraform", "Linux Admin", "CI/CD", "OCI"] 
-        },
-        { 
-            title: "Software Engineering", 
-            skills: ["Python", "Go", "C++", "SQL", "Node.js", "React"] 
-        },
-        { 
-            title: "Systems & Networking", 
-            skills: ["TCP/UDP", "Redis", "RESTful APIs", "UE5 Networking"] 
-        },
-        { 
-            title: "Operational Leadership", 
-            skills: ["Incident Response", "Systems Thinking", "Capacity Planning", "Toil Reduction"] 
-        }
-    ];
+/* CATEGORY CARD */
+.skills-category {
+    background: var(--card-bg);
+    border: 1px solid var(--card-border);
+    border-radius: 8px;
+    padding: 25px;
+    text-align: left;
+    backdrop-filter: blur(8px);
+    display: flex;
+    flex-direction: column;
+    transition: transform 0.2s ease, border-color 0.2s ease;
+}
 
-    return (
-        <header className={`App-header ${theme}`}>
-            <div className="App-header_titleSubpage">
-                <h1>Technical Stack</h1>
-                <p style={{fontFamily: 'var(--font-mono)', fontSize: '0.9rem', opacity: 0.8}}>
-                    // System capabilities and core competencies
-                </p>
-                
-                <div className="skills-dashboard">
-                    {techStack.map((category, idx) => (
-                        <div key={idx} className="skills-category">
-                            <h3>
-                                <span style={{fontSize: '0.8rem'}}>0{idx + 1}_</span>
-                                {category.title}
-                            </h3>
-                            <ul className="skills-list">
-                                {category.skills.map((skill, sIdx) => (
-                                    <li key={sIdx} className="skill-tag">{skill}</li>
-                                ))}
-                            </ul>
-                        </div>
-                    ))}
-                </div> 
-            </div> 
-        </header>
-    );
-};
+/* Hover effect for the "Status Board" feel */
+.skills-category:hover {
+    transform: translateY(-5px);
+    border-color: var(--primary-green);
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.1);
+}
 
-export default Skills;
+/* CATEGORY TITLE (The "Sub-system" Header) */
+.skills-category h3 {
+    font-family: var(--font-mono);
+    font-size: 1.1rem;
+    color: var(--primary-green);
+    margin-bottom: 20px;
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    border-bottom: 1px solid var(--card-border);
+    padding-bottom: 12px;
+}
+
+/* The "Enumeration" number style (e.g., 01_) */
+.skills-category h3 span {
+    font-size: 0.8rem;
+    opacity: 0.6;
+    letter-spacing: 1px;
+}
+
+/* THE SKILLS LIST CONTAINER */
+.skills-list {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 10px;
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+/* Skill Tags are now handled by .tag in Shared.css, 
+   but we can add a specific wrapper style here if needed */
+.skills-list li {
+    display: inline-block;
+}
+
+/* HELPER TEXT (The // Comment) */
+.skills-intro-comment {
+    font-family: var(--font-mono);
+    font-size: 0.9rem;
+    opacity: 0.7;
+    margin-bottom: 10px;
+    color: var(--text-main);
+}
+
+/* RESPONSIVE TWEAKS */
+@media (max-width: 600px) {
+    .skills-dashboard {
+        grid-template-columns: 1fr; /* Stack cards on mobile */
+    }
+    
+    .skills-category {
+        padding: 20px;
+    }
+}
