@@ -1,1 +1,126 @@
-# placeholder
+/* TITLE SECTION */
+.App-header_title {
+    padding-top: 50px;
+    padding-left: 10%;
+    text-align: left;
+    margin-bottom: 20px;
+}
+
+.App-header_title h1 {
+    font-size: 4rem;
+    margin: 0;
+    line-height: 1.1;
+    color: var(--text-main);
+}
+
+.App-header_title h2 {
+    font-size: 1.5rem;
+    font-weight: 400;
+    opacity: 0.8;
+    color: var(--primary-green);
+    margin-top: 10px;
+}
+
+/* CONTENT WRAPPER */
+.home-content {
+    display: flex;
+    align-items: flex-start;
+    gap: 50px;
+    padding: 20px 10%;
+    text-align: left;
+}
+
+/* IMAGE STYLING */
+.home-headshot {
+    width: 200px;
+    height: 238px;
+    border: 5px solid white;
+    border-radius: 50%;
+    filter: drop-shadow(0 4px 12px rgba(0,0,0,0.15));
+    flex-shrink: 0; /* Prevents image from squishing on smaller screens */
+    object-fit: cover;
+}
+
+/* BIO TEXT AREA */
+.home-bio {
+    max-width: 850px;
+}
+
+.home-bio-intro {
+    font-size: 1.2rem;
+    line-height: 1.7;
+    margin-bottom: 30px;
+    color: var(--text-main);
+}
+
+.home-bio b, 
+.home-bio strong {
+    color: var(--primary-green);
+}
+
+/* SECTION LABELS (Operational Edge / Featured Projects) */
+.section-label {
+    display: block;
+    font-family: var(--font-mono);
+    font-size: 0.9rem;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    color: var(--primary-green);
+    margin-bottom: 15px;
+    border-bottom: 1px solid var(--card-border);
+    padding-bottom: 5px;
+    width: fit-content;
+}
+
+/* LIST STYLING */
+.edge-list {
+    list-style: none;
+    padding: 0;
+    margin-bottom: 30px;
+}
+
+.edge-list li {
+    position: relative;
+    padding-left: 30px;
+    margin-bottom: 20px;
+    line-height: 1.5;
+}
+
+/* SRE Bullet Point */
+.edge-list li::before {
+    content: ">_";
+    position: absolute;
+    left: 0;
+    color: var(--primary-green);
+    font-family: var(--font-mono);
+    font-weight: bold;
+}
+
+.edge-list li strong {
+    font-family: var(--font-heading);
+    font-size: 1.1rem;
+    display: block;
+    margin-bottom: 4px;
+}
+
+/* RESPONSIVE DESIGN */
+@media (max-width: 992px) {
+    .home-content {
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+    }
+    
+    .App-header_title {
+        text-align: center;
+        padding-left: 0;
+    }
+
+    .edge-list li {
+        text-align: left;
+    }
+    
+    .section-label {
+        margin: 0 auto 15px auto;
+    }
+}
