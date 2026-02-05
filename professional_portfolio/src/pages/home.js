@@ -8,7 +8,8 @@ const Home = ({ theme }) => {
         <h1 style={{lineHeight: "0em"}}>
           Nicholas Nevins
         </h1>
-        <h2>Infrastructure Engineer | SRE. Specializing in Kubernetes Orchestration and Distributed Systems Reliability.
+        <h2>Infrastructure Engineer | Site Reliability Engineering (SRE)
+
         </h2>
         </div>
         <div className="content">
@@ -28,15 +29,19 @@ const Home = ({ theme }) => {
               padding: "2%",
               maxWidth: "800px",
           }}>
+             
+            <p>
+              I am a Magna Cum Laude Computer Science graduate and Infrastructure Engineer with 13 years of operational leadership experience. I specialize in building and scaling cloud-native distributed systems, with a focus on orchestrating stateful workloads using Go, Kubernetes, and Terraform.
+            </p>
+            <p>
+              My "Day 2" operational mindset ensures that the systems I build are not just functional, but reliable, observable, and scalable from the start.<br/>
+            </p>
+            <p><b>Operational Edge:</p>
             <ul>
-              <li><b>Engineering Focus:</b> Cloud-native game backends (K8s/Agones).</li>
-              <li><b>Academic Excellence:</b> BS in Computer Science, Magna Cum Laude.</li>
-              <li><b>Operational Edge:</b> 13 years leading high-uptime logistics and resource allocation.</li>
-            </ul> 
-            I am an Infrastructure Engineer and SRE with a unique vantage point: 13 years of operational leadership combined with a Magna Cum Laude BS in Computer Science. While many engineers focus solely on the "build," my background in high-pressure logistics has ingrained in me a "Day 2" mindset--prioritizing what happens after code hits production. <br/>
-            
-            <br />Before transitioning into software, I spent over a decade managing complex resource allocation and predictive inventory systems. This wasn't just retail; it was real-world systems engineering. I maintained 99%+ service availability by reducing operational variance and automating workflows--the same principles I now apply to cloud-native infrastructure. 
-
+              <li><b>Systems Thinking:</b> 13 years of maintaining 99%+ service availability in high-pressure, physical-world logistics environments.</li>
+              <li><b>Incident Response:</b> Expert in real-time resource allocation and resolving critical bottlenecks under strict time constraints.</li>
+              <li><b>Toil Reduction::</b> Proven track record of developing standardized workflows to reduce operational variance and human error.</li>
+            </ul>
           </p>
         </div>
       </header>
