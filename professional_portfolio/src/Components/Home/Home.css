@@ -26,14 +26,12 @@
 /* ==========================================
    CONTENT WRAPPER
    ========================================== */
-/* Fix for the shadow cutting out */
 .home-content {
     display: flex;
     align-items: flex-start;
     gap: 50px;
-    padding: 60px 10% 20px 10%; /* Increased top padding so shadow has room */
+    padding: 20px 10%;
     text-align: left;
-    overflow: visible !important; /* Forces the browser to show the shadow outside the box */
 }
 
 /* ==========================================
@@ -42,15 +40,12 @@
 .home-headshot {
     width: 220px;
     height: 220px;
-    border: 5px solid white;
+    border: 5px solid white; /* Classic white border from your 1:40 screenshot */
     border-radius: 50%;
-    object-fit: cover;
+    filter: drop-shadow(0 10px 20px rgba(0,0,0,0.3));
     flex-shrink: 0;
-    /* Use filter for a true circular shadow that won't clip as easily as box-shadow */
-    filter: drop-shadow(0 10px 15px rgba(0, 0, 0, 0.3));
-    margin: 10px; /* Internal buffer */
+    object-fit: cover;
 }
-
 
 /* ==========================================
    BIO & TEXT AREA
