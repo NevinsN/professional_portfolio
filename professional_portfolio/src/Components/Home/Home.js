@@ -1,6 +1,7 @@
 import React from 'react';
 import Headshot from "../../Images/Headshot.jpg";
 import "./Home.css";
+import "../Shared/Shared.css";
 
 const Home = ({ theme }) => {
   return (
