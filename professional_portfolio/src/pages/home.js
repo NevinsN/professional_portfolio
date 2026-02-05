@@ -33,7 +33,7 @@ const Home = ({ theme }) => {
               <li><b>Academic Excellence:</b> BS in Computer Science, Magna Cum Laude.</li>
               <li><b>Operational Edge:</b> 13 years leading high-uptime logistics and resource allocation.</li>
             </ul> 
-            I am an Infrastructure Engineer and SRE with a unique vantage point: 13 years of operational leadership combined with a Magna Cum Laude BS in Computer Science. While many engineers focus solely on the "build," my background in high-pressure logistics has ingrained in me a "Day 2" mindset--prioritizing what happens after code hits production. 
+            I am an Infrastructure Engineer and SRE with a unique vantage point: 13 years of operational leadership combined with a Magna Cum Laude BS in Computer Science. While many engineers focus solely on the "build," my background in high-pressure logistics has ingrained in me a "Day 2" mindset--prioritizing what happens after code hits production. <br/>
             
             Before transitioning into software, I spent over a decade managing complex resource allocation and predictive inventory systems. This wasn't just retail; it was real-world systems engineering. I maintained 99%+ service availability by reducing operational variance and automating workflows--the same principles I now apply to cloud-native infrastructure. 
 
