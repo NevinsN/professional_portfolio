@@ -1,370 +1,74 @@
-/* FONT IMPORT (Make sure this is at the very top) */
-@import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;600&family=Space+Grotesk:wght@500;700&family=JetBrains+Mono&display=swap');
-
-:root {
-    --dark-text: #0A192F;
-    --primary-green: #119605;
-    /* Define font variables for easy reuse */
-    --font-heading: 'Space Grotesk', sans-serif;
-    --font-body: 'Inter', sans-serif;
-    --font-mono: 'JetBrains Mono', monospace;
-}
-
-#root {
-    display: flex;
-    flex-direction: column;
-    min-height: 100vh;
-}
-
-html, body {
-    overflow-x: hidden;
-    width: 100%;
-    position: relative;
-}
-
-.App {
-  text-align: center;
-}
-
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
-}
-
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
-}
-
-.App-header {
-    flex: 1 0 auto;
-    padding-bottom: 60px;
-}
-
-/* LIGHT MODE (The "Whimsical Tech" Look) */
-.App-header.light {
-  font-family: var(--font-body); /* Standardize body text */
-  background-color: white;
-  background-image: radial-gradient(circle at 77% 66%, rgba(41,180,35, 0.18) 0%, rgba(41,180,35, 0.18) 9%,transparent 9%, transparent 43%,transparent 43%, transparent 100%),radial-gradient(circle at 6% 56%, rgba(41,180,35, 0.18) 0%, rgba(41,180,35, 0.18) 20%,transparent 20%, transparent 56%,transparent 56%, transparent 100%),radial-gradient(circle at 48% 45%, rgba(41,180,35, 0.18) 0%, rgba(41,180,35, 0.18) 15%,transparent 15%, transparent 85%,transparent 85%, transparent 100%),radial-gradient(circle at 89% 6%, rgba(41,180,35, 0.18) 0%, rgba(41,180,35, 0.18) 5%,transparent 5%, transparent 32%,transparent 32%, transparent 100%),radial-gradient(circle at 71% 38%, rgba(41,180,35, 0.18) 0%, rgba(41,180,35, 0.18) 14%,transparent 14%, transparent 21%,transparent 21%, transparent 100%),radial-gradient(circle at 84% 78%, rgba(41,180,35, 0.18) 0%, rgba(41,180,35, 0.18) 11%,transparent 11%, transparent 85%,transparent 85%, transparent 100%),radial-gradient(circle at 92% 72%, rgba(41,180,35, 0.18) 0%, rgba(41,180,35, 0.18) 42%,transparent 42%, transparent 51%,transparent 51%, transparent 100%),radial-gradient(circle at 73% 95%, rgba(41,180,35, 0.18) 0%, rgba(41,180,35, 0.18) 48%,transparent 48%, transparent 63%,transparent 63%, transparent 100%),radial-gradient(circle at 29% 29%, rgba(41,180,35, 0.18) 0%, rgba(41,180,35, 0.18) 24%,transparent 24%, transparent 73%,transparent 73%, transparent 100%),linear-gradient(90deg, rgb(154,242,154),rgb(154,242,154));
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: var(--dark-text);
-  flex: 1 0 auto;
-}
-
-/* 3. TARGET THE HEADINGS SPECIFICALLY */
-.App-header.light h1,
-.App-header.light h2, 
-.App-header.light .App-header_title h2 {
-  font-family: var(--font-heading);
-  font-weight: 700;
-  letter-spacing: -0.02em;
-}
-
-/* DARK MODE (The "Serious Engineer" Look) */
-.App-header.dark {
-  /* Swapping from Times New Roman to a modern dark-mode feel */
-  font-family: var(--font-body); 
-  background-color: #000000;
-  background-image: radial-gradient(circle at 57% 36%, hsla(263,0%,78%,0.04) 0%, hsla(263,0%,78%,0.04) 10%,transparent 10%, transparent 100%),radial-gradient(circle at 22% 61%, hsla(263,0%,78%,0.04) 0%, hsla(263,0%,78%,0.04) 36%,transparent 36%, transparent 100%),radial-gradient(circle at 68% 97%, hsla(263,0%,78%,0.04) 0%, hsla(263,0%,78%,0.04) 41%,transparent 41%, transparent 100%),radial-gradient(circle at 57% 89%, hsla(263,0%,78%,0.04) 0%, hsla(263,0%,78%,0.04) 30%,transparent 30%, transparent 100%),radial-gradient(circle at 39% 80%, hsla(263,0%,78%,0.04) 0%, hsla(263,0%,78%,0.04) 22%,transparent 22%, transparent 100%),radial-gradient(circle at 88% 71%, hsla(263,0%,78%,0.04) 0%, hsla(263,0%,78%,0.04) 30%,transparent 30%, transparent 100%),linear-gradient(0deg, rgb(0,0,0),rgb(0,0,0));
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
-  flex: 1 0 auto;
-}
-
-.App-header.dark h1,
-.App-header.dark h2, 
-.App-header.dark h3 {
-  font-family: var(--font-heading);
-  color: #FFFFFF;
-}
-
-/* MAKE THE BUTTONS AND TAGS LOOK LIKE CODE */
-button {
-  font-family: var(--font-mono); /* This makes buttons feel "Technical" */
-  background-color: var(--primary-green);
-  border: 1px solid #0b6b02;
-  font-weight: 600;
-  text-transform: uppercase; /* Professional touch */
-  letter-spacing: 0.05em;
-  padding: 8px 20px;
-  cursor: pointer;
-  border-radius: 4px; /* Slightly sharper for a serious look */
-  color: white;
-}
-
-.App-header_title {
-  display: flex;
-  flex-direction: column;
-  align-items: start;
-  margin-left: 10%;
-}
-
-.App-header_titleSubpage {
-  display: flex;
-  flex-direction: column;
-  align-items: start;
-  margin-left: 10%;
-}
-
-.App-header_content {
-  display: flex;
-  align-items: start;
-  margin-left: 10%;
-  flex-direction: column;
-}
-
-.content {
-  display: flex;
-  flex-wrap: row wrap;
-  margin-inline-start: 10%;
-  font-family: var(--font-body);
-}
-
-.contentItem {
-  flex: "1";
-}
-
-.App-link {
-  color: #61dafb;
-}
-
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
-}
-
-.Bars {
-  display: none;
-}
-
+/* NAVIGATION & LAYOUT */
 .Nav {
-  display: flex;
-  justify-content: space-between; /* Pushes name to left, links to right */
-  align-items: center;
-  padding: 0.5rem 10%;
-  height: 80px;
-  z-index: 10;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0 10%;
+    height: var(--nav-height);
+    position: relative;
+    z-index: 100;
 }
 
 .NavMenu {
-  display: flex;
-  align-items: center;
-  list-style: none;
+    display: flex;
+    list-style: none;
 }
 
 .NavMenu a {
-  padding: 0 1.5rem;
-  color: var(--dark-text); 
-  text-decoration: none;
-  font-family: var(--font-mono);
-  font-size: 1.1rem;
-  font-weight: 500;
+    padding: 0 1.5rem;
+    color: var(--text-main);
+    text-decoration: none;
+    font-family: var(--font-mono);
+    font-weight: 500;
+}
+
+/* THE BLUEPRINT HEADER WRAPPER */
+.App-header {
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+    padding-bottom: 60px;
+}
+
+/* LIGHT BLUEPRINT GRADIENT */
+.App-header.light {
+    background-image: 
+        linear-gradient(135deg, rgba(49, 49, 49,0.07) 0%, rgba(49, 49, 49,0.07) 12.5%, rgba(76, 76, 76,0.07) 12.5%, rgba(76, 76, 76,0.07) 25%, rgba(102, 102, 102,0.07) 25%, rgba(102, 102, 102,0.07) 37.5%, rgba(129, 129, 129,0.07) 37.5%, rgba(129, 129, 129,0.07) 50%, rgba(155, 155, 155,0.07) 50%, rgba(155, 155, 155,0.07) 62.5%, rgba(182, 182, 182,0.07) 62.5%, rgba(182, 182, 182,0.07) 75%, rgba(208, 208, 208,0.07) 75%, rgba(208, 208, 208,0.07) 87.5%, rgba(235, 235, 235,0.07) 87.5%, rgba(235, 235, 235,0.07) 100%),
+        linear-gradient(45deg, rgba(5, 5, 5,0.07) 0%, rgba(5, 5, 5,0.07) 12.5%, rgba(39, 39, 39,0.07) 12.5%, rgba(39, 39, 39,0.07) 25%, rgba(73, 73, 73,0.07) 25%, rgba(73, 73, 73,0.07) 37.5%, rgba(107, 107, 107,0.07) 37.5%, rgba(107, 107, 107,0.07) 50%, rgba(141, 141, 141,0.07) 50%, rgba(141, 141, 141,0.07) 62.5%, rgba(175, 175, 175,0.07) 62.5%, rgba(175, 175, 175,0.07) 75%, rgba(209, 209, 209,0.07) 75%, rgba(209, 209, 209,0.07) 87.5%, rgba(243, 243, 243,0.07) 87.5%, rgba(243, 243, 243,0.07) 100%),
+        linear-gradient(90deg, var(--bg-main), var(--bg-main));
+}
+
+/* DARK SCHEMATIC GRADIENT */
+.App-header.dark {
+    background-image: 
+        linear-gradient(135deg, rgba(244, 244, 244,0.07) 0%, rgba(244, 244, 244,0.07) 12.5%, rgba(211, 211, 211,0.07) 12.5%, rgba(211, 211, 211,0.07) 25%, rgba(178, 178, 178,0.07) 25%, rgba(178, 178, 178,0.07) 37.5%, rgba(145, 145, 145,0.07) 37.5%, rgba(145, 145, 145,0.07) 50%, rgba(113, 113, 113,0.07) 50%, rgba(113, 113, 113,0.07) 62.5%, rgba(80, 80, 80,0.07) 62.5%, rgba(80, 80, 80,0.07) 75%, rgba(47, 47, 47,0.07) 75%, rgba(47, 47, 47,0.07) 87.5%, rgba(14,14,14, 0.1) 87.5%, rgba(14,14,14, 0.1) 100%),
+        linear-gradient(45deg, rgba(236, 236, 236,0.07) 0%, rgba(236, 236, 236,0.07) 12.5%, rgba(210, 210, 210,0.07) 12.5%, rgba(210, 210, 210,0.07) 25%, rgba(183, 183, 183,0.07) 25%, rgba(183, 183, 183,0.07) 37.5%, rgba(157, 157, 157,0.07) 37.5%, rgba(157, 157, 157,0.07) 50%, rgba(130, 130, 130,0.07) 50%, rgba(130, 130, 130,0.07) 62.5%, rgba(104, 104, 104,0.07) 62.5%, rgba(104, 104, 104,0.07) 75%, rgba(77, 77, 77,0.07) 75%, rgba(77, 77, 77,0.07) 87.5%, rgba(51, 51, 51,0.07) 87.5%, rgba(51, 51, 51,0.07) 100%),
+        linear-gradient(90deg, var(--bg-main), var(--bg-main));
+}
+
+/* SHARED SITE FOOTER */
+.site-footer {
+    padding: 1.5rem 0;
+    background-color: #000;
+    color: #fff;
+    border-top: 1px solid var(--primary-green);
+    text-align: center;
+}
+
+/* MOBILE BARS */
+.Bars {
+    display: none;
 }
 
 @media (max-width: 768px) {
-  .App-header_title, 
-  .App-header_titleSubpage, 
-  .App-header_content {
-    margin-left: 0;     
-    align-items: center;
-    text-align: center; 
-    width: 100%;
-  }
-  .Bars {
-    display: block;
-    position: absolute;
-    top: 25px;
-    left: 20px; /* Moved to left side */
-    font-size: 1.8rem;
-    cursor: pointer;
-    color: var(--dark-text); /* Use dark text so it shows on green */
-    z-index: 20;
-  }
-  .NavMenu {
-    flex-direction: column;
-    width: 250px;           /* Professional drawer width */
-    height: auto;
-    position: absolute;
-    top: 70px;              /* Sits under the header */
-    left: 10px;             /* Drops down on the left */
-    
-    /* Animation Logic */
-    transform: translateY(-20px); 
-    opacity: 0; 
-    pointer-events: none;
-    
-    transition: all 0.3s ease-out;
-    background: #1A1A1A;    /* Dark 'Serious' background */
-    border: 1px solid var(--primary-green);
-    border-radius: 8px;
-    z-index: 10;
-  }
-  .NavMenu.active {
-    transform: translateY(0);
-    opacity: 1;
-    pointer-events: auto;
-  }
-  .NavMenu a {
-    color: white; /* Contrast for the dark popup */
-    padding: 15px 20px;
-    width: 100%;
-    text-align: left;
-    border-bottom: 1px solid #333;
-  }
-  .NavMenu a:hover {
-    background-color: #0b6b02; /* Highlight link with your brand green */
-  }
-  .NavBtn {
-    display: none;
-  }
-  .content {
-    flex-direction: column;
-    align-items: center;
-    margin-inline-start: 0;
-    padding: 0 20px;
-    text-align: center;
-    box-sizing: border-box;
-    width: 100%;
-  }
-  .contentItem {
-    width: 100%;
-  }
-}
-
-.project-container {
-    display: flex;
-    flex-wrap: wrap; /* This allows cards to move to the next line */
-    gap: 20px;
-    justify-content: flex-start; /* Keeps them aligned with your left-side header */
-}
-
-.project-card {
-    flex: 1 1 350px; /* Allows cards to grow but stay at least 350px wide */
-    max-width: 500px;
-}
-
-
-.project-card {
-    background: rgba(255, 255, 255, 0.05); /* Subtle contrast */
-    border-left: 4px solid var(--primary-green); /* Visual 'Engineering' accent */
-    padding: 20px;
-    max-width: 600px;
-    text-align: left;
-    border-radius: 4px;
-}
-
-.project-link {
-    color: var(--primary-green);
-    text-decoration: none;
-}
-
-.tech-stack {
-    margin: 10px 0;
-}
-
-.tag {
-    background: var(--primary-green);
-    color: white;
-    padding: 2px 8px;
-    border-radius: 4px;
-    font-family: var(--font-mono);
-    font-size: 0.8rem;
-    margin-right: 10px;
-}
-
-.project-body p {
-    font-size: 1rem;
-    line-height: 1.5;
-    margin-bottom: 10px;
-}
-
-.project-meta {
-    font-size: 0.9rem;
-    opacity: 0.8;
-    border-top: 1px solid rgba(255,255,255,0.1);
-    padding-top: 10px;
-}
-
-.site-footer {
-    padding: 1.5rem 0; /* Reduced from 2rem or 30px */
-    background-color: #000;
-    color: #fff;
-    border-top: 1px solid #0b8a02;
-}
-
-.footer-content {
-    display: flex;
-    flex-direction: column;
-    gap: 10px; /* Tightens the vertical space between blocks */
-}
-
-.footer-socials {
-    display: flex;
-    justify-content: center;
-    gap: 40px; /* Keeps horizontal space wide but vertical gap small */
-    font-size: 1.6rem;
-}
-
-.footer-branding p {
-    margin: 2px 0; /* Forces the lines closer together */
-    font-size: 0.85rem;
-}
-
-.ops-icons {
-    display: flex;
-    justify-content: center;
-    gap: 20px;
-    font-size: 1.1rem; /* Slightly smaller to distinguish from socials */
-    margin-top: 4px;
-}
-
-..skills-container {
-    background: transparent !important; /* This is the key */
-    color: #000;
-    padding: 40px 20px;
-    min-height: 100vh;
-    text-align: center;
-}
-
-/* Style the Category Headers */
-.skills-category h3 {
-    color: #054d01; /* Darker green for readability on the light green bg */
-    border-bottom: 2px solid rgba(5, 77, 1, 0.2);
-    display: inline-block;
-    padding-bottom: 5px;
-    margin-top: 30px;
-}
-
-/* Transform the floating text into "Pills" */
-.skills-list {
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: center;
-    gap: 12px;
-    list-style: none;
-    padding: 20px 0;
-}
-
-.skill-tag {
-    background: rgba(255, 255, 255, 0.9); /* White pills to pop against the green */
-    color: #054d01;
-    border: 1px solid #054d01;
-    padding: 8px 16px;
-    border-radius: 25px;
-    font-weight: bold;
-    font-size: 0.9rem;
-    box-shadow: 2px 2px 5px rgba(0,0,0,0.1);
+    .Bars {
+        display: block;
+        position: absolute;
+        top: 25px;
+        left: 20px;
+        font-size: 1.8rem;
+        cursor: pointer;
+        z-index: 200;
+        color: var(--text-main);
+    }
 }
