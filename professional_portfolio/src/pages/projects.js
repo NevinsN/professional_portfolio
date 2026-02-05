@@ -85,7 +85,7 @@ const Projects = ({ theme }) => {
                             <div className="tech-stack">
                                 <span className="tag">React</span>
                                 <span className="tag">Styled Components</span>
-                                <span className="tag">Netlify CI/CD</span>
+                                <span className="tag">Netlify CI/CD serviced by GitHub Actions</span>
                             </div>
                         </div>
                         <div className="project-body">
