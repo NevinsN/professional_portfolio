@@ -37,14 +37,20 @@
 /* ==========================================
    IMAGE STYLING
    ========================================== */
-.home-headshot {
+.headshot-wrapper {
     width: 220px;
     height: 220px;
-    border: 5px solid white; /* Classic white border from your 1:40 screenshot */
     border-radius: 50%;
-    filter: drop-shadow(0 10px 20px rgba(0,0,0,0.3));
-    flex-shrink: 0;
+    box-shadow: 0 10px 20px rgba(0,0,0,0.25);
+    overflow: hidden;
+}
+
+.home-headshot {
+    width: 100%;
+    height: 100%;
     object-fit: cover;
+    border-radius: 50%;
+    border: 5px solid;
 }
 
 .light .home-headshot {
