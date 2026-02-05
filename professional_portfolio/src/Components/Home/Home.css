@@ -26,12 +26,14 @@
 /* ==========================================
    CONTENT WRAPPER
    ========================================== */
+/* Fix for the shadow cutting out */
 .home-content {
     display: flex;
     align-items: flex-start;
     gap: 50px;
-    padding: 20px 10%;
+    padding: 60px 10% 20px 10%; /* Increased top padding so shadow has room */
     text-align: left;
+    overflow: visible !important; /* Forces the browser to show the shadow outside the box */
 }
 
 /* ==========================================
@@ -43,15 +45,10 @@
     border: 5px solid white;
     border-radius: 50%;
     object-fit: cover;
-    
-    /* 1. Use filter instead of box-shadow for cleaner circles */
-    filter: drop-shadow(0 10px 15px rgba(0, 0, 0, 0.3));
-    
-    /* 2. Add margin so the shadow has space to sit without hitting the wall */
-    margin: 15px; 
-    
-    /* 3. Ensure it doesn't squish */
     flex-shrink: 0;
+    /* Use filter for a true circular shadow that won't clip as easily as box-shadow */
+    filter: drop-shadow(0 10px 15px rgba(0, 0, 0, 0.3));
+    margin: 10px; /* Internal buffer */
 }
 
 
