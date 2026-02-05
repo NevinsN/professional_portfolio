@@ -1,4 +1,6 @@
-/* TITLE SECTION */
+/* ==========================================
+   TITLE SECTION
+   ========================================== */
 .App-header_title {
     padding-top: 50px;
     padding-left: 10%;
@@ -16,12 +18,14 @@
 .App-header_title h2 {
     font-size: 1.5rem;
     font-weight: 400;
-    opacity: 0.8;
+    opacity: 0.9;
     color: var(--primary-green);
     margin-top: 10px;
 }
 
-/* CONTENT WRAPPER */
+/* ==========================================
+   CONTENT WRAPPER
+   ========================================== */
 .home-content {
     display: flex;
     align-items: flex-start;
@@ -30,18 +34,22 @@
     text-align: left;
 }
 
-/* IMAGE STYLING */
+/* ==========================================
+   IMAGE STYLING
+   ========================================== */
 .home-headshot {
-    width: 200px;
-    height: 238px;
-    border: 5px solid white;
+    width: 220px;
+    height: 220px;
+    border: 5px solid white; /* Classic white border from your 1:40 screenshot */
     border-radius: 50%;
-    filter: drop-shadow(0 4px 12px rgba(0,0,0,0.15));
-    flex-shrink: 0; /* Prevents image from squishing on smaller screens */
+    filter: drop-shadow(0 10px 20px rgba(0,0,0,0.3));
+    flex-shrink: 0;
     object-fit: cover;
 }
 
-/* BIO TEXT AREA */
+/* ==========================================
+   BIO & TEXT AREA
+   ========================================== */
 .home-bio {
     max-width: 850px;
 }
@@ -56,9 +64,12 @@
 .home-bio b, 
 .home-bio strong {
     color: var(--primary-green);
+    font-weight: 700;
 }
 
-/* SECTION LABELS (Operational Edge / Featured Projects) */
+/* ==========================================
+   SECTION LABELS
+   ========================================== */
 .section-label {
     display: block;
     font-family: var(--font-mono);
@@ -66,13 +77,16 @@
     text-transform: uppercase;
     letter-spacing: 2px;
     color: var(--primary-green);
-    margin-bottom: 15px;
+    margin-bottom: 25px;
+    margin-top: 15px;
     border-bottom: 1px solid var(--card-border);
     padding-bottom: 5px;
     width: fit-content;
 }
 
-/* LIST STYLING */
+/* ==========================================
+   OPERATIONAL EDGE LIST STYLING
+   ========================================== */
 .edge-list {
     list-style: none;
     padding: 0;
@@ -81,12 +95,13 @@
 
 .edge-list li {
     position: relative;
-    padding-left: 30px;
-    margin-bottom: 20px;
-    line-height: 1.5;
+    padding-left: 40px;
+    margin-bottom: 30px;
+    line-height: 1.6;
+    color: #444; /* Default for Light Mode */
 }
 
-/* SRE Bullet Point */
+/* SRE Terminal Bullet Point */
 .edge-list li::before {
     content: ">_";
     position: absolute;
@@ -94,21 +109,54 @@
     color: var(--primary-green);
     font-family: var(--font-mono);
     font-weight: bold;
+    font-size: 1.2rem;
 }
 
 .edge-list li strong {
-    font-family: var(--font-heading);
-    font-size: 1.1rem;
+    font-size: 1.3rem;
     display: block;
-    margin-bottom: 4px;
+    margin-bottom: 6px;
+    color: #1a2c23; /* Grounding color for Light Mode */
 }
 
-/* RESPONSIVE DESIGN */
+/* ==========================================
+   DARK MODE OVERRIDES (The Contrast Fix)
+   ========================================== */
+
+/* Fixes the "Muddy Blue" text seen in the 2:06 PM screenshot */
+.dark .edge-list li {
+    color: #c9d1d9 !important; /* High-contrast Off-White */
+}
+
+.dark .edge-list li strong {
+    color: var(--primary-green); /* Vivid Green Headings */
+}
+
+.dark .home-bio-intro {
+    color: #f0f6fc;
+}
+
+/* Subtle Card Lift for list items in Dark Mode */
+.dark .edge-list li {
+    background: rgba(48, 54, 61, 0.15);
+    padding: 15px 15px 15px 45px;
+    border-radius: 8px;
+    transition: background 0.3s ease;
+}
+
+.dark .edge-list li:hover {
+    background: rgba(48, 54, 61, 0.3);
+}
+
+/* ==========================================
+   RESPONSIVE DESIGN
+   ========================================== */
 @media (max-width: 992px) {
     .home-content {
         flex-direction: column;
         align-items: center;
         text-align: center;
+        padding: 20px 5%;
     }
     
     .App-header_title {
@@ -121,6 +169,11 @@
     }
     
     .section-label {
-        margin: 0 auto 15px auto;
+        margin: 0 auto 25px auto;
+    }
+
+    .home-headshot {
+        width: 180px;
+        height: 180px;
     }
 }
