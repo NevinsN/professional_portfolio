@@ -59,11 +59,17 @@
 .App.light {
     --bg-main: #f5f7f6;
     --text-primary: #1b1b1b;
+    --page-bg: #eef7f1;
+    --text-main: #444;
+    --text-strong: #1a2c23;
 }
 
 .App.dark {
     --bg-main: #0f1a16;
     --text-primary: #e6e6e6;
+    --page-bg: #0e1512;
+    --text-main: #d6e0db;
+    --text-strong: #ffffff;
 }
 
 
