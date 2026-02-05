@@ -34,6 +34,11 @@
     text-align: left;
 }
 
+.home-page {
+    min-height: 100vh;
+    background: var(--page-bg);
+}
+
 /* ==========================================
    IMAGE STYLING
    ========================================== */
@@ -111,7 +116,7 @@
     padding-left: 40px;
     margin-bottom: 30px;
     line-height: 1.6;
-    color: #444; /* Default for Light Mode */
+    color: var(--text-main);
 }
 
 /* SRE Terminal Bullet Point */
@@ -129,7 +134,7 @@
     font-size: 1.3rem;
     display: block;
     margin-bottom: 6px;
-    color: #1a2c23; /* Grounding color for Light Mode */
+    color: var(--text-strong);
 }
 
 
