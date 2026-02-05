@@ -1,1 +1,71 @@
-# placeholder
+/* CONTAINER */
+.references-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 20px;
+    width: 100%;
+    margin-top: 30px;
+}
+
+/* REFERENCE CARD */
+.reference-card {
+    background: var(--card-bg);
+    border: 1px solid var(--card-border);
+    border-radius: 8px;
+    padding: 25px;
+    text-align: left;
+    backdrop-filter: blur(8px);
+    display: flex;
+    flex-direction: column;
+    transition: transform 0.2s ease;
+}
+
+.reference-card:hover {
+    border-color: var(--primary-green);
+    transform: translateY(-3px);
+}
+
+.reference-card h2 {
+    font-size: 1.3rem;
+    margin-bottom: 5px;
+    color: var(--text-main);
+}
+
+/* THE ROLE TAG */
+.ref-role {
+    display: inline-block;
+    color: var(--primary-green);
+    font-family: var(--font-mono);
+    font-size: 0.8rem;
+    font-weight: 600;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    margin-bottom: 20px;
+}
+
+/* CONTACT INFO SECTION */
+.ref-contact-info {
+    border-top: 1px solid var(--card-border);
+    padding-top: 15px;
+    margin-top: auto; /* Pushes contact info to the bottom of the card */
+}
+
+.contact-item {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    margin-bottom: 8px;
+    font-family: var(--font-mono);
+    font-size: 0.85rem;
+}
+
+.contact-label {
+    color: var(--primary-green);
+    font-weight: bold;
+    min-width: 55px;
+}
+
+.contact-value {
+    color: var(--text-main);
+    opacity: 0.9;
+}
