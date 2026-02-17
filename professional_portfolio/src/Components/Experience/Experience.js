@@ -2,9 +2,9 @@ import React from "react";
 import "./Experience.css";
 import "../Shared/Shared.css";
 
-const Experience = ({ theme }) => {
+const Experience = () => {
     return (
-        <header className={`App-header ${theme}`}>
+        <header className={`App-header`}>
             <div className="App-header_titleSubpage">
                 <h1>Experience</h1>
                 
