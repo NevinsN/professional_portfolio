@@ -22,7 +22,7 @@ const Home = () => {
         
         <div className="home-bio">
           <div className="home-bio-intro">
-            Magna Cum Laude Computer Science graduate and Software Engineer with 13 years of operational leadership experience. I specialize in building high-integrity, scalable applications with a focus on ownership and 'Day 2' maintainability. Having managed mission-critical infrastructure in high-pressure logistics environments, I bring a unique perspective to software developmentâviewing every line of code as a commitment to system reliability and user trust. I am driven by the challenge of solving complex architectural problems and a desire to build software that has a meaningful, real-world impact on global healthcare.
+            Magna Cum Laude Computer Science graduate and Software Engineer with 13 years of operational leadership experience. I specialize in building high-integrity, scalable applications with a focus on ownership and 'Day 2' maintainability. Having managed mission-critical infrastructure in high-pressure logistics environments, I bring a unique perspective to software development; viewing every line of code as a commitment to system reliability and user trust. I am driven by the challenge of solving complex architectural problems and a desire to build software that has a meaningful, real-world impact on global healthcare.
           </div>
 
           {/* Featured Projects Section */}
@@ -50,7 +50,7 @@ const Home = () => {
             </li>
             <li>
               <strong>Architectural Resilience:</strong> 
-              Designing software with a "Day 2" mindsetâensuring code is maintainable, testable, and reliable from the first commit.
+              Designing software with a "Day 2" mindset, ensuring code is maintainable, testable, and reliable from the first commit.
             </li>
           </ul>
         </div>
