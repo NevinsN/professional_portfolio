@@ -1,5 +1,5 @@
 import React from 'react';
-import Headshot from "../Images/Headshot.jpg";
+import Headshot from "../../Images/Headshot.jpg";
 import './Home.css'; // Move your styles here!
 
 const Home = ({ theme }) => {
