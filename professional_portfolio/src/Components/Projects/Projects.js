@@ -3,9 +3,9 @@ import "./Projects.css";
 import "../Shared/Shared.css";
 
 
-const Projects = ({ theme }) => {
+const Projects = () => {
     return (
-        <header className={`App-header ${theme}`}>
+        <header className={`App-header`}>
             <div className="App-header_titleSubpage">
                 <h1>Projects</h1>
                 
