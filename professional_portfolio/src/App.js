@@ -18,23 +18,21 @@ function App() {
 
   return (
     <Router>
-      <div className={`App ${theme}`}>
-        {/* REPLACED: Using your custom Navbar component */}
-        <Navbar theme={theme} toggleTheme={toggleTheme} />
-
-        <main className={"App-header}"}>
+    <div className={`App ${theme}`}>
+      <Navbar toggleTheme={toggleTheme} />
+      <main>
           <Routes>
-            <Route path="/" element={<Home theme={theme} />} />
-            <Route path="/home" element={<Home theme={theme} />} />
-            <Route path="/projects" element={<Projects theme={theme} />} />
-            <Route path="/experience" element={<Experience theme={theme} />} />
-            <Route path="/skills" element={<Skills theme={theme} />} />
-            <Route path="/references" element={<References theme={theme} />} />
+            <Route path="/" element={<Home />} />
+            <Route path="/home" element={<Home />} />
+            <Route path="/projects" element={<Projects />} />
+            <Route path="/experience" element={<Experience />} />
+            <Route path="/skills" element={<Skills />} />
+            <Route path="/references" element={<References />} />
           </Routes>
-        </main>
+      </main>
 
-        <Footer />
-      </div>
+      <Footer />
+    </div>
     </Router>
   );
 }
