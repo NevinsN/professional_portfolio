@@ -2,7 +2,7 @@ import React from "react";
 import "./Skills.css";
 import "../Shared/Shared.css";
 
-const Skills = ({ theme }) => {
+const Skills = () => {
     const techStack = [
         { title: "Cloud & Infrastructure", skills: ["Kubernetes", "Docker", "Terraform", "Linux Admin", "CI/CD", "OCI"] },
         { title: "Software Engineering", skills: ["Python", "Go", "C++", "SQL", "Node.js", "React"] },
