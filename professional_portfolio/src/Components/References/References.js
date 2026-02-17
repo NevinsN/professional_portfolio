@@ -2,7 +2,7 @@ import React from "react";
 import "./References.css";
 import "../Shared/Shared.css";
 
-const References = ({ theme }) => {
+const References = () => {
     const contacts = [
         { name: "Will Holt", role: "Zone Manager", phone: "208-800-9112", email: "wholt@talkingrain.com" },
         { name: "Israel (Izzy) Ayola", role: "Manager", phone: "208-880-4996", email: "iayola@talkingrain.com" },
