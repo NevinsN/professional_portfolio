@@ -1,3 +1,40 @@
+/* THEME VARIABLES */
+
+.App.light {
+    --bg-main: #f5f7f6;
+    --text-primary: #1b1b1b;
+    --page-bg: #eef7f1;
+    --text-main: #444;
+    --text-strong: #1a2c23;
+    --border-color: rgba(0,0,0,0.1);
+    --card-bg: rgba(255,255,255,0.7);
+    --card-border: rgba(0,0,0,0.1);
+    --primary-green: #2ea043;
+    --headshot-border: #1f2a24;
+    --card-shadow: 0 10px 20px rgba(0,0,0,0.1);
+}
+
+.App.dark {
+    --bg-main: #0f1a16;
+    --text-primary: #e6e6e6;
+    --page-bg: #0e1512;
+    --text-main: #d6e0db;
+    --text-strong: #ffffff;
+    --border-color: rgba(255,255,255,0.1);
+    --card-bg: rgba(22,27,34,0.6);
+    --card-border: rgba(255,255,255,0.1);
+    --primary-green: #2ea043;
+    --headshot-border: #ffffff;
+    --card-shadow: 0 10px 20px rgba(0,0,0,0.6);
+}
+
+.App {
+  min-height: 100vh;
+  background-color: var(--bg-main);
+  color: var(--text-main);
+}
+
+
 /* NAVIGATION & LAYOUT */
 .Nav {
     display: flex;
@@ -22,6 +59,11 @@
     font-weight: 500;
 }
 
+.NavMenu a:hover {
+  color: var(--text-strong);
+}
+
+
 /* THE BLUEPRINT HEADER WRAPPER */
 .App-header {
     min-height: 100vh;
@@ -30,13 +72,14 @@
     padding-bottom: 60px;
 }
 
-.App-header.light {
+.App.light .App-header
+ {
     background-image: 
         linear-gradient(135deg, rgba(255, 255, 255, 0.1) 0%, rgba(255, 255, 255, 0.1) 12.5%, rgba(0, 0, 0, 0.02) 12.5%, rgba(0, 0, 0, 0.02) 25%, rgba(255, 255, 255, 0.1) 25%, rgba(255, 255, 255, 0.1) 37.5%, rgba(0, 0, 0, 0.02) 37.5%, rgba(0, 0, 0, 0.02) 50%, rgba(255, 255, 255, 0.1) 50%, rgba(255, 255, 255, 0.1) 62.5%, rgba(0, 0, 0, 0.02) 62.5%, rgba(0, 0, 0, 0.02) 75%, rgba(255, 255, 255, 0.1) 75%, rgba(255, 255, 255, 0.1) 87.5%, rgba(0, 0, 0, 0.02) 87.5%, rgba(0, 0, 0, 0.02) 100%),
         linear-gradient(45deg, rgba(255, 255, 255, 0.05) 0%, rgba(255, 255, 255, 0.05) 100%),
         linear-gradient(90deg, #e8f5ed, #d1eadd); 
 
-    background-color: #e8f5ed;
+    background-color: var(--bg-main);
 }
 
 
@@ -53,34 +96,9 @@
         linear-gradient(45deg, rgba(0, 0, 0, 0.1) 0%, rgba(0, 0, 0, 0.1) 100%),
         linear-gradient(90deg, #0d1117, #162a1d);
 
-    background-color: #0d1117;
+    background-color: var(--bg-main);
 }
 
-.App.light {
-    --bg-main: #f5f7f6;
-    --text-primary: #1b1b1b;
-    --page-bg: #eef7f1;
-    --text-main: #444;
-    --text-strong: #1a2c23;
-}
-
-.App.dark {
-    --bg-main: #0f1a16;
-    --text-primary: #e6e6e6;
-    --page-bg: #0e1512;
-    --text-main: #d6e0db;
-    --text-strong: #ffffff;
-}
-
-
-/* SHARED SITE FOOTER */
-.site-footer {
-    padding: 1.5rem 0;
-    background-color: #000;
-    color: #fff;
-    border-top: 1px solid var(--primary-green);
-    text-align: center;
-}
 
 /* MOBILE BARS */
 .Bars {

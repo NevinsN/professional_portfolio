@@ -26,7 +26,7 @@
 .skills-category:hover {
     transform: translateY(-5px);
     border-color: var(--primary-green);
-    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.1);
+    box-shadow: var(--card-shadow);
 }
 
 /* CATEGORY TITLE (The "Sub-system" Header) */

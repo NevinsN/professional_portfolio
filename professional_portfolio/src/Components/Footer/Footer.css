@@ -1,16 +1,15 @@
 .site-footer {
     width: 100%;
     padding: 3rem 0;
-    background-color: #0d1117; 
-    border-top: 1px solid #30363d;
+    background-color: var(--page-bg);
+    border-top: 1px solid var(--card-border);
     margin-top: auto;
 }
 
 .footer-content p {
     font-family: var(--font-mono);
     font-size: 0.85rem;
-    /* White text for the copyright */
-    color: #ffffff; 
+    color: var(--text-main);
     margin-bottom: 15px;
     letter-spacing: 0.5px;
 }
