@@ -41,42 +41,20 @@ const Navbar = ({ theme, toggleTheme }) => {
 
     return (
         <Nav>
-            <Bars onClick={handleMenuToggle} />
-            <NavLink 
-                to="/home" 
-                onClick={() => setIsOpen(false)} 
-                className="nav-logo"
-                style={{ 
-                    fontWeight: 'bold', 
-                    fontSize: '1.5rem', 
-                    fontFamily: 'var(--font-mono)',
-                    letterSpacing: '1px'
-                }}
-            >
+            <NavLink to="/home" className="nav-logo">
               NN
             </NavLink>
 
+            <Bars onClick={handleMenuToggle} />
+
             <NavMenu ref={menuRef} className={isOpen ? "active" : ""}>
-                <NavLink to="/projects" onClick={() => setIsOpen(false)}>
-                    Projects
-                </NavLink>
-                <NavLink to="/skills" onClick={() => setIsOpen(false)}>
-                    Skills
-                </NavLink>
-                <NavLink to="/experience" onClick={() => setIsOpen(false)}>
-                    Experience
-                </NavLink>
-                <NavLink to="/references" onClick={() => setIsOpen(false)}>
-                    References
-                </NavLink>
+                <NavLink to="/projects">Projects</NavLink>
+                <NavLink to="/skills">Skills</NavLink>
+                <NavLink to="/experience">Experience</NavLink>
                 
-                <button 
-                    id="resumeBtn" 
-                    onClick={() => { downloadTxtFile(); setIsOpen(false); }} 
-                    style={{ cursor: 'pointer' }}
-                >
-                    <i className="fa fa-download" aria-hidden="true"></i> Résumé
-                </button>
+                <ResumeButton onClick={downloadTxtFile}>
+                    <i className="fa fa-download"></i> RÉSUMÉ
+                </ResumeButton>
                 
                 <button className="theme-toggle" onClick={toggleTheme}>
                   {theme === "dark" ? "☀" : "🌙"}
