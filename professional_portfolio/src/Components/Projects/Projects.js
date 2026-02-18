@@ -29,7 +29,7 @@ const Projects = () => {
                             <p className="project-meta">
                                 <strong>Operational Edge:</strong> Implements fail-fast configurations, structured logging (RotatingFileHandler), and compute guardrails to ensure sub-200ms p99 latency.
                             </p>
-                            <a href="#" className="repo-btn">View Code</a>
+                            <a href="https://github.com/NevinsN/Nazh" className="repo-btn">View Code</a>
                         </div>
                     </div>
 
