@@ -40,6 +40,17 @@ const Home = () => {
               13 years of experience resolving critical bottlenecks and managing resource allocation in high-pressure environments.
             </li>
           </ul>
+          <span className="section-label">Featured Development:</span>
+            <ul className="edge-list">
+              <li>
+                <strong>Nazh Engine (Systems & SRE)</strong>
+                <p>Production-grade utility featuring CSPRNG security, sidecar telemetry, and automated CI/CD guardrails.</p>
+              </li>
+              <li>
+                <strong>Beta-Library (Product Architecture)</strong>
+                <p>An automated publishing pipeline and gated reader portal designed to solve complex data distribution challenges.</p>
+              </li>
+            </ul>
         </div>
       </div>
     </header>

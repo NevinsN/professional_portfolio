@@ -10,53 +10,7 @@ const Projects = () => {
                 <h1>Projects</h1>
                 
                 <div className="project-container">
-                    {/* 1. NexusGate */}
-                    <div className="project-card">
-                        <div className="project-header">
-                            <h2>NexusGate</h2>
-                            <div className="tech-stack">
-                                <span className="tag">Go</span>
-                                <span className="tag">Kubernetes</span>
-                                <span className="tag">Redis</span>
-                            </div>
-                        </div>
-                        <div className="project-body">
-                            <p>
-                                A <strong>cloud-native orchestrator</strong> designed to automate the lifecycle of UE5 dedicated servers. 
-                                It solves "Multi-Zonal" challenges by focusing on player state persistence and horizontal scaling in distributed environments.
-                            </p>
-                            <p className="project-meta">
-                                <strong>Logic:</strong> When players advance levels, NexusGate validates destination instances and ensures the "Unlocked" state is synchronized via Redis.
-                            </p>
-                            <a href="https://github.com/NevinsN/NexusGate" target="_blank" rel="noopener noreferrer" className="repo-btn">
-                                View Code
-                            </a>
-                        </div>
-                    </div>
-
-                    {/* 2. Elemental Escapist */}
-                    <div className="project-card">
-                        <div className="project-header">
-                            <h2>Elemental Escapist</h2>
-                            <div className="tech-stack">
-                                <span className="tag">UE5</span>
-                                <span className="tag">C++</span>
-                                <span className="tag">FPS</span>
-                            </div>
-                        </div>
-                        <div className="project-body">
-                            <p>
-                                A first-person technical prototype built in <strong>Unreal Engine 5</strong> to validate <strong>NexusGate</strong> state synchronization. 
-                                It uses a custom C++ <strong>"Powerizer"</strong> system to generate granular player progression flags.
-                            </p>
-                            <p className="project-meta">
-                                <strong>Technical Detail:</strong> Focuses on projectile physics and C++ event triggers that signal the cloud-side API for data persistence.
-                            </p>
-                            <a href="https://github.com/NevinsN/elemental-escapist/tree/main" target="_blank" rel="noopener noreferrer" className="repo-btn">
-                                View Code
-                            </a>
-                        </div>
-                    </div>
+                    
 
                     {/* 3. Capstone Project */}
                     <div className="project-card">
