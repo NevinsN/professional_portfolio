@@ -5,52 +5,39 @@ import "../Shared/Shared.css";
 
 const Home = () => {
   return (
-      <header className="App-header">      
-      {/* Title Section */}
+    <header className="App-header">      
       <div className="App-header_title">
         <h1>Nicholas Nevins</h1>
-        <h2>Software Engineer | Systems Architect</h2>
+        <h2>Software Developer | Systems Architect</h2>
+        {/* New Academic Callout */}
+        <div className="academic-honor-bar">
+            Magna Cum Laude | 3.8 GPA | 15x Honor Roll | 4x President's List
+        </div>
       </div>
 
-      {/* Main Content Area */}
       <div className="home-content">
-        <img 
-          src={Headshot} 
-          className="home-headshot" 
-          alt="Nick Nevins Headshot" 
-        />
+        <img src={Headshot} className="home-headshot" alt="Nick Nevins Headshot" />
         
         <div className="home-bio">
           <div className="home-bio-intro">
-            Magna Cum Laude Computer Science graduate and Software Engineer with 13 years of operational leadership experience. I specialize in building high-integrity, scalable applications with a focus on ownership and 'Day 2' maintainability. Having managed mission-critical infrastructure in high-pressure logistics environments, I bring a unique perspective to software development; viewing every line of code as a commitment to system reliability and user trust. I am driven by the challenge of solving complex architectural problems and a desire to build software that has a meaningful, real-world impact on global healthcare.
+            <strong>Magna Cum Laude</strong> Computer Science graduate with 13 years of operational leadership experience. I specialize in building <strong>high-integrity, user-centered applications</strong> with a focus on ownership and 'Day 2' maintainability. 
+            <br/><br/>
+            I view software development through the lens of mission-critical reliability; every line of code is a commitment to <strong>reducing error and ensuring data integrity</strong>. I am driven to build high-performance tools that solve complex architectural problems and improve global healthcare outcomes.
           </div>
 
-          {/* Featured Projects Section */}
-          <span className="section-label">Featured Projects:</span>
+          <span className="section-label">Technical Focus:</span>
           <ul className="edge-list">
             <li>
-              <strong>Data-Driven Systems Application (Capstone)</strong>
-              Standardized data ingestion and analysis workflows for complex datasets.
-              <div style={{fontFamily: 'var(--font-mono)', fontSize: '0.8rem', marginTop: '5px'}}>
-                Stack: Python, PyQt, Pandas, MongoDB
-              </div>
-            </li>
-          </ul>
-
-          {/* Operational Edge Section */}
-          <span className="section-label">Development Edge:</span>
-          <ul className="edge-list">
-            <li>
-              <strong>Full-Stack Precision:</strong> 
-              Leveraging a 3.8 GPA and deep technical training to build performant, scalable applications in C++, Go, and Python.
+              <strong>Algorithmic Precision:</strong> 
+              Applying a rigorous academic background to build performant applications in <strong>C++, JavaScript/TypeScript, and Python</strong>.
             </li>
             <li>
-              <strong>Systems-Level Logic:</strong> 
-              13 years of leadership experience applied to solving complex architectural bottlenecks and data integrity challenges.
+              <strong>Data Integrity & Scalability:</strong> 
+              Expertise in standardizing complex workflows, as demonstrated in my <strong>Data-Driven Systems Capstone</strong> (Python, MongoDB).
             </li>
             <li>
-              <strong>Architectural Resilience:</strong> 
-              Designing software with a "Day 2" mindset, ensuring code is maintainable, testable, and reliable from the first commit.
+              <strong>High-Stakes Problem Solving:</strong> 
+              13 years of experience resolving critical bottlenecks and managing resource allocation in high-pressure environments.
             </li>
           </ul>
         </div>

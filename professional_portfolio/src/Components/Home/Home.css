@@ -170,3 +170,25 @@
         border: 4px solid var(--headshot-border);
     }
 }
+
+
+.academic-honor-bar {
+    display: inline-block;
+    padding: 5px 15px;
+    margin-top: 12px;
+    background: rgba(46, 160, 67, 0.1); /* Subtle green tint */
+    border: 1px solid var(--primary-green);
+    border-radius: 20px;
+    color: var(--primary-green);
+    font-family: var(--font-mono);
+    font-size: 0.85rem;
+    font-weight: 600;
+    text-transform: uppercase;
+    letter-spacing: 0.5px;
+}
+
+/* Ensure the bio text is readable */
+.home-bio-intro {
+    line-height: 1.6;
+    margin-bottom: 2rem;
+}
