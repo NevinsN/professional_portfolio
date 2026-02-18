@@ -1,10 +1,5 @@
 import React, { useState, useEffect, useRef } from "react";
-import {
-    Nav,
-    NavLink,
-    Bars,
-    NavMenu
-} from "./NavbarElements";
+import { Nav, NavLink, Bars, NavMenu, ResumeButton, ThemeToggleButton } from "./NavbarElements";
 
 const Navbar = ({ theme, toggleTheme }) => {
     const [isOpen, setIsOpen] = useState(false);
@@ -56,9 +51,10 @@ const Navbar = ({ theme, toggleTheme }) => {
                     <i className="fa fa-download"></i> RÉSUMÉ
                 </ResumeButton>
                 
-                <button className="theme-toggle" onClick={toggleTheme}>
-                  {theme === "dark" ? "☀" : "🌙"}
-                </button>
+                {/* Swapping the generic button for the Styled Component */}
+                <ThemeToggleButton onClick={toggleTheme}>
+                {theme === "dark" ? "☀" : "🌙"}
+                </ThemeToggleButton>
             </NavMenu>
         </Nav>
     );

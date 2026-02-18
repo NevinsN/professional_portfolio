@@ -1,3 +1,4 @@
+import { FaBars } from "react-icons/fa";
 import { NavLink as Link } from "react-router-dom";
 import styled from "styled-components";
 
@@ -89,17 +90,41 @@ export const ResumeButton = styled.button`
 export const ThemeToggleButton = styled.button`
     background: transparent;
     border: none;
-    color: var(--text-main);
+    color: var(--text-main); /* Automatically swaps based on your CSS variables */
     cursor: pointer;
     font-size: 1.5rem;
-    width: 40px; /* Fixed width prevents layout shift */
-    height: 40px;
     display: flex;
     align-items: center;
     justify-content: center;
-    transition: transform 0.3s ease;
+    width: 40px;
+    height: 40px;
+    transition: transform 0.2s ease, color 0.2s ease;
 
     &:hover {
-        transform: scale(1.2); /* Fun interactive feedback */
+        transform: scale(1.1);
+        color: var(--primary-green);
+    }
+
+    &:active {
+        transform: scale(0.9);
+    }
+
+    @media screen and (max-width: 768px) {
+        margin-top: 10px; /* Gives it some breathing room in the mobile drawer */
+    }
+`;
+
+
+export const Bars = styled(FaBars)`
+    display: none; /* Hidden on desktop */
+    color: var(--text-main);
+    cursor: pointer;
+
+    @media screen and (max-width: 768px) {
+        display: block;
+        position: absolute;
+        top: 25px; /* Adjust to center vertically in your 80px nav */
+        left: 20px;
+        font-size: 1.8rem;
     }
 `;
