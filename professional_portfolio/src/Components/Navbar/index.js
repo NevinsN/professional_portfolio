@@ -43,13 +43,13 @@ const Navbar = ({ theme, toggleTheme }) => {
             <Bars onClick={handleMenuToggle} />
 
             <NavMenu ref={menuRef} className={isOpen ? "active" : ""}>
-                <NavLink to="/projects">Projects</NavLink>
-                <NavLink to="/skills">Skills</NavLink>
-                <NavLink to="/experience">Experience</NavLink>
-                <NavLink to="/references">References</NavLink>
+                <NavLink to="/projects" onClick={() => setIsOpen(false)}>Projects</NavLink>
+                <NavLink to="/skills" onClick={() => setIsOpen(false)}>Skills</NavLink>
+                <NavLink to="/experience" onClick={() => setIsOpen(false)}>Experience</NavLink>
+                <NavLink to="/references" onClick={() => setIsOpen(false)}>References</NavLink>
                 
                 <ResumeButton onClick={downloadTxtFile}>
-                    <i className="fa fa-download"></i> RÉSUMÉ
+                    <i className="fa fa-download" onClick={() => setIsOpen(false)}></i> RÉSUMÉ
                 </ResumeButton>
                 
                 {/* Swapping the generic button for the Styled Component */}

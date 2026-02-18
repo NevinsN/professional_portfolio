@@ -19,7 +19,7 @@ function App() {
   return (
     <Router>
     <div className={`App ${theme}`}>
-      <Navbar toggleTheme={toggleTheme} />
+      <Navbar theme={theme} toggleTheme={toggleTheme} />
       <main>
           <Routes>
             <Route path="/" element={<Home />} />
