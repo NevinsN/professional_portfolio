@@ -3,42 +3,45 @@ import { NavLink as Link } from "react-router-dom";
 import styled from "styled-components";
 
 export const Nav = styled.nav`
-    /* Use variables instead of hardcoded hex codes */
     background: var(--bg-main); 
     height: 80px;
     display: flex;
     justify-content: space-between;
     align-items: center;
-    padding: 0 5%; /* Using % instead of 2rem for better scaling */
+    padding: 0 5%; 
     position: sticky;
     top: 0;
     z-index: 1000;
     border-bottom: 2px solid var(--primary-green);
     box-shadow: var(--card-shadow);
-    transition: all 0.3s ease; /* Smooth color transition during toggle */
+    transition: all 0.3s ease;
+
+    @media screen and (max-width: 768px) {
+        /* Ensure the Logo (NN) stays left while Bars go right */
+        padding: 0 20px;
+    }
 `;
 
 export const NavMenu = styled.div`
     display: flex; 
     align-items: center;
-    gap: 2rem; /* Consistent spacing */
+    gap: 2rem;
 
     @media screen and (max-width: 768px) {
         display: none; 
         
         &.active {
-            background: var(--bg-main);
-            backdrop-filter: blur(10px);
             display: flex !important;
             flex-direction: column;
             position: absolute;
             top: 80px;
-            right: 0;
+            right: 0; /* Align the drawer to the right */
             background: var(--bg-main);
-            width: 200px; 
-            padding: 1.5rem;
-            border-left: 2px solid var(--primary-green);
+            width: 100%; /* Or set a specific width like 250px */
+            padding: 2rem;
+            border-bottom: 2px solid var(--primary-green);
             box-shadow: var(--card-shadow);
+            z-index: 99;
         }
     }
 `;
@@ -122,9 +125,12 @@ export const Bars = styled(FaBars)`
 
     @media screen and (max-width: 768px) {
         display: block;
+        /* Position it on the right */
         position: absolute;
-        top: 25px; /* Adjust to center vertically in your 80px nav */
-        left: 20px;
+        top: 50%;
+        right: 20px;
+        transform: translateY(-50%); /* Perfectly centers vertically regardless of height */
         font-size: 1.8rem;
+        z-index: 100;
     }
 `;

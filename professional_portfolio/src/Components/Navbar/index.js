@@ -46,6 +46,7 @@ const Navbar = ({ theme, toggleTheme }) => {
                 <NavLink to="/projects">Projects</NavLink>
                 <NavLink to="/skills">Skills</NavLink>
                 <NavLink to="/experience">Experience</NavLink>
+                <NavLink to="/references">References</NavLink>
                 
                 <ResumeButton onClick={downloadTxtFile}>
                     <i className="fa fa-download"></i> RÉSUMÉ
