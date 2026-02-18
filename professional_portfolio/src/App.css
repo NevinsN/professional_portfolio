@@ -30,6 +30,7 @@
 
 .App {
   min-height: 100vh;
+  transition: background-color 0.4s ease, color 0.4s ease;
   background-color: var(--bg-main);
   color: var(--text-main);
 }
@@ -99,23 +100,4 @@
         linear-gradient(90deg, #0d1117, #162a1d);
 
     background-color: var(--bg-main);
-}
-
-
-/* MOBILE BARS */
-.Bars {
-    display: none;
-}
-
-@media (max-width: 768px) {
-    .Bars {
-        display: block;
-        position: absolute;
-        top: 25px;
-        left: 20px;
-        font-size: 1.8rem;
-        cursor: pointer;
-        z-index: 200;
-        color: var(--text-main);
-    }
 }
