@@ -29,7 +29,7 @@ const Home = () => {
           <ul className="edge-list">
             <li>
               <strong>Algorithmic Precision:</strong> 
-              Applying a rigorous academic background to build performant applications in <strong>C++, JavaScript/TypeScript, and Python</strong>.
+              Applying a rigorous academic background to build performant applications in <strong>C++, JavaScript/TypeScript, and Python.</strong>
             </li>
             <li>
               <strong>Data Integrity & Scalability:</strong> 
