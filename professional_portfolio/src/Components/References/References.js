@@ -12,32 +12,34 @@ const References = () => {
     ];
 
     return (
-        <div className="subpage-container">
-            <span className="section-label">Professional References</span>
-            <p className="skills-intro-comment">
-                {"// Verified nodes in my professional network"}
-            </p>
-            
-            <div className="references-grid">
-                {contacts.map((ref, idx) => (
-                    <div key={idx} className="reference-card">
-                        <h2>{ref.name}</h2>
-                        <span className="ref-role">{ref.role}</span>
-                        
-                        <div className="ref-contact-info">
-                            <div className="contact-item">
-                                <span className="contact-label">TEL:</span>
-                                <span className="contact-value">{ref.phone}</span>
-                            </div>
-                            <div className="contact-item">
-                                <span className="contact-label">EXT:</span>
-                                <span className="contact-value">{ref.email}</span>
+        <header className={`App-header`}>
+            <div className="subpage-container">
+                <span className="section-label">Professional References</span>
+                <p className="skills-intro-comment">
+                    {"// Verified nodes in my professional network"}
+                </p>
+                
+                <div className="references-grid">
+                    {contacts.map((ref, idx) => (
+                        <div key={idx} className="reference-card">
+                            <h2>{ref.name}</h2>
+                            <span className="ref-role">{ref.role}</span>
+                            
+                            <div className="ref-contact-info">
+                                <div className="contact-item">
+                                    <span className="contact-label">TEL:</span>
+                                    <span className="contact-value">{ref.phone}</span>
+                                </div>
+                                <div className="contact-item">
+                                    <span className="contact-label">EXT:</span>
+                                    <span className="contact-value">{ref.email}</span>
+                                </div>
                             </div>
                         </div>
-                    </div>
-                ))}
+                    ))}
+                </div>
             </div>
-        </div>
+        </header>
     );
 };
 

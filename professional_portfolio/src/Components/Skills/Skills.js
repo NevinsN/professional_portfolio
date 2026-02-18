@@ -11,28 +11,30 @@ const Skills = () => {
     ];
 
     return (
-        <div className="subpage-container">
-            <span className="section-label">Technical Stack</span>
-            <p className="skills-intro-comment">
-                {"// System capabilities and core competencies"}
-            </p>
-            
-            <div className="skills-dashboard">
-                {techStack.map((category, idx) => (
-                    <div key={idx} className="skills-category">
-                        <h3>
-                            <span>0{idx + 1}_</span>
-                            {category.title}
-                        </h3>
-                        <ul className="skills-list">
-                            {category.skills.map((skill, sIdx) => (
-                                <li key={sIdx} className="tag">{skill}</li>
-                            ))}
-                        </ul>
-                    </div>
-                ))}
+        <header className={`App-header`}>
+            <div className="subpage-container">
+                <span className="section-label">Technical Stack</span>
+                <p className="skills-intro-comment">
+                    {"// System capabilities and core competencies"}
+                </p>
+                
+                <div className="skills-dashboard">
+                    {techStack.map((category, idx) => (
+                        <div key={idx} className="skills-category">
+                            <h3>
+                                <span>0{idx + 1}_</span>
+                                {category.title}
+                            </h3>
+                            <ul className="skills-list">
+                                {category.skills.map((skill, sIdx) => (
+                                    <li key={sIdx} className="tag">{skill}</li>
+                                ))}
+                            </ul>
+                        </div>
+                    ))}
+                </div> 
             </div> 
-        </div> 
+        </header>
     );
 };
 
