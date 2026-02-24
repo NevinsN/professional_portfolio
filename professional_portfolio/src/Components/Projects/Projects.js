@@ -49,7 +49,7 @@ const Projects = () => {
                         </div>
                         <div className="project-body">
                             <p>
-                                A production reading platform live at <a href="https://nicholasnevins.org" target="_blank" rel="noopener noreferrer">nicholasnevins.org</a> — authors upload and version manuscripts, control access at the series, book, or draft level, and invite readers via time-limited token links. Built end-to-end on Azure with no third-party auth libraries.
+                                A production reading platform live at <a href="https://bespoke.nicholasnevins.org" target="_blank" rel="noopener noreferrer">nicholasnevins.org</a> — authors upload and version manuscripts, control access at the series, book, or draft level, and invite readers via time-limited token links. Built end-to-end on Azure with no third-party auth libraries.
                             </p>
                             <p className="project-meta">
                                 <strong>Engineering depth:</strong> 7-collection normalized Cosmos DB schema designed to make permission resolution a single indexed query rather than a full scan. A central <code>permission_service</code> enforces all access rules server-side — the frontend makes zero security decisions. Invite redemption is atomic via <code>find_one_and_update</code> with a use-count condition, preventing race conditions on simultaneous redemptions. Database indexes are managed in code and applied idempotently on cold start. Includes a non-destructive, dry-run capable migration script for schema evolution.
