@@ -84,3 +84,31 @@
         padding: 20px;
     }
 }
+
+/* ACTIVELY DEVELOPING CARD - visually distinct but not hidden */
+.skills-category--developing {
+    border-color: var(--card-border);
+    opacity: 0.85;
+    border-style: dashed;
+}
+
+.skills-category--developing h3 {
+    color: var(--text-main);
+    opacity: 0.75;
+}
+
+.skills-category--developing:hover {
+    opacity: 1;
+    border-color: var(--text-main);
+    box-shadow: none;
+}
+
+/* NOTE TEXT under the category header */
+.skills-category-note {
+    font-family: var(--font-mono);
+    font-size: 0.78rem;
+    opacity: 0.6;
+    margin: -12px 0 14px 0;
+    font-style: italic;
+    line-height: 1.4;
+}
