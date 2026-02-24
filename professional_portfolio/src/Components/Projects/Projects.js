@@ -29,7 +29,7 @@ const Projects = () => {
                             <p className="project-meta">
                                 <strong>Operational Edge:</strong> Implements fail-fast configurations, structured logging (RotatingFileHandler), and compute guardrails to ensure sub-200ms p99 latency.
                             </p>
-                            <a href="https://github.com/NevinsN/Nazh" className="repo-btn">View Code</a>
+                            <a href="https://github.com/NevinsN/Nazh" target="_blank" rel="noopener noreferrer" className="repo-btn">View Code</a>
                         </div>
                     </div>
 
@@ -51,7 +51,7 @@ const Projects = () => {
                             <p className="project-meta">
                                 <strong>Software Logic:</strong> Developed a custom access-control system ensuring intellectual property integrity while streamlining the beta-reader feedback loop.
                             </p>
-                            <a href="#" className="repo-btn">View Code</a>
+                            <a href="https://github.com/NevinsN/Beta-Library" target="_blank" rel="noopener noreferrer" className="repo-btn">View Code</a>
                         </div>
                     </div>
 
@@ -70,9 +70,7 @@ const Projects = () => {
                                 A desktop application for standardizing data ingestion and analysis workflows. 
                                 Completed with <strong>high honors (Magna Cum Laude)</strong> during a period of significant personal adversity, demonstrating extreme resilience.
                             </p>
-                            <a href="https://github.com/NevinsN/CS-499" target="_blank" rel="noopener noreferrer" className="repo-btn">
-                                View Code
-                            </a>
+                            <a href="https://github.com/NevinsN/CS-499" target="_blank" rel="noopener noreferrer" className="repo-btn">View Code</a>
                         </div>
                     </div>
 
@@ -91,9 +89,7 @@ const Projects = () => {
                                 A high-performance portfolio utilizing a <strong>custom theme engine</strong> and mobile-first navigation. 
                                 Serves as a live demonstration of frontend architectural principles and automated deployment.
                             </p>
-                            <a href="https://github.com/NevinsN/professional_portfolio" target="_blank" rel="noopener noreferrer" className="repo-btn">
-                                View Code
-                            </a>
+                            <a href="https://github.com/NevinsN/professional_portfolio" target="_blank" rel="noopener noreferrer" className="repo-btn">View Code</a>
                         </div>
                     </div>  
                 </div> 
