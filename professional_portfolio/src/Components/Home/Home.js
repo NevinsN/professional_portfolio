@@ -8,13 +8,13 @@ const Home = () => {
     <header className="App-header">      
       <div className="App-header_title">
         <h1>Nicholas Nevins</h1>
-        <h2>Software Developer | Systems Architect | Cloud & Full-Stack Engineer</h2>
+        <h2>Software Developer | Cloud Engineer | Full-Stack & Systems</h2>
         <div className="academic-honor-bar">
             Magna Cum Laude | 3.8 GPA | 15x Honor Roll | 4x President's List
         </div>
         {/* Quick recruiter scan-friendly banner */}
         <div className="home-quick-highlights">
-          Azure Serverless | JS/TS & C# | Python Backends | Data Pipelines | Secure Systems | High-Concurrency SRE
+          Azure Cloud & Serverless | JS/TS | Python Backends | C++ / OOP | Data Pipelines | CI/CD | Secure Systems
         </div>
       </div>
 
@@ -23,54 +23,54 @@ const Home = () => {
         
         <div className="home-bio">
           <div className="home-bio-intro">
-            <strong>Magna Cum Laude</strong> Computer Science graduate with 13 years of operational leadership experience. I design and deploy <strong>high-integrity software systems</strong> built to scale, maintain security, and perform reliably under real-world constraints. My work spans <strong>cloud-native applications on Azure, serverless backends, and full-stack development</strong> with JS/TS, C#, and Python. 
+            <strong>Magna Cum Laude</strong> Computer Science graduate with hands-on experience designing and deploying <strong>cloud-native applications on Azure</strong> — including serverless backends, automated data workflows, and secure full-stack systems. My technical foundation spans <strong>Python, JavaScript/TypeScript, SQL, and C++</strong>, with a strong object-oriented background and active interest in expanding into C#.
             <br/><br/>
-            I specialize in <strong>data integrity, scalable workflows, and failure-tolerant architectures</strong> — ensuring systems remain correct and performant beyond initial deployment. My background in high-stakes operational environments translates directly into building resilient, maintainable, and secure software systems.
+            I bring 13 years of operational leadership into software engineering — a background that instills a deep respect for <strong>reliability, data integrity, and systems that hold up under real-world pressure</strong>. Whether building cloud infrastructure, automating workflows, or designing access-controlled data pipelines, I focus on correctness and maintainability from the start.
           </div>
 
           <span className="section-label">Technical Focus:</span>
           <ul className="edge-list">
             <li>
-              <strong>Algorithmic Precision:</strong> 
-              Leveraging rigorous academic training to build performant and maintainable applications in <strong>C++/C#, JavaScript/TypeScript, and Python</strong>, with careful attention to scalability and correctness.
+              <strong>Object-Oriented Engineering:</strong>
+              Strong academic and practical foundation in <strong>C++ and OOP principles</strong> — encapsulation, inheritance, polymorphism, and design patterns — applied to building maintainable, scalable applications in <strong>Python and JavaScript/TypeScript</strong>. Actively developing C# proficiency as a natural extension of this background.
             </li>
             <li>
-              <strong>Cloud & Systems:</strong> 
-              Designed and deployed serverless applications using <strong>Azure Static Web Apps, Functions, and Cosmos DB</strong>, focused on backend-driven authorization systems, automation, monitoring, and strict trust boundaries.
+              <strong>Azure Cloud & Infrastructure:</strong>
+              Designed and deployed production systems using <strong>Azure Static Web Apps, Functions, Cosmos DB, and automated CI/CD pipelines</strong>. Focused on backend-enforced security, resource configuration, monitoring, and strict trust boundaries — aligned with cloud engineering best practices.
             </li>
             <li>
-              <strong>Data Integrity & Scalability:</strong> 
-              Standardized complex workflows and data pipelines as demonstrated in my <strong>Data-Driven Systems Capstone</strong> (Python, MongoDB), completed with high honors during a period of significant personal adversity, highlighting resilience and commitment.
+              <strong>Data Pipelines & Workflow Automation:</strong>
+              Built and standardized data ingestion and processing workflows using <strong>Python, SQL, and MongoDB</strong>, with attention to data quality, schema consistency, and operational reliability. Comfortable designing structured pipelines from requirements through deployment.
             </li>
             <li>
-              <strong>High-Stakes Problem Solving:</strong> 
-              13 years of experience resolving critical bottlenecks and managing resources in high-pressure operational environments, directly applicable to ensuring system reliability and performance at scale.
+              <strong>Operational Reliability:</strong>
+              13 years managing high-stakes, high-volume operations translates directly into engineering habits: clear documentation, proactive monitoring, structured troubleshooting, and building systems that stay correct under pressure.
             </li>
           </ul>
 
           <p className="project-intro">
-            Selected systems designed for reliability, security, scalability, and real-world constraints.
+            Selected systems built for reliability, security, and real-world operational constraints.
           </p>
 
           <span className="section-label">Featured Development:</span>
           <ul className="edge-list">
             <li>
-              <strong>Bespoke Library (Cloud & Full-Stack)</strong>
+              <strong>Bespoke Library (Azure Cloud & Full-Stack)</strong>
               <p>
-                Secure content distribution platform built on <strong>Azure Static Web Apps, Functions, and Cosmos DB</strong>. Implements backend-enforced hierarchical access control and atomic invite flows to guarantee data integrity at scale.
+                Secure content distribution platform deployed on <strong>Azure Static Web Apps, Azure Functions, and Cosmos DB</strong>. Features backend-enforced hierarchical access control, atomic invite flows, and automated CI/CD — demonstrating end-to-end cloud infrastructure ownership from configuration through deployment.
                 <br/>
-                <em>Skills highlighted:</em> Cloud deployment, serverless architecture, JS/TS frontend, Python backend, automation of workflows, secure data handling, database modeling.
+                <em>Skills highlighted:</em> Azure resource provisioning, serverless architecture, JS/TS frontend, Python backend, access control design, automated deployment pipelines, NoSQL data modeling.
                 <br/>
                 <span className="project-link">View Project →</span>
               </p>
             </li>
           
             <li>
-              <strong>Nazh Engine (Systems & SRE)</strong>
+              <strong>Nazh Engine (Systems & Reliability)</strong>
               <p>
-                High-performance concurrency utility leveraging <strong>Python async programming</strong>, cryptographically secure randomization (CSPRNG), and sidecar observability. Engineered for <strong>sub-200ms response times under load</strong> with automated CI/CD and monitoring guardrails.
+                High-concurrency Discord utility built with <strong>Python asyncio</strong>, cryptographically secure randomization (CSPRNG), and a sidecar observability pattern. Engineered for <strong>sub-200ms p99 response times</strong> with structured logging, fail-fast configurations, and automated GitHub Actions deployment.
                 <br/>
-                <em>Skills highlighted:</em> Asynchronous systems, performance optimization, production-grade reliability, automated deployment.
+                <em>Skills highlighted:</em> Async system design, performance engineering, production-grade monitoring, CI/CD automation.
                 <br/>
                 <span className="project-link">View Project →</span>
               </p>
@@ -81,5 +81,6 @@ const Home = () => {
     </header>
   );
 }
+
 
 export default Home;
