@@ -57,9 +57,9 @@ const Home = () => {
             <li>
               <strong>Bespoke Library (Azure Cloud & Full-Stack)</strong>
               <p>
-                Secure content distribution platform deployed on <strong>Azure Static Web Apps, Azure Functions, and Cosmos DB</strong>. Features backend-enforced hierarchical access control, atomic invite flows, and automated CI/CD — demonstrating end-to-end cloud infrastructure ownership from configuration through deployment.
+                A production reading platform live at nicholasnevins.org — built on <strong>Azure Static Web Apps, Azure Functions, and Cosmos DB</strong>. Features a normalized 7-collection schema, a server-side permission service enforcing hierarchical access control across series/book/draft scopes, and atomic invite redemption designed to prevent race conditions. Database indexes managed in code, AAD authentication via SWA config, and a non-destructive migration system for schema evolution.
                 <br/>
-                <em>Skills highlighted:</em> Azure resource provisioning, serverless architecture, JS/TS frontend, Python backend, access control design, automated deployment pipelines, NoSQL data modeling.
+                <em>Skills highlighted:</em> Azure resource ownership, Python Azure Functions, Cosmos DB schema design, access control architecture, atomic operations, CI/CD deployment.
                 <br/>
                 <span className="project-link">View Project →</span>
               </p>
@@ -81,6 +81,5 @@ const Home = () => {
     </header>
   );
 }
-
 
 export default Home;
