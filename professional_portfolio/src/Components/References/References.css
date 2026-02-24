@@ -40,32 +40,14 @@
     font-weight: 600;
     text-transform: uppercase;
     letter-spacing: 1px;
-    margin-bottom: 20px;
+    margin-bottom: 6px;
 }
 
-/* CONTACT INFO SECTION */
-.ref-contact-info {
-    border-top: 1px solid var(--card-border);
-    padding-top: 15px;
-    margin-top: auto; /* Pushes contact info to the bottom of the card */
-}
-
-.contact-item {
-    display: flex;
-    align-items: center;
-    gap: 10px;
-    margin-bottom: 8px;
+/* COMPANY NAME */
+.ref-company {
+    display: block;
     font-family: var(--font-mono);
-    font-size: 0.85rem;
-}
-
-.contact-label {
-    color: var(--primary-green);
-    font-weight: bold;
-    min-width: 55px;
-}
-
-.contact-value {
-    color: var(--text-main);
-    opacity: 0.9;
+    font-size: 0.78rem;
+    opacity: 0.55;
+    letter-spacing: 0.5px;
 }
