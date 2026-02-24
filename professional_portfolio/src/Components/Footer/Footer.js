@@ -5,7 +5,7 @@ const Footer = () => {
   return (
     <footer className="site-footer">
       <div className="footer-content">
-        <p>© {new Date().getFullYear()} Nicholas Nevins | Software Engineer</p>
+        <p>© {new Date().getFullYear()} Nicholas Nevins | Software Developer & Cloud Engineer</p>
           <div className="footer-socials">
             <a href="https://github.com/NevinsN" target="_blank" rel="noopener noreferrer">GITHUB</a>
             <span className="divider">|</span>
