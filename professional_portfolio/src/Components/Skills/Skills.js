@@ -10,7 +10,7 @@ const Skills = () => {
         },
         {
             title: "Software Engineering",
-            skills: ["Python", "JavaScript / TypeScript", "C++", "SQL", "Node.js", "React", "Go"]
+            skills: ["Python", "JavaScript / TypeScript", "Vanilla JS (ES Modules)", "C++", "SQL", "Node.js", "React", "Go"]
         },
         {
             title: "Systems & Networking",
