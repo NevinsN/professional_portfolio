@@ -7,6 +7,7 @@ import Experience from './Components/Experience/Experience';
 import Skills from './Components/Skills/Skills';
 import References from './Components/References/References';
 import Footer from './Components/Footer/Footer'; 
+import ObsidianSync from './Components/ObsidianSync/ObsidianSync';
 import './App.css';
 
 function App() {
@@ -28,6 +29,7 @@ function App() {
             <Route path="/experience" element={<Experience />} />
             <Route path="/skills" element={<Skills />} />
             <Route path="/references" element={<References />} />
+            <Route path="/obsidian-sync" element={<ObsidianSync />} />
           </Routes>
       </main>
 

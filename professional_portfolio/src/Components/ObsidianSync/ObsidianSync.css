@@ -1,0 +1,71 @@
+/* CONTAINER SETUP */
+.obsidian-sync-page {
+  width: 100%;
+}
+
+.obsidian-sync-wrapper {
+  display: flex;
+  flex-direction: column;
+  gap: 30px;
+  width: 100%;
+  max-width: 900px;
+  padding-top: 20px;
+  text-align: left;
+}
+
+.obsidian-sync-card {
+  padding: 30px;
+  color: inherit;
+  text-align: left;
+  background: var(--card-bg);
+  border: 1px solid var(--card-border);
+  border-left: 4px solid var(--primary-green);
+  border-radius: 8px;
+  backdrop-filter: blur(8px);
+}
+
+.obsidian-sync-card h2 {
+  margin: 0 0 20px;
+  color: var(--primary-green);
+}
+
+.obsidian-sync-card h3 {
+  margin: 24px 0 8px;
+}
+
+.obsidian-sync-card p,
+.obsidian-sync-card li {
+  font-size: 1rem;
+  line-height: 1.65;
+}
+
+.obsidian-sync-card p {
+  margin: 0 0 14px;
+}
+
+.obsidian-sync-card ol {
+  padding-left: 24px;
+}
+
+.obsidian-sync-card li {
+  margin-bottom: 8px;
+}
+
+.obsidian-sync-card a {
+  color: var(--primary-green);
+  text-underline-offset: 3px;
+}
+
+.obsidian-sync-card a:hover {
+  text-decoration-thickness: 2px;
+}
+
+.obsidian-sync-updated {
+  opacity: 0.8;
+}
+
+@media (max-width: 600px) {
+  .obsidian-sync-card {
+    padding: 20px;
+  }
+}
